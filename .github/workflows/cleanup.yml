@@ -1,0 +1,14 @@
+name: Cleanup dev issues
+on:
+  push:
+    paths: [ '.github/workflows/cleanup.yml' ]
+permissions:
+  issues: write
+jobs:
+  close:
+    runs-on: ubuntu-24.04
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue list -R "$GITHUB_REPOSITORY" --state open --limit 100 --json number,title -q '.[] | select(.title | startswith("API:")) | .number' | while read n; do gh issue close "$n" -R "$GITHUB_REPOSITORY" -r "not planned" -c "Служебная выгрузка API для разработки — закрыто."; done

@@ -3,7 +3,7 @@ name: Build APK
 on:
   push:
     branches: [ main ]
-    paths-ignore: [ '.github/workflows/api.yml', 'README.md' ]
+    paths-ignore: [ '.github/workflows/cleanup.yml', '.github/workflows/api.yml', 'README.md' ]
   workflow_dispatch:
 
 permissions:
