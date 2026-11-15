@@ -1,0 +1,46 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore: [ '.github/workflows/api.yml', 'README.md' ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Android SDK licenses
+        run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+      - name: Build
+        run: |
+          set -o pipefail
+          gradle assembleRelease --no-daemon --console=plain 2>&1 | tee build.log
+      - name: Report build errors
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          { echo '```'; grep -E "^e: |error:|ERROR|What went wrong|FAILURE|Exception" -A3 build.log | head -150; echo '---- tail ----'; tail -60 build.log; echo '```'; } | head -c 60000 > err.md
+          gh issue create -R "$GITHUB_REPOSITORY" -t "Build failed #${{ github.run_number }}" -F err.md
+      - name: Rename APK
+        run: cp app/build/outputs/apk/release/app-release.apk AREPO-0.1.${{ github.run_number }}.apk
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v0.1.${{ github.run_number }}
+          name: AR.E.P.O. 0.1.${{ github.run_number }}
+          body: "Скачай файл AREPO-0.1.${{ github.run_number }}.apk ниже и установи на телефон."
+          files: AREPO-*.apk
+          make_latest: true
