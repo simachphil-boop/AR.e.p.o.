@@ -1,0 +1,1491 @@
+Compiled from "AnchorMeshSpawner.kt"
+public final class com.meta.spatial.mruk.AnchorMeshScalingMode extends java.lang.Enum<com.meta.spatial.mruk.AnchorMeshScalingMode> {
+  public static final com.meta.spatial.mruk.AnchorMeshScalingMode STRETCH;
+  public static final com.meta.spatial.mruk.AnchorMeshScalingMode UNIFORM_SCALING;
+  public static final com.meta.spatial.mruk.AnchorMeshScalingMode UNIFORM_XZ_SCALING;
+  public static final com.meta.spatial.mruk.AnchorMeshScalingMode NO_SCALING;
+  public static com.meta.spatial.mruk.AnchorMeshScalingMode[] values();
+  public static com.meta.spatial.mruk.AnchorMeshScalingMode valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.AnchorMeshScalingMode> getEntries();
+  static {};
+}
+Compiled from "AnchorMeshSpawner.kt"
+public final class com.meta.spatial.mruk.AnchorMeshSelectionMode extends java.lang.Enum<com.meta.spatial.mruk.AnchorMeshSelectionMode> {
+  public static final com.meta.spatial.mruk.AnchorMeshSelectionMode RANDOM;
+  public static final com.meta.spatial.mruk.AnchorMeshSelectionMode CLOSEST_SIZE;
+  public static com.meta.spatial.mruk.AnchorMeshSelectionMode[] values();
+  public static com.meta.spatial.mruk.AnchorMeshSelectionMode valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.AnchorMeshSelectionMode> getEntries();
+  static {};
+}
+Compiled from "AnchorMeshSpawner.kt"
+public final class com.meta.spatial.mruk.AnchorMeshSpawner {
+  public static final com.meta.spatial.mruk.AnchorMeshSpawner$Companion Companion;
+  public com.meta.spatial.mruk.AnchorMeshSpawner(com.meta.spatial.mruk.MRUKFeature, java.util.Map<com.meta.spatial.mruk.MRUKLabel, com.meta.spatial.mruk.AnchorMeshSpawner$AnchorMeshGroup>, com.meta.spatial.mruk.MRUKSpawnMode);
+  public com.meta.spatial.mruk.AnchorMeshSpawner(com.meta.spatial.mruk.MRUKFeature, java.util.Map, com.meta.spatial.mruk.MRUKSpawnMode, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public final com.meta.spatial.mruk.MRUKFeature getMrukFeature();
+  public final java.util.Map<com.meta.spatial.mruk.MRUKLabel, com.meta.spatial.mruk.AnchorMeshSpawner$AnchorMeshGroup> getSpawnGroups();
+  public final void setSpawnGroups(java.util.Map<com.meta.spatial.mruk.MRUKLabel, com.meta.spatial.mruk.AnchorMeshSpawner$AnchorMeshGroup>);
+  public final com.meta.spatial.mruk.MRUKSpawnMode getSpawnMode();
+  public final java.util.List<com.meta.spatial.core.Entity> spawnMeshes(java.util.List<com.meta.spatial.mruk.MRUKRoom>);
+  public final java.util.List<com.meta.spatial.core.Entity> spawnMeshes(com.meta.spatial.mruk.MRUKRoom);
+  public final void destroy();
+  public static final java.util.HashMap access$getBoundsCache$cp();
+  public static final java.util.Map access$getRoomToSpawnedEntities$p(com.meta.spatial.mruk.AnchorMeshSpawner);
+  public static final java.util.List access$spawnMeshesInternal(com.meta.spatial.mruk.AnchorMeshSpawner, com.meta.spatial.mruk.MRUKRoom);
+  static {};
+}
+Compiled from "AnchorMeshSpawner.kt"
+public final class com.meta.spatial.mruk.AnchorMeshSpawner$AnchorMeshGroup {
+  public com.meta.spatial.mruk.AnchorMeshSpawner$AnchorMeshGroup(java.util.List<java.lang.String>, com.meta.spatial.mruk.AnchorMeshSelectionMode, com.meta.spatial.mruk.AnchorMeshScalingMode, boolean);
+  public com.meta.spatial.mruk.AnchorMeshSpawner$AnchorMeshGroup(java.util.List, com.meta.spatial.mruk.AnchorMeshSelectionMode, com.meta.spatial.mruk.AnchorMeshScalingMode, boolean, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public final java.util.List<java.lang.String> getMeshes();
+  public final com.meta.spatial.mruk.AnchorMeshSelectionMode getSelectionMode();
+  public final com.meta.spatial.mruk.AnchorMeshScalingMode getScalingMode();
+  public final boolean getMatchAspectRatio();
+  public final java.util.List<java.lang.String> component1();
+  public final com.meta.spatial.mruk.AnchorMeshSelectionMode component2();
+  public final com.meta.spatial.mruk.AnchorMeshScalingMode component3();
+  public final boolean component4();
+  public final com.meta.spatial.mruk.AnchorMeshSpawner$AnchorMeshGroup copy(java.util.List<java.lang.String>, com.meta.spatial.mruk.AnchorMeshSelectionMode, com.meta.spatial.mruk.AnchorMeshScalingMode, boolean);
+  public static com.meta.spatial.mruk.AnchorMeshSpawner$AnchorMeshGroup copy$default(com.meta.spatial.mruk.AnchorMeshSpawner$AnchorMeshGroup, java.util.List, com.meta.spatial.mruk.AnchorMeshSelectionMode, com.meta.spatial.mruk.AnchorMeshScalingMode, boolean, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "AnchorMeshSpawner.kt"
+public final class com.meta.spatial.mruk.AnchorMeshSpawner$Companion {
+  public final java.util.HashMap<java.lang.String, com.meta.spatial.core.Bound3D> getBoundsCache();
+  public final com.meta.spatial.core.Bound3D getMeshBounds(java.lang.String);
+  public com.meta.spatial.mruk.AnchorMeshSpawner$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "AnchorMeshSpawner.kt"
+public final class com.meta.spatial.mruk.AnchorMeshSpawner$WhenMappings {
+  public static final int[] $EnumSwitchMapping$0;
+  public static final int[] $EnumSwitchMapping$1;
+  static {};
+}
+Compiled from "AnchorProcMeshInfo.kt"
+public final class com.meta.spatial.mruk.AnchorProcMeshInfo extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.mruk.AnchorProcMeshInfo$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.mruk.AnchorProcMeshInfo(java.lang.String, com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2);
+  public com.meta.spatial.mruk.AnchorProcMeshInfo(java.lang.String, com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final java.lang.String getCutHoleLabels();
+  public final void setCutHoleLabels(java.lang.String);
+  public final com.meta.spatial.core.Vector2 getPlaneUvOffset();
+  public final void setPlaneUvOffset(com.meta.spatial.core.Vector2);
+  public final com.meta.spatial.core.Vector2 getPlaneUvScale();
+  public final void setPlaneUvScale(com.meta.spatial.core.Vector2);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.mruk.AnchorProcMeshInfo(java.util.List<? extends com.meta.spatial.mruk.MRUKLabel>, com.meta.spatial.mruk.MRUKPlaneUV);
+  public com.meta.spatial.mruk.AnchorProcMeshInfo(java.util.List, com.meta.spatial.mruk.MRUKPlaneUV, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public com.meta.spatial.mruk.AnchorProcMeshInfo(java.lang.String, com.meta.spatial.core.Vector2);
+  public com.meta.spatial.mruk.AnchorProcMeshInfo(java.lang.String);
+  public com.meta.spatial.mruk.AnchorProcMeshInfo();
+  public static final int access$getId$cp();
+  public static final int access$getCutHoleLabelsId$cp();
+  public static final int access$getPlaneUvOffsetId$cp();
+  public static final int access$getPlaneUvScaleId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.StringAttributeData access$getCutHoleLabelsData$cp();
+  public static final com.meta.spatial.core.Vector2AttributeData access$getPlaneUvOffsetData$cp();
+  public static final com.meta.spatial.core.Vector2AttributeData access$getPlaneUvScaleData$cp();
+  static {};
+}
+Compiled from "AnchorProcMeshInfo.kt"
+public final class com.meta.spatial.mruk.AnchorProcMeshInfo$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getCutHoleLabelsId();
+  public final int getPlaneUvOffsetId();
+  public final int getPlaneUvScaleId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.mruk.AnchorProcMeshInfo> getCreateDefaultInstance();
+  public final com.meta.spatial.core.StringAttributeData getCutHoleLabelsData();
+  public final com.meta.spatial.core.Vector2AttributeData getPlaneUvOffsetData();
+  public final com.meta.spatial.core.Vector2AttributeData getPlaneUvScaleData();
+  public com.meta.spatial.mruk.AnchorProcMeshInfo$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "AnchorProceduralMesh.kt"
+public final class com.meta.spatial.mruk.AnchorProceduralMesh {
+  public static final com.meta.spatial.mruk.AnchorProceduralMesh$Companion Companion;
+  public static final java.lang.String TAG;
+  public com.meta.spatial.mruk.AnchorProceduralMesh(com.meta.spatial.mruk.MRUKFeature, java.util.Map<com.meta.spatial.mruk.MRUKLabel, com.meta.spatial.mruk.AnchorProceduralMeshConfig>, com.meta.spatial.mruk.MRUKSpawnMode, com.meta.spatial.mruk.MRUKWallTexCoordModeU, com.meta.spatial.mruk.MRUKWallTexCoordModeV, com.meta.spatial.mruk.MRUKAnchorTexCoordMode, java.util.List<? extends com.meta.spatial.mruk.MRUKLabel>);
+  public com.meta.spatial.mruk.AnchorProceduralMesh(com.meta.spatial.mruk.MRUKFeature, java.util.Map, com.meta.spatial.mruk.MRUKSpawnMode, com.meta.spatial.mruk.MRUKWallTexCoordModeU, com.meta.spatial.mruk.MRUKWallTexCoordModeV, com.meta.spatial.mruk.MRUKAnchorTexCoordMode, java.util.List, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public final com.meta.spatial.mruk.MRUKFeature getMrukFeature();
+  public final java.util.Map<com.meta.spatial.mruk.MRUKLabel, com.meta.spatial.mruk.AnchorProceduralMeshConfig> getLabelToConfig();
+  public final void setLabelToConfig(java.util.Map<com.meta.spatial.mruk.MRUKLabel, com.meta.spatial.mruk.AnchorProceduralMeshConfig>);
+  public final com.meta.spatial.mruk.MRUKSpawnMode getSpawnMode();
+  public final com.meta.spatial.mruk.MRUKWallTexCoordModeU getWallTexCoordModeU();
+  public final void setWallTexCoordModeU(com.meta.spatial.mruk.MRUKWallTexCoordModeU);
+  public final com.meta.spatial.mruk.MRUKWallTexCoordModeV getWallTexCoordModeV();
+  public final void setWallTexCoordModeV(com.meta.spatial.mruk.MRUKWallTexCoordModeV);
+  public final com.meta.spatial.mruk.MRUKAnchorTexCoordMode getAnchorTexCoordMode();
+  public final void setAnchorTexCoordMode(com.meta.spatial.mruk.MRUKAnchorTexCoordMode);
+  public final java.util.List<com.meta.spatial.mruk.MRUKLabel> getCutHoleLabels();
+  public final void setCutHoleLabels(java.util.List<? extends com.meta.spatial.mruk.MRUKLabel>);
+  public final java.util.List<com.meta.spatial.mruk.AnchorProceduralMesh$MeshAndPhysicEntity> spawnMeshes(java.util.List<com.meta.spatial.mruk.MRUKRoom>);
+  public final java.util.List<com.meta.spatial.mruk.AnchorProceduralMesh$MeshAndPhysicEntity> spawnMeshes(com.meta.spatial.mruk.MRUKRoom);
+  public final void destroy();
+  public static final java.util.Map access$getEntityToSceneMaterial$cp();
+  public static final java.util.Map access$getRoomToSpawnedEntities$p(com.meta.spatial.mruk.AnchorProceduralMesh);
+  public static final java.util.List access$spawnMeshesInternal(com.meta.spatial.mruk.AnchorProceduralMesh, com.meta.spatial.mruk.MRUKRoom);
+  static {};
+}
+Compiled from "AnchorProceduralMesh.kt"
+public final class com.meta.spatial.mruk.AnchorProceduralMesh$Companion {
+  public final java.util.Map<com.meta.spatial.core.Entity, com.meta.spatial.mruk.ProceduralMeshMaterial> getEntityToSceneMaterial$xplat_aether_libs_features_mr_utility_kit_mrukForAAR();
+  public final void registerMeshCreator$xplat_aether_libs_features_mr_utility_kit_mrukForAAR(android.content.Context, com.meta.spatial.toolkit.MeshManager, com.meta.spatial.mruk.MRUKFeature);
+  public com.meta.spatial.mruk.AnchorProceduralMesh$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "AnchorProceduralMesh.kt"
+final class com.meta.spatial.mruk.AnchorProceduralMesh$Companion$DirectionVectorsWithUVDim {
+  public com.meta.spatial.mruk.AnchorProceduralMesh$Companion$DirectionVectorsWithUVDim(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getForward();
+  public final com.meta.spatial.core.Vector3 getRight();
+  public final com.meta.spatial.core.Vector3 getUp();
+  public final com.meta.spatial.core.Vector3 getDimRotated();
+  public final com.meta.spatial.core.Vector3 component1();
+  public final com.meta.spatial.core.Vector3 component2();
+  public final com.meta.spatial.core.Vector3 component3();
+  public final com.meta.spatial.core.Vector3 component4();
+  public final com.meta.spatial.mruk.AnchorProceduralMesh$Companion$DirectionVectorsWithUVDim copy(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public static com.meta.spatial.mruk.AnchorProceduralMesh$Companion$DirectionVectorsWithUVDim copy$default(com.meta.spatial.mruk.AnchorProceduralMesh$Companion$DirectionVectorsWithUVDim, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "AnchorProceduralMesh.kt"
+public final class com.meta.spatial.mruk.AnchorProceduralMesh$MeshAndPhysicEntity {
+  public com.meta.spatial.mruk.AnchorProceduralMesh$MeshAndPhysicEntity(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Entity getMesh();
+  public final com.meta.spatial.core.Entity getPhysics();
+  public final com.meta.spatial.core.Entity component1();
+  public final com.meta.spatial.core.Entity component2();
+  public final com.meta.spatial.mruk.AnchorProceduralMesh$MeshAndPhysicEntity copy(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity);
+  public static com.meta.spatial.mruk.AnchorProceduralMesh$MeshAndPhysicEntity copy$default(com.meta.spatial.mruk.AnchorProceduralMesh$MeshAndPhysicEntity, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "AnchorProceduralMesh.kt"
+public final class com.meta.spatial.mruk.AnchorProceduralMesh$WhenMappings {
+  public static final int[] $EnumSwitchMapping$0;
+  public static final int[] $EnumSwitchMapping$1;
+  public static final int[] $EnumSwitchMapping$2;
+  static {};
+}
+Compiled from "AnchorProceduralMesh.kt"
+public final class com.meta.spatial.mruk.AnchorProceduralMeshConfig {
+  public com.meta.spatial.mruk.AnchorProceduralMeshConfig(com.meta.spatial.mruk.ProceduralMeshMaterial, boolean);
+  public final com.meta.spatial.mruk.ProceduralMeshMaterial getMaterial$xplat_aether_libs_features_mr_utility_kit_mrukForAAR();
+  public final boolean getPhysics();
+  public com.meta.spatial.mruk.AnchorProceduralMeshConfig(com.meta.spatial.toolkit.Material, boolean);
+  public com.meta.spatial.mruk.AnchorProceduralMeshConfig(com.meta.spatial.runtime.SceneMaterial, boolean);
+}
+Compiled from "ComponentRegistrations.kt"
+public final class com.meta.spatial.mruk.ComponentRegistrations {
+  public static final com.meta.spatial.mruk.ComponentRegistrations INSTANCE;
+  public final java.util.List<com.meta.spatial.core.ComponentRegistration> all();
+  static {};
+}
+Compiled from "Data.kt"
+public final class com.meta.spatial.mruk.GlobalMeshData {
+  public com.meta.spatial.mruk.GlobalMeshData(float[], int[]);
+  public final float[] getPositions();
+  public final int[] getIndices();
+  public final float[] component1();
+  public final int[] component2();
+  public final com.meta.spatial.mruk.GlobalMeshData copy(float[], int[]);
+  public static com.meta.spatial.mruk.GlobalMeshData copy$default(com.meta.spatial.mruk.GlobalMeshData, float[], int[], int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKAnchor.kt"
+public final class com.meta.spatial.mruk.MRUKAnchor extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.mruk.MRUKAnchor$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.mruk.MRUKAnchor(java.util.UUID, java.util.UUID, long, int, com.meta.spatial.core.Entity);
+  public com.meta.spatial.mruk.MRUKAnchor(java.util.UUID, java.util.UUID, long, int, com.meta.spatial.core.Entity, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final java.util.UUID getRoomUuid();
+  public final void setRoomUuid(java.util.UUID);
+  public final java.util.UUID getUuid();
+  public final void setUuid(java.util.UUID);
+  public final long getHandle();
+  public final void setHandle(long);
+  public final com.meta.spatial.core.MapDelegate<java.lang.Integer, java.lang.String> getLabels();
+  public final void setLabels(com.meta.spatial.core.MapDelegate<java.lang.Integer, java.lang.String>);
+  public final int getLabelsCount();
+  public final void setLabelsCount(int);
+  public final com.meta.spatial.core.Entity getParentAnchor();
+  public final void setParentAnchor(com.meta.spatial.core.Entity);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.mruk.MRUKAnchor(java.util.UUID, java.util.UUID, long, java.util.List<? extends com.meta.spatial.mruk.MRUKLabel>, com.meta.spatial.core.Entity);
+  public com.meta.spatial.mruk.MRUKAnchor(java.util.UUID, java.util.UUID, long, java.util.List, com.meta.spatial.core.Entity, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public com.meta.spatial.mruk.MRUKAnchor(java.util.UUID, java.util.UUID, long, int);
+  public com.meta.spatial.mruk.MRUKAnchor(java.util.UUID, java.util.UUID, long);
+  public com.meta.spatial.mruk.MRUKAnchor(java.util.UUID, java.util.UUID);
+  public com.meta.spatial.mruk.MRUKAnchor(java.util.UUID);
+  public com.meta.spatial.mruk.MRUKAnchor();
+  public static final int access$getId$cp();
+  public static final int access$getRoomUuidId$cp();
+  public static final int access$getUuidId$cp();
+  public static final int access$getHandleId$cp();
+  public static final int access$getLabelsId$cp();
+  public static final int access$getLabelsCountId$cp();
+  public static final int access$getParentAnchorId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.UUIDAttributeData access$getRoomUuidData$cp();
+  public static final com.meta.spatial.core.UUIDAttributeData access$getUuidData$cp();
+  public static final com.meta.spatial.core.LongAttributeData access$getHandleData$cp();
+  public static final com.meta.spatial.core.ExperimentalMapAttributeData access$getLabelsData$cp();
+  public static final com.meta.spatial.core.IntAttributeData access$getLabelsCountData$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getParentAnchorData$cp();
+  static {};
+}
+Compiled from "MRUKAnchor.kt"
+public final class com.meta.spatial.mruk.MRUKAnchor$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getRoomUuidId();
+  public final int getUuidId();
+  public final int getHandleId();
+  public final int getLabelsId();
+  public final int getLabelsCountId();
+  public final int getParentAnchorId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.mruk.MRUKAnchor> getCreateDefaultInstance();
+  public final com.meta.spatial.core.UUIDAttributeData getRoomUuidData();
+  public final com.meta.spatial.core.UUIDAttributeData getUuidData();
+  public final com.meta.spatial.core.LongAttributeData getHandleData();
+  public final com.meta.spatial.core.ExperimentalMapAttributeData<java.lang.Integer, java.lang.String> getLabelsData();
+  public final com.meta.spatial.core.IntAttributeData getLabelsCountData();
+  public final com.meta.spatial.core.EntityAttributeData getParentAnchorData();
+  public com.meta.spatial.mruk.MRUKAnchor$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "AnchorProceduralMesh.kt"
+public final class com.meta.spatial.mruk.MRUKAnchorTexCoordMode extends java.lang.Enum<com.meta.spatial.mruk.MRUKAnchorTexCoordMode> {
+  public static final com.meta.spatial.mruk.MRUKAnchorTexCoordMode METRIC;
+  public static final com.meta.spatial.mruk.MRUKAnchorTexCoordMode STRETCH;
+  public static com.meta.spatial.mruk.MRUKAnchorTexCoordMode[] values();
+  public static com.meta.spatial.mruk.MRUKAnchorTexCoordMode valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKAnchorTexCoordMode> getEntries();
+  static {};
+}
+Compiled from "MRUKComponentExtFunctions.kt"
+public final class com.meta.spatial.mruk.MRUKComponentExtFunctionsKt {
+  public static final java.lang.String getPayloadAsString(com.meta.spatial.mruk.TrackedQrCode);
+  public static final float getVolume(com.meta.spatial.mruk.MRUKVolume);
+  public static final com.meta.spatial.core.Vector3 getSize(com.meta.spatial.mruk.MRUKVolume);
+  public static final com.meta.spatial.core.Vector3 getCenter(com.meta.spatial.mruk.MRUKVolume);
+  public static final java.util.List<com.meta.spatial.core.Vector2> getBoundaryAsList(com.meta.spatial.mruk.MRUKPlane);
+  public static final com.meta.spatial.core.Vector2 size(com.meta.spatial.mruk.MRUKPlane);
+  public static final com.meta.spatial.core.Vector2 getSize(com.meta.spatial.mruk.MRUKPlane);
+  public static final com.meta.spatial.core.Vector2 getCenter(com.meta.spatial.mruk.MRUKPlane);
+  public static final boolean isPositionInBoundary(com.meta.spatial.mruk.MRUKPlane, com.meta.spatial.core.Vector2);
+  public static final com.meta.spatial.runtime.Anchor getAnchor(com.meta.spatial.mruk.MRUKAnchor);
+  public static final java.util.List<com.meta.spatial.mruk.MRUKLabel> getLabelsAsList(com.meta.spatial.mruk.MRUKAnchor);
+  public static final boolean hasLabels(com.meta.spatial.mruk.MRUKAnchor, java.util.List<? extends com.meta.spatial.mruk.MRUKLabel>);
+  public static final boolean hasLabel(com.meta.spatial.mruk.MRUKAnchor, com.meta.spatial.mruk.MRUKLabel);
+  public static final java.util.List<com.meta.spatial.mruk.MRUKLabel> getCutHoleLabelsAsList(com.meta.spatial.mruk.AnchorProcMeshInfo);
+}
+Compiled from "AnchorProceduralMesh.kt"
+final class com.meta.spatial.mruk.MRUKEntityWithPlaneUV {
+  public com.meta.spatial.mruk.MRUKEntityWithPlaneUV(com.meta.spatial.core.Entity, com.meta.spatial.mruk.MRUKPlaneUV);
+  public final com.meta.spatial.core.Entity getEntity();
+  public final com.meta.spatial.mruk.MRUKPlaneUV getPlaneUv();
+  public final com.meta.spatial.core.Entity component1();
+  public final com.meta.spatial.mruk.MRUKPlaneUV component2();
+  public final com.meta.spatial.mruk.MRUKEntityWithPlaneUV copy(com.meta.spatial.core.Entity, com.meta.spatial.mruk.MRUKPlaneUV);
+  public static com.meta.spatial.mruk.MRUKEntityWithPlaneUV copy$default(com.meta.spatial.mruk.MRUKEntityWithPlaneUV, com.meta.spatial.core.Entity, com.meta.spatial.mruk.MRUKPlaneUV, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKUtil.kt"
+public final class com.meta.spatial.mruk.MRUKEnvironmentRaycastHit {
+  public com.meta.spatial.mruk.MRUKEnvironmentRaycastHit(com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult getResult();
+  public final com.meta.spatial.core.Vector3 getPoint();
+  public final com.meta.spatial.core.Vector3 getNormal();
+  public final com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult component1();
+  public final com.meta.spatial.core.Vector3 component2();
+  public final com.meta.spatial.core.Vector3 component3();
+  public final com.meta.spatial.mruk.MRUKEnvironmentRaycastHit copy(com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public static com.meta.spatial.mruk.MRUKEnvironmentRaycastHit copy$default(com.meta.spatial.mruk.MRUKEnvironmentRaycastHit, com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKUtil.kt"
+public final class com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult extends java.lang.Enum<com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult> {
+  public static final com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult SUCCESS;
+  public static final com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult NOT_READY;
+  public static final com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult NO_HIT;
+  public static final com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult HIT_POINT_OUTSIDE_OF_FOV;
+  public static final com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult HIT_POINT_OCCLUDED;
+  public static final com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult RAY_OCCLUDED;
+  public static com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult[] values();
+  public static com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKEnvironmentRaycastHitResult> getEntries();
+  static {};
+}
+Compiled from "MRUKUtil.kt"
+public final class com.meta.spatial.mruk.MRUKEnvironmentRaycasterStatus extends java.lang.Enum<com.meta.spatial.mruk.MRUKEnvironmentRaycasterStatus> {
+  public static final com.meta.spatial.mruk.MRUKEnvironmentRaycasterStatus READY;
+  public static final com.meta.spatial.mruk.MRUKEnvironmentRaycasterStatus STOPPED;
+  public static final com.meta.spatial.mruk.MRUKEnvironmentRaycasterStatus CREATING;
+  public static com.meta.spatial.mruk.MRUKEnvironmentRaycasterStatus[] values();
+  public static com.meta.spatial.mruk.MRUKEnvironmentRaycasterStatus valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKEnvironmentRaycasterStatus> getEntries();
+  static {};
+}
+Compiled from "MRUKFeature.kt"
+public final class com.meta.spatial.mruk.MRUKFeature extends com.meta.spatial.core.AbstractSpatialFeature {
+  public static final com.meta.spatial.mruk.MRUKFeature$Companion Companion;
+  public com.meta.spatial.mruk.MRUKFeature(android.content.Context, com.meta.spatial.core.SystemManager);
+  public final android.content.Context getContext();
+  public final com.meta.spatial.core.SystemManager getSystemManager();
+  public final java.util.List<com.meta.spatial.mruk.MRUKRoom> getRooms();
+  public java.util.List<java.lang.String> registerRequiredOpenXRExtensions();
+  public java.util.List<com.meta.spatial.core.SystemBase> systemsToRegister();
+  public void onCreate(android.os.Bundle);
+  public void onSpatialShutdown();
+  public java.util.List<com.meta.spatial.core.ComponentRegistration> componentsToRegister();
+  public final void loadSceneFromJsonString(java.lang.String, boolean, com.meta.spatial.mruk.SceneModel);
+  public static void loadSceneFromJsonString$default(com.meta.spatial.mruk.MRUKFeature, java.lang.String, boolean, com.meta.spatial.mruk.SceneModel, int, java.lang.Object);
+  public final java.util.concurrent.CompletableFuture<com.meta.spatial.mruk.MRUKLoadDeviceResult> loadSceneFromDevice(boolean, boolean, com.meta.spatial.mruk.SceneModel);
+  public static java.util.concurrent.CompletableFuture loadSceneFromDevice$default(com.meta.spatial.mruk.MRUKFeature, boolean, boolean, com.meta.spatial.mruk.SceneModel, int, java.lang.Object);
+  public final java.lang.String saveSceneToJsonString();
+  public final java.util.concurrent.CompletableFuture<kotlin.Unit> requestSceneCapture();
+  public final com.meta.spatial.mruk.MRUKRoom findRoom(java.util.UUID);
+  public final com.meta.spatial.mruk.MRUKRoom getCurrentRoom();
+  public final void clearRooms();
+  public final com.meta.spatial.mruk.MRUKHit raycastRoom(java.util.UUID, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, com.meta.spatial.mruk.SurfaceType);
+  public static com.meta.spatial.mruk.MRUKHit raycastRoom$default(com.meta.spatial.mruk.MRUKFeature, java.util.UUID, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, com.meta.spatial.mruk.SurfaceType, int, java.lang.Object);
+  public final com.meta.spatial.mruk.MRUKHit[] raycastRoomAll(java.util.UUID, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, com.meta.spatial.mruk.SurfaceType);
+  public static com.meta.spatial.mruk.MRUKHit[] raycastRoomAll$default(com.meta.spatial.mruk.MRUKFeature, java.util.UUID, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, com.meta.spatial.mruk.SurfaceType, int, java.lang.Object);
+  public final java.util.concurrent.CompletableFuture<com.meta.spatial.mruk.MRUKStartTrackerResult> configureTrackers(java.util.Set<? extends com.meta.spatial.mruk.Tracker>);
+  public final void stopTrackers();
+  public final com.meta.spatial.mruk.MRUKStartEnvironmentRaycasterResult startEnvironmentRaycaster();
+  public final void stopEnvironmentRaycaster();
+  public final com.meta.spatial.mruk.MRUKEnvironmentRaycasterStatus getEnvironmentRaycasterStatus();
+  public final com.meta.spatial.mruk.MRUKEnvironmentRaycastHit raycastEnvironment(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float);
+  public static com.meta.spatial.mruk.MRUKEnvironmentRaycastHit raycastEnvironment$default(com.meta.spatial.mruk.MRUKFeature, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, int, java.lang.Object);
+  public final void addSceneEventListener(com.meta.spatial.mruk.MRUKSceneEventListener);
+  public final void removeSceneEventListener(com.meta.spatial.mruk.MRUKSceneEventListener);
+  public final boolean isWorldLockingEnabled();
+  public final void setWorldLockingEnabled(boolean);
+  static {};
+}
+Compiled from "MRUKFeature.kt"
+public final class com.meta.spatial.mruk.MRUKFeature$Companion {
+  public com.meta.spatial.mruk.MRUKFeature$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKFeature.kt"
+public final class com.meta.spatial.mruk.MRUKFeature$WhenMappings {
+  public static final int[] $EnumSwitchMapping$0;
+  public static final int[] $EnumSwitchMapping$1;
+  public static final int[] $EnumSwitchMapping$2;
+  static {};
+}
+Compiled from "MRUKUtil.kt"
+public final class com.meta.spatial.mruk.MRUKHit {
+  public com.meta.spatial.mruk.MRUKHit(float, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.util.UUID, java.util.UUID);
+  public final float getHitDistance();
+  public final com.meta.spatial.core.Vector3 getHitPosition();
+  public final com.meta.spatial.core.Vector3 getHitNormal();
+  public final java.util.UUID getRoomAnchorUuid();
+  public final java.util.UUID getSceneAnchorUuid();
+  public final float component1();
+  public final com.meta.spatial.core.Vector3 component2();
+  public final com.meta.spatial.core.Vector3 component3();
+  public final java.util.UUID component4();
+  public final java.util.UUID component5();
+  public final com.meta.spatial.mruk.MRUKHit copy(float, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.util.UUID, java.util.UUID);
+  public static com.meta.spatial.mruk.MRUKHit copy$default(com.meta.spatial.mruk.MRUKHit, float, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.util.UUID, java.util.UUID, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKUtil.kt"
+public final class com.meta.spatial.mruk.MRUKLabel extends java.lang.Enum<com.meta.spatial.mruk.MRUKLabel> {
+  public static final com.meta.spatial.mruk.MRUKLabel FLOOR;
+  public static final com.meta.spatial.mruk.MRUKLabel CEILING;
+  public static final com.meta.spatial.mruk.MRUKLabel WALL_FACE;
+  public static final com.meta.spatial.mruk.MRUKLabel TABLE;
+  public static final com.meta.spatial.mruk.MRUKLabel COUCH;
+  public static final com.meta.spatial.mruk.MRUKLabel DOOR_FRAME;
+  public static final com.meta.spatial.mruk.MRUKLabel WINDOW_FRAME;
+  public static final com.meta.spatial.mruk.MRUKLabel OTHER;
+  public static final com.meta.spatial.mruk.MRUKLabel STORAGE;
+  public static final com.meta.spatial.mruk.MRUKLabel BED;
+  public static final com.meta.spatial.mruk.MRUKLabel SCREEN;
+  public static final com.meta.spatial.mruk.MRUKLabel LAMP;
+  public static final com.meta.spatial.mruk.MRUKLabel PLANT;
+  public static final com.meta.spatial.mruk.MRUKLabel WALL_ART;
+  public static final com.meta.spatial.mruk.MRUKLabel GLOBAL_MESH;
+  public static final com.meta.spatial.mruk.MRUKLabel INVISIBLE_WALL_FACE;
+  public static final com.meta.spatial.mruk.MRUKLabel UNKNOWN;
+  public static final com.meta.spatial.mruk.MRUKLabel INNER_WALL_FACE;
+  public static final com.meta.spatial.mruk.MRUKLabel INNER_TABLETOP;
+  public static final com.meta.spatial.mruk.MRUKLabel INNER_SITTING_AREA;
+  public static final com.meta.spatial.mruk.MRUKLabel INNER_SLEEPING_AREA;
+  public static final com.meta.spatial.mruk.MRUKLabel INNER_STORAGE_TOP;
+  public static com.meta.spatial.mruk.MRUKLabel[] values();
+  public static com.meta.spatial.mruk.MRUKLabel valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKLabel> getEntries();
+  static {};
+}
+Compiled from "MRUKLoadDeviceResult.kt"
+public final class com.meta.spatial.mruk.MRUKLoadDeviceResult extends java.lang.Enum<com.meta.spatial.mruk.MRUKLoadDeviceResult> {
+  public static final com.meta.spatial.mruk.MRUKLoadDeviceResult SUCCESS;
+  public static final com.meta.spatial.mruk.MRUKLoadDeviceResult ERROR_NO_ROOMS_FOUND;
+  public static final com.meta.spatial.mruk.MRUKLoadDeviceResult ERROR_INSUFFICIENT_RESOURCES;
+  public static final com.meta.spatial.mruk.MRUKLoadDeviceResult ERROR_STORAGE_AT_CAPACITY;
+  public static final com.meta.spatial.mruk.MRUKLoadDeviceResult ERROR_INSUFFICIENT_VIEW;
+  public static final com.meta.spatial.mruk.MRUKLoadDeviceResult ERROR_PERMISSION_INSUFFICIENT;
+  public static final com.meta.spatial.mruk.MRUKLoadDeviceResult ERROR_RATE_LIMITED;
+  public static final com.meta.spatial.mruk.MRUKLoadDeviceResult ERROR_TOO_DARK;
+  public static final com.meta.spatial.mruk.MRUKLoadDeviceResult ERROR_TOO_BRIGHT;
+  public static final com.meta.spatial.mruk.MRUKLoadDeviceResult ERROR_UNKNOWN;
+  public static com.meta.spatial.mruk.MRUKLoadDeviceResult[] values();
+  public static com.meta.spatial.mruk.MRUKLoadDeviceResult valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKLoadDeviceResult> getEntries();
+  static {};
+}
+Compiled from "MRUKMesh.kt"
+public final class com.meta.spatial.mruk.MRUKMesh {
+  public com.meta.spatial.mruk.MRUKMesh(float[], float[], int[]);
+  public final float[] getPositions();
+  public final float[] getNormals();
+  public final int[] getIndices();
+  public final float[] component1();
+  public final float[] component2();
+  public final int[] component3();
+  public final com.meta.spatial.mruk.MRUKMesh copy(float[], float[], int[]);
+  public static com.meta.spatial.mruk.MRUKMesh copy$default(com.meta.spatial.mruk.MRUKMesh, float[], float[], int[], int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKNative.kt"
+public final class com.meta.spatial.mruk.MRUKNative {
+  public static final com.meta.spatial.mruk.MRUKNative$Companion Companion;
+  public com.meta.spatial.mruk.MRUKNative();
+  public static final void onRoomAdded(com.meta.spatial.mruk.MRUKNative$Room);
+  public static final void onRoomRemoved(com.meta.spatial.mruk.MRUKNative$Room);
+  public static final void onRoomUpdated(java.util.UUID, com.meta.spatial.mruk.MRUKNative$Room, boolean);
+  public static final void onAddRoom(com.meta.spatial.mruk.MRUKNative$Room);
+  public static final void onAnchorAdded(com.meta.spatial.mruk.MRUKNative$Anchor);
+  public static final void onAnchorUpdated(com.meta.spatial.mruk.MRUKNative$Anchor, boolean);
+  public static final void onAnchorRemoved(com.meta.spatial.mruk.MRUKNative$Anchor);
+  public static final void onTrackableKeyboardAdded(long, long, java.util.UUID, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], boolean);
+  public static final void onTrackableQrCodeAdded(long, long, java.util.UUID, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], int, byte[], boolean);
+  public static final void onTrackableUpdated(long, long, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], boolean);
+  public static final void onTrackableRemoved(long, long);
+  public static final kotlin.jvm.functions.Function1 access$getOnAddRoomListener$cp();
+  public static final void access$setOnAddRoomListener$cp(kotlin.jvm.functions.Function1);
+  public static final kotlin.jvm.functions.Function1 access$getOnRoomAddedListener$cp();
+  public static final void access$setOnRoomAddedListener$cp(kotlin.jvm.functions.Function1);
+  public static final kotlin.jvm.functions.Function1 access$getOnRoomRemovedListener$cp();
+  public static final void access$setOnRoomRemovedListener$cp(kotlin.jvm.functions.Function1);
+  public static final kotlin.jvm.functions.Function3 access$getOnRoomUpdatedListener$cp();
+  public static final void access$setOnRoomUpdatedListener$cp(kotlin.jvm.functions.Function3);
+  public static final kotlin.jvm.functions.Function1 access$getOnAnchorAddedListener$cp();
+  public static final void access$setOnAnchorAddedListener$cp(kotlin.jvm.functions.Function1);
+  public static final kotlin.jvm.functions.Function2 access$getOnAnchorUpdatedListener$cp();
+  public static final void access$setOnAnchorUpdatedListener$cp(kotlin.jvm.functions.Function2);
+  public static final kotlin.jvm.functions.Function1 access$getOnAnchorRemovedListener$cp();
+  public static final void access$setOnAnchorRemovedListener$cp(kotlin.jvm.functions.Function1);
+  public static final kotlin.jvm.functions.Function8 access$getOnTrackableKeyboardAddedListener$cp();
+  public static final void access$setOnTrackableKeyboardAddedListener$cp(kotlin.jvm.functions.Function8);
+  public static final kotlin.jvm.functions.Function10 access$getOnTrackableQrCodeAddedListener$cp();
+  public static final void access$setOnTrackableQrCodeAddedListener$cp(kotlin.jvm.functions.Function10);
+  public static final kotlin.jvm.functions.Function7 access$getOnTrackableUpdatedListener$cp();
+  public static final void access$setOnTrackableUpdatedListener$cp(kotlin.jvm.functions.Function7);
+  public static final kotlin.jvm.functions.Function2 access$getOnTrackableRemovedListener$cp();
+  public static final void access$setOnTrackableRemovedListener$cp(kotlin.jvm.functions.Function2);
+  static {};
+}
+Compiled from "MRUKNative.kt"
+public final class com.meta.spatial.mruk.MRUKNative$Anchor {
+  public com.meta.spatial.mruk.MRUKNative$Anchor(long, java.util.UUID, java.util.UUID, java.lang.String[], com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], com.meta.spatial.mruk.GlobalMeshData, java.util.UUID);
+  public final long getHandle();
+  public final java.util.UUID getUuid();
+  public final java.util.UUID getRoomUuid();
+  public final java.lang.String[] getSemanticLabels();
+  public final com.meta.spatial.core.Pose getPose();
+  public final com.meta.spatial.mruk.MRUKNative$Volume getVolume();
+  public final com.meta.spatial.mruk.MRUKNative$Plane getPlane();
+  public final com.meta.spatial.core.Vector2[] getPlaneBoundary();
+  public final com.meta.spatial.mruk.GlobalMeshData getGlobalMesh();
+  public final java.util.UUID getParentUuid();
+  public final long component1();
+  public final java.util.UUID component2();
+  public final java.util.UUID component3();
+  public final java.lang.String[] component4();
+  public final com.meta.spatial.core.Pose component5();
+  public final com.meta.spatial.mruk.MRUKNative$Volume component6();
+  public final com.meta.spatial.mruk.MRUKNative$Plane component7();
+  public final com.meta.spatial.core.Vector2[] component8();
+  public final com.meta.spatial.mruk.GlobalMeshData component9();
+  public final java.util.UUID component10();
+  public final com.meta.spatial.mruk.MRUKNative$Anchor copy(long, java.util.UUID, java.util.UUID, java.lang.String[], com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], com.meta.spatial.mruk.GlobalMeshData, java.util.UUID);
+  public static com.meta.spatial.mruk.MRUKNative$Anchor copy$default(com.meta.spatial.mruk.MRUKNative$Anchor, long, java.util.UUID, java.util.UUID, java.lang.String[], com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], com.meta.spatial.mruk.GlobalMeshData, java.util.UUID, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKNative.kt"
+public final class com.meta.spatial.mruk.MRUKNative$Companion {
+  public final kotlin.jvm.functions.Function1<com.meta.spatial.mruk.MRUKNative$Room, kotlin.Unit> getOnAddRoomListener();
+  public final void setOnAddRoomListener(kotlin.jvm.functions.Function1<? super com.meta.spatial.mruk.MRUKNative$Room, kotlin.Unit>);
+  public final kotlin.jvm.functions.Function1<com.meta.spatial.mruk.MRUKNative$Room, kotlin.Unit> getOnRoomAddedListener();
+  public final void setOnRoomAddedListener(kotlin.jvm.functions.Function1<? super com.meta.spatial.mruk.MRUKNative$Room, kotlin.Unit>);
+  public final kotlin.jvm.functions.Function1<com.meta.spatial.mruk.MRUKNative$Room, kotlin.Unit> getOnRoomRemovedListener();
+  public final void setOnRoomRemovedListener(kotlin.jvm.functions.Function1<? super com.meta.spatial.mruk.MRUKNative$Room, kotlin.Unit>);
+  public final kotlin.jvm.functions.Function3<java.util.UUID, com.meta.spatial.mruk.MRUKNative$Room, java.lang.Boolean, kotlin.Unit> getOnRoomUpdatedListener();
+  public final void setOnRoomUpdatedListener(kotlin.jvm.functions.Function3<? super java.util.UUID, ? super com.meta.spatial.mruk.MRUKNative$Room, ? super java.lang.Boolean, kotlin.Unit>);
+  public final kotlin.jvm.functions.Function1<com.meta.spatial.mruk.MRUKNative$Anchor, kotlin.Unit> getOnAnchorAddedListener();
+  public final void setOnAnchorAddedListener(kotlin.jvm.functions.Function1<? super com.meta.spatial.mruk.MRUKNative$Anchor, kotlin.Unit>);
+  public final kotlin.jvm.functions.Function2<com.meta.spatial.mruk.MRUKNative$Anchor, java.lang.Boolean, kotlin.Unit> getOnAnchorUpdatedListener();
+  public final void setOnAnchorUpdatedListener(kotlin.jvm.functions.Function2<? super com.meta.spatial.mruk.MRUKNative$Anchor, ? super java.lang.Boolean, kotlin.Unit>);
+  public final kotlin.jvm.functions.Function1<com.meta.spatial.mruk.MRUKNative$Anchor, kotlin.Unit> getOnAnchorRemovedListener();
+  public final void setOnAnchorRemovedListener(kotlin.jvm.functions.Function1<? super com.meta.spatial.mruk.MRUKNative$Anchor, kotlin.Unit>);
+  public final kotlin.jvm.functions.Function8<java.lang.Long, java.lang.Long, java.util.UUID, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], java.lang.Boolean, kotlin.Unit> getOnTrackableKeyboardAddedListener();
+  public final void setOnTrackableKeyboardAddedListener(kotlin.jvm.functions.Function8<? super java.lang.Long, ? super java.lang.Long, ? super java.util.UUID, ? super com.meta.spatial.core.Pose, ? super com.meta.spatial.mruk.MRUKNative$Volume, ? super com.meta.spatial.mruk.MRUKNative$Plane, ? super com.meta.spatial.core.Vector2[], ? super java.lang.Boolean, kotlin.Unit>);
+  public final kotlin.jvm.functions.Function10<java.lang.Long, java.lang.Long, java.util.UUID, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], com.meta.spatial.mruk.MRUKNativeMarkerPayloadType, byte[], java.lang.Boolean, kotlin.Unit> getOnTrackableQrCodeAddedListener();
+  public final void setOnTrackableQrCodeAddedListener(kotlin.jvm.functions.Function10<? super java.lang.Long, ? super java.lang.Long, ? super java.util.UUID, ? super com.meta.spatial.core.Pose, ? super com.meta.spatial.mruk.MRUKNative$Volume, ? super com.meta.spatial.mruk.MRUKNative$Plane, ? super com.meta.spatial.core.Vector2[], ? super com.meta.spatial.mruk.MRUKNativeMarkerPayloadType, ? super byte[], ? super java.lang.Boolean, kotlin.Unit>);
+  public final kotlin.jvm.functions.Function7<java.lang.Long, java.lang.Long, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], java.lang.Boolean, kotlin.Unit> getOnTrackableUpdatedListener();
+  public final void setOnTrackableUpdatedListener(kotlin.jvm.functions.Function7<? super java.lang.Long, ? super java.lang.Long, ? super com.meta.spatial.core.Pose, ? super com.meta.spatial.mruk.MRUKNative$Volume, ? super com.meta.spatial.mruk.MRUKNative$Plane, ? super com.meta.spatial.core.Vector2[], ? super java.lang.Boolean, kotlin.Unit>);
+  public final kotlin.jvm.functions.Function2<java.lang.Long, java.lang.Long, kotlin.Unit> getOnTrackableRemovedListener();
+  public final void setOnTrackableRemovedListener(kotlin.jvm.functions.Function2<? super java.lang.Long, ? super java.lang.Long, kotlin.Unit>);
+  public final native void createGlobalContext(long);
+  public final native void destroyGlobalContext();
+  public final native java.util.concurrent.CompletableFuture<java.lang.Void> startDiscovery(boolean, com.meta.spatial.mruk.MRUKNativeSceneModel);
+  public final native void loadSceneFromJson(java.lang.String, boolean, com.meta.spatial.mruk.MRUKNativeSceneModel);
+  public final native java.lang.String saveSceneToJson();
+  public final native void clearRooms();
+  public final native void clearRoom(java.util.UUID);
+  public final native void tickGlobalContext(long);
+  public final native com.meta.spatial.mruk.MRUKHit raycastRoom(java.util.UUID, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, long);
+  public final native com.meta.spatial.mruk.MRUKHit[] raycastRoomAll(java.util.UUID, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, long);
+  public final native com.meta.spatial.mruk.MRUKNative$Mesh2f triangulatePolygon(com.meta.spatial.core.Vector2[][]);
+  public final native com.meta.spatial.mruk.MRUKNativeResult createEnvironmentRaycaster();
+  public final native void destroyEnvironmentRaycaster();
+  public final native com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus getEnvironmentRaycasterStatus();
+  public final native com.meta.spatial.mruk.MRUKEnvironmentRaycastHit raycastEnvironment(float, float, float, float, float, float, float);
+  public final native java.util.concurrent.CompletableFuture<java.lang.Void> configureTrackers(int);
+  public final native boolean isPositionInRoom(java.util.UUID, com.meta.spatial.core.Vector3, boolean);
+  public final native com.meta.spatial.core.Pose getWorldLockOffset();
+  public final native boolean isWorldLockingEnabled();
+  public final native void setWorldLockingEnabled(boolean);
+  public final void onRoomAdded(com.meta.spatial.mruk.MRUKNative$Room);
+  public final void onRoomRemoved(com.meta.spatial.mruk.MRUKNative$Room);
+  public final void onRoomUpdated(java.util.UUID, com.meta.spatial.mruk.MRUKNative$Room, boolean);
+  public final void onAddRoom(com.meta.spatial.mruk.MRUKNative$Room);
+  public final void onAnchorAdded(com.meta.spatial.mruk.MRUKNative$Anchor);
+  public final void onAnchorUpdated(com.meta.spatial.mruk.MRUKNative$Anchor, boolean);
+  public final void onAnchorRemoved(com.meta.spatial.mruk.MRUKNative$Anchor);
+  public final void onTrackableKeyboardAdded(long, long, java.util.UUID, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], boolean);
+  public final void onTrackableQrCodeAdded(long, long, java.util.UUID, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], int, byte[], boolean);
+  public final void onTrackableUpdated(long, long, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2[], boolean);
+  public final void onTrackableRemoved(long, long);
+  public com.meta.spatial.mruk.MRUKNative$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKNative.kt"
+public final class com.meta.spatial.mruk.MRUKNative$Mesh2f {
+  public com.meta.spatial.mruk.MRUKNative$Mesh2f(com.meta.spatial.core.Vector2[], int[]);
+  public final com.meta.spatial.core.Vector2[] getVertices();
+  public final int[] getIndices();
+  public final com.meta.spatial.core.Vector2[] component1();
+  public final int[] component2();
+  public final com.meta.spatial.mruk.MRUKNative$Mesh2f copy(com.meta.spatial.core.Vector2[], int[]);
+  public static com.meta.spatial.mruk.MRUKNative$Mesh2f copy$default(com.meta.spatial.mruk.MRUKNative$Mesh2f, com.meta.spatial.core.Vector2[], int[], int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKNative.kt"
+public final class com.meta.spatial.mruk.MRUKNative$Plane {
+  public com.meta.spatial.mruk.MRUKNative$Plane(com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2);
+  public final com.meta.spatial.core.Vector2 getMin();
+  public final com.meta.spatial.core.Vector2 getMax();
+  public final com.meta.spatial.core.Vector2 component1();
+  public final com.meta.spatial.core.Vector2 component2();
+  public final com.meta.spatial.mruk.MRUKNative$Plane copy(com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2);
+  public static com.meta.spatial.mruk.MRUKNative$Plane copy$default(com.meta.spatial.mruk.MRUKNative$Plane, com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKNative.kt"
+public final class com.meta.spatial.mruk.MRUKNative$Room {
+  public com.meta.spatial.mruk.MRUKNative$Room(long, java.util.UUID, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKRoomMesh);
+  public final long getHandle();
+  public final java.util.UUID getUuid();
+  public final com.meta.spatial.core.Pose getPose();
+  public final com.meta.spatial.mruk.MRUKRoomMesh getRoomMesh();
+  public final long component1();
+  public final java.util.UUID component2();
+  public final com.meta.spatial.core.Pose component3();
+  public final com.meta.spatial.mruk.MRUKRoomMesh component4();
+  public final com.meta.spatial.mruk.MRUKNative$Room copy(long, java.util.UUID, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKRoomMesh);
+  public static com.meta.spatial.mruk.MRUKNative$Room copy$default(com.meta.spatial.mruk.MRUKNative$Room, long, java.util.UUID, com.meta.spatial.core.Pose, com.meta.spatial.mruk.MRUKRoomMesh, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKNative.kt"
+public final class com.meta.spatial.mruk.MRUKNative$Volume {
+  public com.meta.spatial.mruk.MRUKNative$Volume(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getMin();
+  public final com.meta.spatial.core.Vector3 getMax();
+  public final com.meta.spatial.core.Vector3 component1();
+  public final com.meta.spatial.core.Vector3 component2();
+  public final com.meta.spatial.mruk.MRUKNative$Volume copy(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public static com.meta.spatial.mruk.MRUKNative$Volume copy$default(com.meta.spatial.mruk.MRUKNative$Volume, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeCameraSource extends java.lang.Enum<com.meta.spatial.mruk.MRUKNativeCameraSource> {
+  public static final com.meta.spatial.mruk.MRUKNativeCameraSource$Companion Companion;
+  public static final com.meta.spatial.mruk.MRUKNativeCameraSource LEFT;
+  public static final com.meta.spatial.mruk.MRUKNativeCameraSource RIGHT;
+  public static final com.meta.spatial.mruk.MRUKNativeCameraSource COUNT;
+  public final int getCode();
+  public static com.meta.spatial.mruk.MRUKNativeCameraSource[] values();
+  public static com.meta.spatial.mruk.MRUKNativeCameraSource valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKNativeCameraSource> getEntries();
+  public static final com.meta.spatial.mruk.MRUKNativeCameraSource findByValue(int);
+  public static final java.util.Map access$getTypes$cp();
+  static {};
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeCameraSource$Companion {
+  public final com.meta.spatial.mruk.MRUKNativeCameraSource findByValue(int);
+  public com.meta.spatial.mruk.MRUKNativeCameraSource$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus extends java.lang.Enum<com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus> {
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus$Companion Companion;
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus HIT;
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus NO_HIT;
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus HIT_POINT_OCCLUDED;
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus HIT_POINT_OUTSIDE_FOV;
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus RAY_OCCLUDED;
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus INVALID_ORIENTATION;
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus MAX;
+  public final int getCode();
+  public static com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus[] values();
+  public static com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus> getEntries();
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus findByValue(int);
+  public static final java.util.Map access$getTypes$cp();
+  static {};
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus$Companion {
+  public final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus findByValue(int);
+  public com.meta.spatial.mruk.MRUKNativeEnvironmentRaycastStatus$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus extends java.lang.Enum<com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus> {
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus$Companion Companion;
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus STOPPED;
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus CREATING;
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus READY;
+  public final int getCode();
+  public static com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus[] values();
+  public static com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus> getEntries();
+  public static final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus findByValue(int);
+  public static final java.util.Map access$getTypes$cp();
+  static {};
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus$Companion {
+  public final com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus findByValue(int);
+  public com.meta.spatial.mruk.MRUKNativeEnvironmentRaycasterStatus$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeLabel extends java.lang.Enum<com.meta.spatial.mruk.MRUKNativeLabel> {
+  public static final com.meta.spatial.mruk.MRUKNativeLabel$Companion Companion;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel FLOOR;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel CEILING;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel WALL_FACE;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel TABLE;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel COUCH;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel DOOR_FRAME;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel WINDOW_FRAME;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel OTHER;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel STORAGE;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel BED;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel SCREEN;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel LAMP;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel PLANT;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel WALL_ART;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel SCENE_MESH;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel INVISIBLE_WALL_FACE;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel UNKNOWN;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel INNER_WALL_FACE;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel TABLETOP;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel SITTING_AREA;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel SLEEPING_AREA;
+  public static final com.meta.spatial.mruk.MRUKNativeLabel STORAGE_TOP;
+  public final int getCode();
+  public static com.meta.spatial.mruk.MRUKNativeLabel[] values();
+  public static com.meta.spatial.mruk.MRUKNativeLabel valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKNativeLabel> getEntries();
+  public static final com.meta.spatial.mruk.MRUKNativeLabel findByValue(int);
+  public static final java.util.Map access$getTypes$cp();
+  static {};
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeLabel$Companion {
+  public final com.meta.spatial.mruk.MRUKNativeLabel findByValue(int);
+  public com.meta.spatial.mruk.MRUKNativeLabel$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeLogLevel extends java.lang.Enum<com.meta.spatial.mruk.MRUKNativeLogLevel> {
+  public static final com.meta.spatial.mruk.MRUKNativeLogLevel$Companion Companion;
+  public static final com.meta.spatial.mruk.MRUKNativeLogLevel DEBUG;
+  public static final com.meta.spatial.mruk.MRUKNativeLogLevel INFO;
+  public static final com.meta.spatial.mruk.MRUKNativeLogLevel WARN;
+  public static final com.meta.spatial.mruk.MRUKNativeLogLevel ERROR;
+  public final int getCode();
+  public static com.meta.spatial.mruk.MRUKNativeLogLevel[] values();
+  public static com.meta.spatial.mruk.MRUKNativeLogLevel valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKNativeLogLevel> getEntries();
+  public static final com.meta.spatial.mruk.MRUKNativeLogLevel findByValue(int);
+  public static final java.util.Map access$getTypes$cp();
+  static {};
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeLogLevel$Companion {
+  public final com.meta.spatial.mruk.MRUKNativeLogLevel findByValue(int);
+  public com.meta.spatial.mruk.MRUKNativeLogLevel$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeMarkerPayloadType extends java.lang.Enum<com.meta.spatial.mruk.MRUKNativeMarkerPayloadType> {
+  public static final com.meta.spatial.mruk.MRUKNativeMarkerPayloadType$Companion Companion;
+  public static final com.meta.spatial.mruk.MRUKNativeMarkerPayloadType NONE;
+  public static final com.meta.spatial.mruk.MRUKNativeMarkerPayloadType INVALID_QRCODE;
+  public static final com.meta.spatial.mruk.MRUKNativeMarkerPayloadType STRING_QRCODE;
+  public static final com.meta.spatial.mruk.MRUKNativeMarkerPayloadType BINARY_QRCODE;
+  public final int getCode();
+  public static com.meta.spatial.mruk.MRUKNativeMarkerPayloadType[] values();
+  public static com.meta.spatial.mruk.MRUKNativeMarkerPayloadType valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKNativeMarkerPayloadType> getEntries();
+  public static final com.meta.spatial.mruk.MRUKNativeMarkerPayloadType findByValue(int);
+  public static final java.util.Map access$getTypes$cp();
+  static {};
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeMarkerPayloadType$Companion {
+  public final com.meta.spatial.mruk.MRUKNativeMarkerPayloadType findByValue(int);
+  public com.meta.spatial.mruk.MRUKNativeMarkerPayloadType$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeRendererType extends java.lang.Enum<com.meta.spatial.mruk.MRUKNativeRendererType> {
+  public static final com.meta.spatial.mruk.MRUKNativeRendererType$Companion Companion;
+  public static final com.meta.spatial.mruk.MRUKNativeRendererType NONE;
+  public static final com.meta.spatial.mruk.MRUKNativeRendererType VULKAN;
+  public static final com.meta.spatial.mruk.MRUKNativeRendererType OPENGL;
+  public final int getCode();
+  public static com.meta.spatial.mruk.MRUKNativeRendererType[] values();
+  public static com.meta.spatial.mruk.MRUKNativeRendererType valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKNativeRendererType> getEntries();
+  public static final com.meta.spatial.mruk.MRUKNativeRendererType findByValue(int);
+  public static final java.util.Map access$getTypes$cp();
+  static {};
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeRendererType$Companion {
+  public final com.meta.spatial.mruk.MRUKNativeRendererType findByValue(int);
+  public com.meta.spatial.mruk.MRUKNativeRendererType$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeResult extends java.lang.Enum<com.meta.spatial.mruk.MRUKNativeResult> {
+  public static final com.meta.spatial.mruk.MRUKNativeResult$Companion Companion;
+  public static final com.meta.spatial.mruk.MRUKNativeResult SUCCESS;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_INVALID_ARGS;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_UNKNOWN;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_INTERNAL;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_DISCOVERY_ONGOING;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_INVALID_JSON;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_NO_ROOMS_FOUND;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_INSUFFICIENT_RESOURCES;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_STORAGE_AT_CAPACITY;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_INSUFFICIENT_VIEW;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_PERMISSION_INSUFFICIENT;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_RATE_LIMITED;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_TOO_DARK;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_TOO_BRIGHT;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_NOT_READY;
+  public static final com.meta.spatial.mruk.MRUKNativeResult ERROR_UNSUPPORTED;
+  public final int getCode();
+  public static com.meta.spatial.mruk.MRUKNativeResult[] values();
+  public static com.meta.spatial.mruk.MRUKNativeResult valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKNativeResult> getEntries();
+  public static final com.meta.spatial.mruk.MRUKNativeResult findByValue(int);
+  public static final java.util.Map access$getTypes$cp();
+  static {};
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeResult$Companion {
+  public final com.meta.spatial.mruk.MRUKNativeResult findByValue(int);
+  public com.meta.spatial.mruk.MRUKNativeResult$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKNative.kt"
+public final class com.meta.spatial.mruk.MRUKNativeResultException extends java.lang.Exception {
+  public com.meta.spatial.mruk.MRUKNativeResultException(int);
+  public final int getErrorCode();
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeSceneModel extends java.lang.Enum<com.meta.spatial.mruk.MRUKNativeSceneModel> {
+  public static final com.meta.spatial.mruk.MRUKNativeSceneModel$Companion Companion;
+  public static final com.meta.spatial.mruk.MRUKNativeSceneModel V2_FALLBACK_V1;
+  public static final com.meta.spatial.mruk.MRUKNativeSceneModel V1;
+  public static final com.meta.spatial.mruk.MRUKNativeSceneModel V2;
+  public final int getCode();
+  public static com.meta.spatial.mruk.MRUKNativeSceneModel[] values();
+  public static com.meta.spatial.mruk.MRUKNativeSceneModel valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKNativeSceneModel> getEntries();
+  public static final com.meta.spatial.mruk.MRUKNativeSceneModel findByValue(int);
+  public static final java.util.Map access$getTypes$cp();
+  static {};
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeSceneModel$Companion {
+  public final com.meta.spatial.mruk.MRUKNativeSceneModel findByValue(int);
+  public com.meta.spatial.mruk.MRUKNativeSceneModel$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeSurfaceType extends java.lang.Enum<com.meta.spatial.mruk.MRUKNativeSurfaceType> {
+  public static final com.meta.spatial.mruk.MRUKNativeSurfaceType$Companion Companion;
+  public static final com.meta.spatial.mruk.MRUKNativeSurfaceType NONE;
+  public static final com.meta.spatial.mruk.MRUKNativeSurfaceType PLANE;
+  public static final com.meta.spatial.mruk.MRUKNativeSurfaceType VOLUME;
+  public static final com.meta.spatial.mruk.MRUKNativeSurfaceType MESH;
+  public static final com.meta.spatial.mruk.MRUKNativeSurfaceType ALL;
+  public final int getCode();
+  public static com.meta.spatial.mruk.MRUKNativeSurfaceType[] values();
+  public static com.meta.spatial.mruk.MRUKNativeSurfaceType valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKNativeSurfaceType> getEntries();
+  public static final com.meta.spatial.mruk.MRUKNativeSurfaceType findByValue(int);
+  public static final java.util.Map access$getTypes$cp();
+  static {};
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeSurfaceType$Companion {
+  public final com.meta.spatial.mruk.MRUKNativeSurfaceType findByValue(int);
+  public com.meta.spatial.mruk.MRUKNativeSurfaceType$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeTrackableType extends java.lang.Enum<com.meta.spatial.mruk.MRUKNativeTrackableType> {
+  public static final com.meta.spatial.mruk.MRUKNativeTrackableType$Companion Companion;
+  public static final com.meta.spatial.mruk.MRUKNativeTrackableType NONE;
+  public static final com.meta.spatial.mruk.MRUKNativeTrackableType KEYBOARD;
+  public static final com.meta.spatial.mruk.MRUKNativeTrackableType QRCODE;
+  public final int getCode();
+  public static com.meta.spatial.mruk.MRUKNativeTrackableType[] values();
+  public static com.meta.spatial.mruk.MRUKNativeTrackableType valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKNativeTrackableType> getEntries();
+  public static final com.meta.spatial.mruk.MRUKNativeTrackableType findByValue(int);
+  public static final java.util.Map access$getTypes$cp();
+  static {};
+}
+Compiled from "MRUKNative.Generated.kt"
+public final class com.meta.spatial.mruk.MRUKNativeTrackableType$Companion {
+  public final com.meta.spatial.mruk.MRUKNativeTrackableType findByValue(int);
+  public com.meta.spatial.mruk.MRUKNativeTrackableType$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKPlane.kt"
+public final class com.meta.spatial.mruk.MRUKPlane extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.mruk.MRUKPlane$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.mruk.MRUKPlane(com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2, int);
+  public com.meta.spatial.mruk.MRUKPlane(com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2, int, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final com.meta.spatial.core.Vector2 getMin();
+  public final void setMin(com.meta.spatial.core.Vector2);
+  public final com.meta.spatial.core.Vector2 getMax();
+  public final void setMax(com.meta.spatial.core.Vector2);
+  public final com.meta.spatial.core.MapDelegate<java.lang.Integer, com.meta.spatial.core.Vector2> getBoundary();
+  public final void setBoundary(com.meta.spatial.core.MapDelegate<java.lang.Integer, com.meta.spatial.core.Vector2>);
+  public final int getBoundariesCount();
+  public final void setBoundariesCount(int);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.mruk.MRUKPlane(com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2, java.util.HashMap<java.lang.Integer, com.meta.spatial.core.Vector2>);
+  public com.meta.spatial.mruk.MRUKPlane(com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2, java.util.HashMap, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public com.meta.spatial.mruk.MRUKPlane(com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2);
+  public com.meta.spatial.mruk.MRUKPlane(com.meta.spatial.core.Vector2);
+  public com.meta.spatial.mruk.MRUKPlane();
+  public static final int access$getId$cp();
+  public static final int access$getMinId$cp();
+  public static final int access$getMaxId$cp();
+  public static final int access$getBoundaryId$cp();
+  public static final int access$getBoundariesCountId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.Vector2AttributeData access$getMinData$cp();
+  public static final com.meta.spatial.core.Vector2AttributeData access$getMaxData$cp();
+  public static final com.meta.spatial.core.ExperimentalMapAttributeData access$getBoundaryData$cp();
+  public static final com.meta.spatial.core.IntAttributeData access$getBoundariesCountData$cp();
+  static {};
+}
+Compiled from "MRUKPlane.kt"
+public final class com.meta.spatial.mruk.MRUKPlane$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getMinId();
+  public final int getMaxId();
+  public final int getBoundaryId();
+  public final int getBoundariesCountId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.mruk.MRUKPlane> getCreateDefaultInstance();
+  public final com.meta.spatial.core.Vector2AttributeData getMinData();
+  public final com.meta.spatial.core.Vector2AttributeData getMaxData();
+  public final com.meta.spatial.core.ExperimentalMapAttributeData<java.lang.Integer, com.meta.spatial.core.Vector2> getBoundaryData();
+  public final com.meta.spatial.core.IntAttributeData getBoundariesCountData();
+  public com.meta.spatial.mruk.MRUKPlane$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "AnchorProceduralMesh.kt"
+public final class com.meta.spatial.mruk.MRUKPlaneUV {
+  public com.meta.spatial.mruk.MRUKPlaneUV(com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2);
+  public final com.meta.spatial.core.Vector2 getOffset();
+  public final com.meta.spatial.core.Vector2 getScale();
+  public final com.meta.spatial.core.Vector2 component1();
+  public final com.meta.spatial.core.Vector2 component2();
+  public final com.meta.spatial.mruk.MRUKPlaneUV copy(com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2);
+  public static com.meta.spatial.mruk.MRUKPlaneUV copy$default(com.meta.spatial.mruk.MRUKPlaneUV, com.meta.spatial.core.Vector2, com.meta.spatial.core.Vector2, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKRoom.kt"
+public final class com.meta.spatial.mruk.MRUKRoom {
+  public com.meta.spatial.mruk.MRUKRoom(com.meta.spatial.runtime.Anchor);
+  public final com.meta.spatial.runtime.Anchor getAnchor();
+  public final void setAnchor(com.meta.spatial.runtime.Anchor);
+  public final java.util.List<com.meta.spatial.core.Entity> getAnchors();
+  public final void setAnchors$xplat_aether_libs_features_mr_utility_kit_mrukForAAR(java.util.List<com.meta.spatial.core.Entity>);
+  public final java.util.List<com.meta.spatial.core.Entity> getWalls();
+  public final void setWalls$xplat_aether_libs_features_mr_utility_kit_mrukForAAR(java.util.List<com.meta.spatial.core.Entity>);
+  public final java.util.List<com.meta.spatial.core.Entity> getFloors();
+  public final void setFloors$xplat_aether_libs_features_mr_utility_kit_mrukForAAR(java.util.List<com.meta.spatial.core.Entity>);
+  public final java.util.List<com.meta.spatial.core.Entity> getCeilings();
+  public final void setCeilings$xplat_aether_libs_features_mr_utility_kit_mrukForAAR(java.util.List<com.meta.spatial.core.Entity>);
+  public final com.meta.spatial.core.Bound3D getRoomBounds();
+  public final void setRoomBounds(com.meta.spatial.core.Bound3D);
+  public final com.meta.spatial.mruk.MRUKMesh getGlobalMesh();
+  public final void setGlobalMesh(com.meta.spatial.mruk.MRUKMesh);
+  public final com.meta.spatial.core.Entity getEntity();
+  public final void setEntity(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.mruk.MRUKRoomMesh getRoomMesh();
+  public final void setRoomMesh(com.meta.spatial.mruk.MRUKRoomMesh);
+  public final com.meta.spatial.core.Entity getKeyWall();
+  public final void create();
+  public final void updateRoomProperties$xplat_aether_libs_features_mr_utility_kit_mrukForAAR(com.meta.spatial.mruk.MRUKNative$Room);
+  public final void destroy();
+  public final boolean isPositionInRoom(com.meta.spatial.core.Vector3, boolean);
+  public static boolean isPositionInRoom$default(com.meta.spatial.mruk.MRUKRoom, com.meta.spatial.core.Vector3, boolean, int, java.lang.Object);
+  public final void setPose(com.meta.spatial.core.Pose);
+}
+Compiled from "MRUKRoom.kt"
+public final class com.meta.spatial.mruk.MRUKRoomFace {
+  public com.meta.spatial.mruk.MRUKRoomFace(java.util.UUID, java.util.UUID, com.meta.spatial.mruk.MRUKLabel, int[]);
+  public final java.util.UUID getUuid();
+  public final java.util.UUID getParentUuid();
+  public final com.meta.spatial.mruk.MRUKLabel getLabel();
+  public final int[] getIndices();
+  public final java.util.UUID component1();
+  public final java.util.UUID component2();
+  public final com.meta.spatial.mruk.MRUKLabel component3();
+  public final int[] component4();
+  public final com.meta.spatial.mruk.MRUKRoomFace copy(java.util.UUID, java.util.UUID, com.meta.spatial.mruk.MRUKLabel, int[]);
+  public static com.meta.spatial.mruk.MRUKRoomFace copy$default(com.meta.spatial.mruk.MRUKRoomFace, java.util.UUID, java.util.UUID, com.meta.spatial.mruk.MRUKLabel, int[], int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKRoom.kt"
+public final class com.meta.spatial.mruk.MRUKRoomMesh {
+  public com.meta.spatial.mruk.MRUKRoomMesh(float[], com.meta.spatial.mruk.MRUKRoomFace[]);
+  public final float[] getPositions();
+  public final com.meta.spatial.mruk.MRUKRoomFace[] getFaces();
+  public final float[] component1();
+  public final com.meta.spatial.mruk.MRUKRoomFace[] component2();
+  public final com.meta.spatial.mruk.MRUKRoomMesh copy(float[], com.meta.spatial.mruk.MRUKRoomFace[]);
+  public static com.meta.spatial.mruk.MRUKRoomMesh copy$default(com.meta.spatial.mruk.MRUKRoomMesh, float[], com.meta.spatial.mruk.MRUKRoomFace[], int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKSceneEventListener.kt"
+public interface com.meta.spatial.mruk.MRUKSceneEventListener {
+  public default void onRoomAdded(com.meta.spatial.mruk.MRUKRoom);
+  public default void onRoomRemoved(com.meta.spatial.mruk.MRUKRoom);
+  public default void onRoomUpdated(com.meta.spatial.mruk.MRUKRoom);
+  public default void onAnchorAdded(com.meta.spatial.mruk.MRUKRoom, com.meta.spatial.core.Entity);
+  public default void onAnchorRemoved(com.meta.spatial.mruk.MRUKRoom, com.meta.spatial.core.Entity);
+  public default void onAnchorUpdated(com.meta.spatial.mruk.MRUKRoom, com.meta.spatial.core.Entity);
+}
+Compiled from "MRUKUtil.kt"
+public final class com.meta.spatial.mruk.MRUKSpawnMode extends java.lang.Enum<com.meta.spatial.mruk.MRUKSpawnMode> {
+  public static final com.meta.spatial.mruk.MRUKSpawnMode NONE;
+  public static final com.meta.spatial.mruk.MRUKSpawnMode CURRENT_ROOM_ONLY;
+  public static final com.meta.spatial.mruk.MRUKSpawnMode ALL_ROOMS;
+  public static com.meta.spatial.mruk.MRUKSpawnMode[] values();
+  public static com.meta.spatial.mruk.MRUKSpawnMode valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKSpawnMode> getEntries();
+  static {};
+}
+Compiled from "MRUKStartEnvironmentRaycasterResult.kt"
+public final class com.meta.spatial.mruk.MRUKStartEnvironmentRaycasterResult extends java.lang.Enum<com.meta.spatial.mruk.MRUKStartEnvironmentRaycasterResult> {
+  public static final com.meta.spatial.mruk.MRUKStartEnvironmentRaycasterResult SUCCESS;
+  public static final com.meta.spatial.mruk.MRUKStartEnvironmentRaycasterResult ERROR;
+  public static final com.meta.spatial.mruk.MRUKStartEnvironmentRaycasterResult UNSUPPORTED;
+  public static com.meta.spatial.mruk.MRUKStartEnvironmentRaycasterResult[] values();
+  public static com.meta.spatial.mruk.MRUKStartEnvironmentRaycasterResult valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKStartEnvironmentRaycasterResult> getEntries();
+  static {};
+}
+Compiled from "MRUKStartTrackerResult.kt"
+public final class com.meta.spatial.mruk.MRUKStartTrackerResult extends java.lang.Enum<com.meta.spatial.mruk.MRUKStartTrackerResult> {
+  public static final com.meta.spatial.mruk.MRUKStartTrackerResult SUCCESS;
+  public static final com.meta.spatial.mruk.MRUKStartTrackerResult ERROR_CREATE;
+  public static com.meta.spatial.mruk.MRUKStartTrackerResult[] values();
+  public static com.meta.spatial.mruk.MRUKStartTrackerResult valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKStartTrackerResult> getEntries();
+  static {};
+}
+Compiled from "MRUKSystem.kt"
+public final class com.meta.spatial.mruk.MRUKSystem extends com.meta.spatial.core.SystemBase {
+  public com.meta.spatial.mruk.MRUKSystem();
+  public void execute();
+  public void delete(com.meta.spatial.core.Entity);
+}
+Compiled from "MRUKUtil.kt"
+public final class com.meta.spatial.mruk.MRUKUtilKt {
+  public static final void destroyWithChildren(com.meta.spatial.core.Entity);
+  public static final float getVolume(com.meta.spatial.core.Bound3D);
+  public static final java.util.List<com.meta.spatial.core.Entity> mrukAnchorChildren(com.meta.spatial.core.Entity);
+}
+Compiled from "MRUKVolume.kt"
+public final class com.meta.spatial.mruk.MRUKVolume extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.mruk.MRUKVolume$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.mruk.MRUKVolume(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.mruk.MRUKVolume(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final com.meta.spatial.core.Vector3 getMin();
+  public final void setMin(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getMax();
+  public final void setMax(com.meta.spatial.core.Vector3);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.mruk.MRUKVolume(com.meta.spatial.core.Vector3);
+  public com.meta.spatial.mruk.MRUKVolume();
+  public static final int access$getId$cp();
+  public static final int access$getMinId$cp();
+  public static final int access$getMaxId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getMinData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getMaxData$cp();
+  static {};
+}
+Compiled from "MRUKVolume.kt"
+public final class com.meta.spatial.mruk.MRUKVolume$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getMinId();
+  public final int getMaxId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.mruk.MRUKVolume> getCreateDefaultInstance();
+  public final com.meta.spatial.core.Vector3AttributeData getMinData();
+  public final com.meta.spatial.core.Vector3AttributeData getMaxData();
+  public com.meta.spatial.mruk.MRUKVolume$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "AnchorProceduralMesh.kt"
+public final class com.meta.spatial.mruk.MRUKWallTexCoordModeU extends java.lang.Enum<com.meta.spatial.mruk.MRUKWallTexCoordModeU> {
+  public static final com.meta.spatial.mruk.MRUKWallTexCoordModeU METRIC;
+  public static final com.meta.spatial.mruk.MRUKWallTexCoordModeU METRIC_SEAMLESS;
+  public static final com.meta.spatial.mruk.MRUKWallTexCoordModeU MAINTAIN_ASPECT_RATIO;
+  public static final com.meta.spatial.mruk.MRUKWallTexCoordModeU MAINTAIN_ASPECT_RATIO_SEAMLESS;
+  public static final com.meta.spatial.mruk.MRUKWallTexCoordModeU STRETCH;
+  public static final com.meta.spatial.mruk.MRUKWallTexCoordModeU STRETCH_SECTION;
+  public static com.meta.spatial.mruk.MRUKWallTexCoordModeU[] values();
+  public static com.meta.spatial.mruk.MRUKWallTexCoordModeU valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKWallTexCoordModeU> getEntries();
+  static {};
+}
+Compiled from "AnchorProceduralMesh.kt"
+public final class com.meta.spatial.mruk.MRUKWallTexCoordModeV extends java.lang.Enum<com.meta.spatial.mruk.MRUKWallTexCoordModeV> {
+  public static final com.meta.spatial.mruk.MRUKWallTexCoordModeV METRIC;
+  public static final com.meta.spatial.mruk.MRUKWallTexCoordModeV MAINTAIN_ASPECT_RATIO;
+  public static final com.meta.spatial.mruk.MRUKWallTexCoordModeV STRETCH;
+  public static com.meta.spatial.mruk.MRUKWallTexCoordModeV[] values();
+  public static com.meta.spatial.mruk.MRUKWallTexCoordModeV valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MRUKWallTexCoordModeV> getEntries();
+  static {};
+}
+Compiled from "MRUKFeature.kt"
+public final class com.meta.spatial.mruk.MarkerPayloadType extends java.lang.Enum<com.meta.spatial.mruk.MarkerPayloadType> {
+  public static final com.meta.spatial.mruk.MarkerPayloadType InvalidQrCode;
+  public static final com.meta.spatial.mruk.MarkerPayloadType StringQrCode;
+  public static final com.meta.spatial.mruk.MarkerPayloadType BinaryQrCode;
+  public static com.meta.spatial.mruk.MarkerPayloadType[] values();
+  public static com.meta.spatial.mruk.MarkerPayloadType valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.MarkerPayloadType> getEntries();
+  static {};
+}
+Compiled from "AnchorProceduralMesh.kt"
+public abstract class com.meta.spatial.mruk.ProceduralMeshMaterial {
+  public com.meta.spatial.mruk.ProceduralMeshMaterial(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "AnchorProceduralMesh.kt"
+public final class com.meta.spatial.mruk.ProceduralMeshMaterial$Mat extends com.meta.spatial.mruk.ProceduralMeshMaterial {
+  public com.meta.spatial.mruk.ProceduralMeshMaterial$Mat(com.meta.spatial.toolkit.Material);
+  public final com.meta.spatial.toolkit.Material getMaterial();
+  public final com.meta.spatial.toolkit.Material component1();
+  public final com.meta.spatial.mruk.ProceduralMeshMaterial$Mat copy(com.meta.spatial.toolkit.Material);
+  public static com.meta.spatial.mruk.ProceduralMeshMaterial$Mat copy$default(com.meta.spatial.mruk.ProceduralMeshMaterial$Mat, com.meta.spatial.toolkit.Material, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "AnchorProceduralMesh.kt"
+public final class com.meta.spatial.mruk.ProceduralMeshMaterial$SceneMat extends com.meta.spatial.mruk.ProceduralMeshMaterial {
+  public com.meta.spatial.mruk.ProceduralMeshMaterial$SceneMat(com.meta.spatial.runtime.SceneMaterial);
+  public final com.meta.spatial.runtime.SceneMaterial getSceneMaterial();
+  public final com.meta.spatial.runtime.SceneMaterial component1();
+  public final com.meta.spatial.mruk.ProceduralMeshMaterial$SceneMat copy(com.meta.spatial.runtime.SceneMaterial);
+  public static com.meta.spatial.mruk.ProceduralMeshMaterial$SceneMat copy$default(com.meta.spatial.mruk.ProceduralMeshMaterial$SceneMat, com.meta.spatial.runtime.SceneMaterial, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "MRUKFeature.kt"
+public final class com.meta.spatial.mruk.SceneModel extends java.lang.Enum<com.meta.spatial.mruk.SceneModel> {
+  public static final com.meta.spatial.mruk.SceneModel V1;
+  public static final com.meta.spatial.mruk.SceneModel V2;
+  public static final com.meta.spatial.mruk.SceneModel V2_FALLBACK_V1;
+  public static com.meta.spatial.mruk.SceneModel[] values();
+  public static com.meta.spatial.mruk.SceneModel valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.SceneModel> getEntries();
+  static {};
+}
+Compiled from "MRUKFeature.kt"
+public final class com.meta.spatial.mruk.SurfaceType extends java.lang.Enum<com.meta.spatial.mruk.SurfaceType> {
+  public static final com.meta.spatial.mruk.SurfaceType NONE;
+  public static final com.meta.spatial.mruk.SurfaceType PLANE;
+  public static final com.meta.spatial.mruk.SurfaceType VOLUME;
+  public static final com.meta.spatial.mruk.SurfaceType MESH;
+  public static final com.meta.spatial.mruk.SurfaceType PLANE_VOLUME;
+  public static final com.meta.spatial.mruk.SurfaceType PLANE_MESH;
+  public static final com.meta.spatial.mruk.SurfaceType VOLUME_MESH;
+  public static final com.meta.spatial.mruk.SurfaceType ALL;
+  public final int getValue();
+  public static com.meta.spatial.mruk.SurfaceType[] values();
+  public static com.meta.spatial.mruk.SurfaceType valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.SurfaceType> getEntries();
+  static {};
+}
+Compiled from "TrackableEntityManager.kt"
+public final class com.meta.spatial.mruk.TrackableEntityManager {
+  public static final com.meta.spatial.mruk.TrackableEntityManager$Companion Companion;
+  public com.meta.spatial.mruk.TrackableEntityManager();
+  public final void create();
+  public final void destroy();
+  static {};
+}
+Compiled from "TrackableEntityManager.kt"
+public final class com.meta.spatial.mruk.TrackableEntityManager$Companion {
+  public static final kotlin.Pair access$getTrackableId(com.meta.spatial.mruk.TrackableEntityManager$Companion, long, long);
+  public com.meta.spatial.mruk.TrackableEntityManager$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "TrackableEntityManager.kt"
+public final class com.meta.spatial.mruk.TrackableEntityManager$WhenMappings {
+  public static final int[] $EnumSwitchMapping$0;
+  static {};
+}
+Compiled from "TrackedKeyboard.kt"
+public final class com.meta.spatial.mruk.TrackedKeyboard extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.mruk.TrackedKeyboard$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.mruk.TrackedKeyboard(long);
+  public com.meta.spatial.mruk.TrackedKeyboard(long, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final long getAnchorHandle();
+  public final void setAnchorHandle(long);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.mruk.TrackedKeyboard();
+  public static final int access$getId$cp();
+  public static final int access$getAnchorHandleId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.LongAttributeData access$getAnchorHandleData$cp();
+  static {};
+}
+Compiled from "TrackedKeyboard.kt"
+public final class com.meta.spatial.mruk.TrackedKeyboard$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getAnchorHandleId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.mruk.TrackedKeyboard> getCreateDefaultInstance();
+  public final com.meta.spatial.core.LongAttributeData getAnchorHandleData();
+  public com.meta.spatial.mruk.TrackedKeyboard$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "TrackedQrCode.kt"
+public final class com.meta.spatial.mruk.TrackedQrCode extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.mruk.TrackedQrCode$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.mruk.TrackedQrCode(long, com.meta.spatial.mruk.MarkerPayloadType, java.lang.String);
+  public com.meta.spatial.mruk.TrackedQrCode(long, com.meta.spatial.mruk.MarkerPayloadType, java.lang.String, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final long getAnchorHandle();
+  public final void setAnchorHandle(long);
+  public final com.meta.spatial.mruk.MarkerPayloadType getPayloadType();
+  public final void setPayloadType(com.meta.spatial.mruk.MarkerPayloadType);
+  public final java.lang.String getPayload();
+  public final void setPayload(java.lang.String);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.mruk.TrackedQrCode(long, com.meta.spatial.mruk.MarkerPayloadType, byte[]);
+  public com.meta.spatial.mruk.TrackedQrCode(long, com.meta.spatial.mruk.MarkerPayloadType);
+  public com.meta.spatial.mruk.TrackedQrCode(long);
+  public com.meta.spatial.mruk.TrackedQrCode();
+  public static final int access$getId$cp();
+  public static final int access$getAnchorHandleId$cp();
+  public static final int access$getPayloadTypeId$cp();
+  public static final int access$getPayloadId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.LongAttributeData access$getAnchorHandleData$cp();
+  public static final com.meta.spatial.core.EnumAttributeData access$getPayloadTypeData$cp();
+  public static final com.meta.spatial.core.StringAttributeData access$getPayloadData$cp();
+  static {};
+}
+Compiled from "TrackedQrCode.kt"
+public final class com.meta.spatial.mruk.TrackedQrCode$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getAnchorHandleId();
+  public final int getPayloadTypeId();
+  public final int getPayloadId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.mruk.TrackedQrCode> getCreateDefaultInstance();
+  public final com.meta.spatial.core.LongAttributeData getAnchorHandleData();
+  public final com.meta.spatial.core.EnumAttributeData getPayloadTypeData();
+  public final com.meta.spatial.core.StringAttributeData getPayloadData();
+  public com.meta.spatial.mruk.TrackedQrCode$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "MRUKFeature.kt"
+public final class com.meta.spatial.mruk.Tracker extends java.lang.Enum<com.meta.spatial.mruk.Tracker> {
+  public static final com.meta.spatial.mruk.Tracker Keyboard;
+  public static final com.meta.spatial.mruk.Tracker QrCode;
+  public static com.meta.spatial.mruk.Tracker[] values();
+  public static com.meta.spatial.mruk.Tracker valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.mruk.Tracker> getEntries();
+  static {};
+}
+Compiled from "TrackingStatus.kt"
+public final class com.meta.spatial.mruk.TrackingStatus extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.mruk.TrackingStatus$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.mruk.TrackingStatus(boolean);
+  public com.meta.spatial.mruk.TrackingStatus(boolean, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final boolean isTracked();
+  public final void setTracked(boolean);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.mruk.TrackingStatus();
+  public static final int access$getId$cp();
+  public static final int access$isTrackedId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$isTrackedData$cp();
+  static {};
+}
+Compiled from "TrackingStatus.kt"
+public final class com.meta.spatial.mruk.TrackingStatus$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int isTrackedId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.mruk.TrackingStatus> getCreateDefaultInstance();
+  public final com.meta.spatial.core.BooleanAttributeData isTrackedData();
+  public com.meta.spatial.mruk.TrackingStatus$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}

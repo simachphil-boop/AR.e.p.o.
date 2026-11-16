@@ -1,0 +1,256 @@
+Compiled from "AudioSessionId.kt"
+public final class com.meta.spatial.spatialaudio.AudioSessionId extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.spatialaudio.AudioSessionId$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.spatialaudio.AudioSessionId(int, com.meta.spatial.spatialaudio.AudioType);
+  public com.meta.spatial.spatialaudio.AudioSessionId(int, com.meta.spatial.spatialaudio.AudioType, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final int getAudioSessionId();
+  public final void setAudioSessionId(int);
+  public final com.meta.spatial.spatialaudio.AudioType getType();
+  public final void setType(com.meta.spatial.spatialaudio.AudioType);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.spatialaudio.AudioSessionId(int);
+  public com.meta.spatial.spatialaudio.AudioSessionId();
+  public static final int access$getId$cp();
+  public static final int access$getAudioSessionIdId$cp();
+  public static final int access$getTypeId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.IntAttributeData access$getAudioSessionIdData$cp();
+  public static final com.meta.spatial.core.EnumAttributeData access$getTypeData$cp();
+  static {};
+}
+Compiled from "AudioSessionId.kt"
+public final class com.meta.spatial.spatialaudio.AudioSessionId$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getAudioSessionIdId();
+  public final int getTypeId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.spatialaudio.AudioSessionId> getCreateDefaultInstance();
+  public final com.meta.spatial.core.IntAttributeData getAudioSessionIdData();
+  public final com.meta.spatial.core.EnumAttributeData getTypeData();
+  public com.meta.spatial.spatialaudio.AudioSessionId$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "AudioSessionIdManager.kt"
+public final class com.meta.spatial.spatialaudio.AudioSessionIdManager {
+  public com.meta.spatial.spatialaudio.AudioSessionIdManager();
+  public final void registerSessionId(int, int);
+  public final java.lang.Integer getSessionId(int);
+  public final void unregisterSessionId(int);
+  public final boolean isRegistered(int);
+}
+Compiled from "AudioSessionManagerSystem.kt"
+public final class com.meta.spatial.spatialaudio.AudioSessionManagerSystem extends com.meta.spatial.core.SystemBase {
+  public static final com.meta.spatial.spatialaudio.AudioSessionManagerSystem$Companion Companion;
+  public com.meta.spatial.spatialaudio.AudioSessionManagerSystem();
+  public final void setAudioManagerHandle(long);
+  public final void registerAudioSessionId(int, int);
+  public void execute();
+  public final com.meta.spatial.core.Quaternion calculateSoundfieldOrientation(com.meta.spatial.spatialaudio.SoundfieldOrientationType, com.meta.spatial.core.Pose);
+  public final kotlin.Pair<com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3> calculateStereoObjectWorldPositions(com.meta.spatial.core.Entity, com.meta.spatial.core.Pose);
+  public void delete(com.meta.spatial.core.Entity);
+  public void destroy();
+  static {};
+}
+Compiled from "AudioSessionManagerSystem.kt"
+public final class com.meta.spatial.spatialaudio.AudioSessionManagerSystem$Companion {
+  public com.meta.spatial.spatialaudio.AudioSessionManagerSystem$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "AudioSessionManagerSystem.kt"
+public final class com.meta.spatial.spatialaudio.AudioSessionManagerSystem$WhenMappings {
+  public static final int[] $EnumSwitchMapping$0;
+  public static final int[] $EnumSwitchMapping$1;
+  public static final int[] $EnumSwitchMapping$2;
+  static {};
+}
+Compiled from "AudioSessionStereoOffsets.kt"
+public final class com.meta.spatial.spatialaudio.AudioSessionStereoOffsets extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.spatialaudio.AudioSessionStereoOffsets$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.spatialaudio.AudioSessionStereoOffsets(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.spatialaudio.StereoOffsetMode);
+  public com.meta.spatial.spatialaudio.AudioSessionStereoOffsets(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.spatialaudio.StereoOffsetMode, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final com.meta.spatial.core.Vector3 getLeft();
+  public final void setLeft(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getRight();
+  public final void setRight(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.spatialaudio.StereoOffsetMode getMode();
+  public final void setMode(com.meta.spatial.spatialaudio.StereoOffsetMode);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.spatialaudio.AudioSessionStereoOffsets(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.spatialaudio.AudioSessionStereoOffsets(com.meta.spatial.core.Vector3);
+  public com.meta.spatial.spatialaudio.AudioSessionStereoOffsets();
+  public static final int access$getId$cp();
+  public static final int access$getLeftId$cp();
+  public static final int access$getRightId$cp();
+  public static final int access$getModeId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getLeftData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getRightData$cp();
+  public static final com.meta.spatial.core.EnumAttributeData access$getModeData$cp();
+  static {};
+}
+Compiled from "AudioSessionStereoOffsets.kt"
+public final class com.meta.spatial.spatialaudio.AudioSessionStereoOffsets$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getLeftId();
+  public final int getRightId();
+  public final int getModeId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.spatialaudio.AudioSessionStereoOffsets> getCreateDefaultInstance();
+  public final com.meta.spatial.core.Vector3AttributeData getLeftData();
+  public final com.meta.spatial.core.Vector3AttributeData getRightData();
+  public final com.meta.spatial.core.EnumAttributeData getModeData();
+  public com.meta.spatial.spatialaudio.AudioSessionStereoOffsets$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "AudioType.kt"
+public final class com.meta.spatial.spatialaudio.AudioType extends java.lang.Enum<com.meta.spatial.spatialaudio.AudioType> {
+  public static final com.meta.spatial.spatialaudio.AudioType SOUNDFIELD;
+  public static final com.meta.spatial.spatialaudio.AudioType AMBISONIC_ORDER_1;
+  public static final com.meta.spatial.spatialaudio.AudioType AMBISONIC_ORDER_2;
+  public static final com.meta.spatial.spatialaudio.AudioType AMBISONIC_ORDER_3;
+  public static final com.meta.spatial.spatialaudio.AudioType MONO;
+  public static final com.meta.spatial.spatialaudio.AudioType STEREO;
+  public static com.meta.spatial.spatialaudio.AudioType[] values();
+  public static com.meta.spatial.spatialaudio.AudioType valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.spatialaudio.AudioType> getEntries();
+  static {};
+}
+Compiled from "ComponentRegistrations.kt"
+public final class com.meta.spatial.spatialaudio.ComponentRegistrations {
+  public static final com.meta.spatial.spatialaudio.ComponentRegistrations INSTANCE;
+  public final java.util.List<com.meta.spatial.core.ComponentRegistration> all();
+  static {};
+}
+Compiled from "SoundfieldOrientation.kt"
+public final class com.meta.spatial.spatialaudio.SoundfieldOrientation extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.spatialaudio.SoundfieldOrientation$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.spatialaudio.SoundfieldOrientation(com.meta.spatial.spatialaudio.SoundfieldOrientationType);
+  public com.meta.spatial.spatialaudio.SoundfieldOrientation(com.meta.spatial.spatialaudio.SoundfieldOrientationType, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final com.meta.spatial.spatialaudio.SoundfieldOrientationType getType();
+  public final void setType(com.meta.spatial.spatialaudio.SoundfieldOrientationType);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.spatialaudio.SoundfieldOrientation();
+  public static final int access$getId$cp();
+  public static final int access$getTypeId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.EnumAttributeData access$getTypeData$cp();
+  static {};
+}
+Compiled from "SoundfieldOrientation.kt"
+public final class com.meta.spatial.spatialaudio.SoundfieldOrientation$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getTypeId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.spatialaudio.SoundfieldOrientation> getCreateDefaultInstance();
+  public final com.meta.spatial.core.EnumAttributeData getTypeData();
+  public com.meta.spatial.spatialaudio.SoundfieldOrientation$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "SoundfieldOrientationType.kt"
+public final class com.meta.spatial.spatialaudio.SoundfieldOrientationType extends java.lang.Enum<com.meta.spatial.spatialaudio.SoundfieldOrientationType> {
+  public static final com.meta.spatial.spatialaudio.SoundfieldOrientationType POSITION;
+  public static final com.meta.spatial.spatialaudio.SoundfieldOrientationType POSITION_Y_LOCKED;
+  public static final com.meta.spatial.spatialaudio.SoundfieldOrientationType ORIENTATION_ONLY;
+  public static com.meta.spatial.spatialaudio.SoundfieldOrientationType[] values();
+  public static com.meta.spatial.spatialaudio.SoundfieldOrientationType valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.spatialaudio.SoundfieldOrientationType> getEntries();
+  static {};
+}
+Compiled from "SpatialAudioFeature.kt"
+public final class com.meta.spatial.spatialaudio.SpatialAudioFeature extends com.meta.spatial.core.AbstractSpatialFeature {
+  public com.meta.spatial.spatialaudio.SpatialAudioFeature();
+  public void onCreate(android.os.Bundle);
+  public java.util.List<com.meta.spatial.core.SystemBase> lateSystemsToRegister();
+  public java.util.List<com.meta.spatial.core.SystemBase> systemsToRegister();
+  public java.util.List<com.meta.spatial.core.ComponentRegistration> componentsToRegister();
+  public void onSpatialShutdown();
+  public final void registerAudioSessionId(int, int);
+}
+Compiled from "StereoOffsetMode.kt"
+public final class com.meta.spatial.spatialaudio.StereoOffsetMode extends java.lang.Enum<com.meta.spatial.spatialaudio.StereoOffsetMode> {
+  public static final com.meta.spatial.spatialaudio.StereoOffsetMode WORLD_SPACE;
+  public static final com.meta.spatial.spatialaudio.StereoOffsetMode LOCAL_SPACE;
+  public static final com.meta.spatial.spatialaudio.StereoOffsetMode HEAD_LOCKED;
+  public static final com.meta.spatial.spatialaudio.StereoOffsetMode HEAD_RELATIVE;
+  public static com.meta.spatial.spatialaudio.StereoOffsetMode[] values();
+  public static com.meta.spatial.spatialaudio.StereoOffsetMode valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.spatialaudio.StereoOffsetMode> getEntries();
+  static {};
+}

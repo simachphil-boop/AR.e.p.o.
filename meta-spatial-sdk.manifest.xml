@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+The "package" defined here directly influences the generated AARs package info.
+The "android:versionName" and "SDK_VERSION" are placeholders (0.0.0-dev) and
+are overwritten at release time by the release tooling with the build's Maven
+version: Takeoff plus -SNAPSHOT for Flight Deck release-train builds, dated
+Configerator for manual builds, or the release branch's X.Y.Z for stage-aars.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.meta.spatial"
+    android:versionName="0.15.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <application>
+        <meta-data
+            android:name="com.meta.spatial.SDK_VERSION"
+            android:value="0.15.0" />
+    </application>
+
+</manifest>

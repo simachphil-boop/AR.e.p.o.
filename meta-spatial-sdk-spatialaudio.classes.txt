@@ -1,0 +1,15 @@
+com.meta.spatial.spatialaudio.AudioSessionId
+com.meta.spatial.spatialaudio.AudioSessionId$Companion
+com.meta.spatial.spatialaudio.AudioSessionIdManager
+com.meta.spatial.spatialaudio.AudioSessionManagerSystem
+com.meta.spatial.spatialaudio.AudioSessionManagerSystem$Companion
+com.meta.spatial.spatialaudio.AudioSessionManagerSystem$WhenMappings
+com.meta.spatial.spatialaudio.AudioSessionStereoOffsets
+com.meta.spatial.spatialaudio.AudioSessionStereoOffsets$Companion
+com.meta.spatial.spatialaudio.AudioType
+com.meta.spatial.spatialaudio.ComponentRegistrations
+com.meta.spatial.spatialaudio.SoundfieldOrientation
+com.meta.spatial.spatialaudio.SoundfieldOrientation$Companion
+com.meta.spatial.spatialaudio.SoundfieldOrientationType
+com.meta.spatial.spatialaudio.SpatialAudioFeature
+com.meta.spatial.spatialaudio.StereoOffsetMode

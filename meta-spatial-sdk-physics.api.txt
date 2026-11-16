@@ -1,0 +1,1436 @@
+Compiled from "BallSocketConstraint.kt"
+public final class com.meta.spatial.physics.BallSocketConstraint extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.physics.BallSocketConstraint$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.physics.BallSocketConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean);
+  public com.meta.spatial.physics.BallSocketConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final com.meta.spatial.core.Entity getBodyA();
+  public final void setBodyA(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Entity getBodyB();
+  public final void setBodyB(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Vector3 getAnchorA();
+  public final void setAnchorA(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getAnchorB();
+  public final void setAnchorB(com.meta.spatial.core.Vector3);
+  public final float getBreakForce();
+  public final void setBreakForce(float);
+  public final float getBreakTorque();
+  public final void setBreakTorque(float);
+  public final boolean isBroken();
+  public final void setBroken(boolean);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.physics.BallSocketConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float);
+  public com.meta.spatial.physics.BallSocketConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float);
+  public com.meta.spatial.physics.BallSocketConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.BallSocketConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.BallSocketConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.BallSocketConstraint(com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.BallSocketConstraint();
+  public static final int access$getId$cp();
+  public static final int access$getBodyAId$cp();
+  public static final int access$getBodyBId$cp();
+  public static final int access$getAnchorAId$cp();
+  public static final int access$getAnchorBId$cp();
+  public static final int access$getBreakForceId$cp();
+  public static final int access$getBreakTorqueId$cp();
+  public static final int access$isBrokenId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyAData$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyBData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorAData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorBData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakForceData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakTorqueData$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$isBrokenData$cp();
+  static {};
+}
+Compiled from "BallSocketConstraint.kt"
+public final class com.meta.spatial.physics.BallSocketConstraint$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getBodyAId();
+  public final int getBodyBId();
+  public final int getAnchorAId();
+  public final int getAnchorBId();
+  public final int getBreakForceId();
+  public final int getBreakTorqueId();
+  public final int isBrokenId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.physics.BallSocketConstraint> getCreateDefaultInstance();
+  public final com.meta.spatial.core.EntityAttributeData getBodyAData();
+  public final com.meta.spatial.core.EntityAttributeData getBodyBData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorAData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorBData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakForceData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakTorqueData();
+  public final com.meta.spatial.core.BooleanAttributeData isBrokenData();
+  public com.meta.spatial.physics.BallSocketConstraint$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "CollisionShapeType.kt"
+public final class com.meta.spatial.physics.CollisionShapeType extends java.lang.Enum<com.meta.spatial.physics.CollisionShapeType> {
+  public static final com.meta.spatial.physics.CollisionShapeType PRIMITIVE;
+  public static final com.meta.spatial.physics.CollisionShapeType TRIANGLE_MESH;
+  public static final com.meta.spatial.physics.CollisionShapeType CONVEX_HULL;
+  public static final com.meta.spatial.physics.CollisionShapeType CONVEX_DECOMPOSITION;
+  public static final com.meta.spatial.physics.CollisionShapeType COMPOUND;
+  public static com.meta.spatial.physics.CollisionShapeType[] values();
+  public static com.meta.spatial.physics.CollisionShapeType valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.physics.CollisionShapeType> getEntries();
+  static {};
+}
+Compiled from "ConeTwistConstraint.kt"
+public final class com.meta.spatial.physics.ConeTwistConstraint extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.physics.ConeTwistConstraint$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, float, float, float, float, boolean, float, float);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, float, float, float, float, boolean, float, float, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final com.meta.spatial.core.Entity getBodyA();
+  public final void setBodyA(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Entity getBodyB();
+  public final void setBodyB(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Vector3 getAnchorA();
+  public final void setAnchorA(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getAnchorB();
+  public final void setAnchorB(com.meta.spatial.core.Vector3);
+  public final float getBreakForce();
+  public final void setBreakForce(float);
+  public final float getBreakTorque();
+  public final void setBreakTorque(float);
+  public final boolean isBroken();
+  public final void setBroken(boolean);
+  public final com.meta.spatial.core.Vector3 getTwistAxis();
+  public final void setTwistAxis(com.meta.spatial.core.Vector3);
+  public final float getSwingSpan1();
+  public final void setSwingSpan1(float);
+  public final float getSwingSpan2();
+  public final void setSwingSpan2(float);
+  public final float getTwistSpan();
+  public final void setTwistSpan(float);
+  public final float getSoftness();
+  public final void setSoftness(float);
+  public final float getBiasFactor();
+  public final void setBiasFactor(float);
+  public final float getRelaxationFactor();
+  public final void setRelaxationFactor(float);
+  public final boolean getMotorEnabled();
+  public final void setMotorEnabled(boolean);
+  public final float getMotorTargetVelocity();
+  public final void setMotorTargetVelocity(float);
+  public final float getMotorMaxForce();
+  public final void setMotorMaxForce(float);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, float, float, float, float, boolean, float);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, float, float, float, float, boolean);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, float, float, float, float);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, float, float, float);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, float, float);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, float);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.ConeTwistConstraint(com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.ConeTwistConstraint();
+  public static final int access$getId$cp();
+  public static final int access$getBodyAId$cp();
+  public static final int access$getBodyBId$cp();
+  public static final int access$getAnchorAId$cp();
+  public static final int access$getAnchorBId$cp();
+  public static final int access$getBreakForceId$cp();
+  public static final int access$getBreakTorqueId$cp();
+  public static final int access$isBrokenId$cp();
+  public static final int access$getTwistAxisId$cp();
+  public static final int access$getSwingSpan1Id$cp();
+  public static final int access$getSwingSpan2Id$cp();
+  public static final int access$getTwistSpanId$cp();
+  public static final int access$getSoftnessId$cp();
+  public static final int access$getBiasFactorId$cp();
+  public static final int access$getRelaxationFactorId$cp();
+  public static final int access$getMotorEnabledId$cp();
+  public static final int access$getMotorTargetVelocityId$cp();
+  public static final int access$getMotorMaxForceId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyAData$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyBData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorAData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorBData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakForceData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakTorqueData$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$isBrokenData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getTwistAxisData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getSwingSpan1Data$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getSwingSpan2Data$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getTwistSpanData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getSoftnessData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBiasFactorData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getRelaxationFactorData$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$getMotorEnabledData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getMotorTargetVelocityData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getMotorMaxForceData$cp();
+  static {};
+}
+Compiled from "ConeTwistConstraint.kt"
+public final class com.meta.spatial.physics.ConeTwistConstraint$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getBodyAId();
+  public final int getBodyBId();
+  public final int getAnchorAId();
+  public final int getAnchorBId();
+  public final int getBreakForceId();
+  public final int getBreakTorqueId();
+  public final int isBrokenId();
+  public final int getTwistAxisId();
+  public final int getSwingSpan1Id();
+  public final int getSwingSpan2Id();
+  public final int getTwistSpanId();
+  public final int getSoftnessId();
+  public final int getBiasFactorId();
+  public final int getRelaxationFactorId();
+  public final int getMotorEnabledId();
+  public final int getMotorTargetVelocityId();
+  public final int getMotorMaxForceId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.physics.ConeTwistConstraint> getCreateDefaultInstance();
+  public final com.meta.spatial.core.EntityAttributeData getBodyAData();
+  public final com.meta.spatial.core.EntityAttributeData getBodyBData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorAData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorBData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakForceData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakTorqueData();
+  public final com.meta.spatial.core.BooleanAttributeData isBrokenData();
+  public final com.meta.spatial.core.Vector3AttributeData getTwistAxisData();
+  public final com.meta.spatial.core.FloatAttributeData getSwingSpan1Data();
+  public final com.meta.spatial.core.FloatAttributeData getSwingSpan2Data();
+  public final com.meta.spatial.core.FloatAttributeData getTwistSpanData();
+  public final com.meta.spatial.core.FloatAttributeData getSoftnessData();
+  public final com.meta.spatial.core.FloatAttributeData getBiasFactorData();
+  public final com.meta.spatial.core.FloatAttributeData getRelaxationFactorData();
+  public final com.meta.spatial.core.BooleanAttributeData getMotorEnabledData();
+  public final com.meta.spatial.core.FloatAttributeData getMotorTargetVelocityData();
+  public final com.meta.spatial.core.FloatAttributeData getMotorMaxForceData();
+  public com.meta.spatial.physics.ConeTwistConstraint$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "FixedConstraint.kt"
+public final class com.meta.spatial.physics.FixedConstraint extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.physics.FixedConstraint$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.physics.FixedConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean);
+  public com.meta.spatial.physics.FixedConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final com.meta.spatial.core.Entity getBodyA();
+  public final void setBodyA(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Entity getBodyB();
+  public final void setBodyB(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Vector3 getAnchorA();
+  public final void setAnchorA(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getAnchorB();
+  public final void setAnchorB(com.meta.spatial.core.Vector3);
+  public final float getBreakForce();
+  public final void setBreakForce(float);
+  public final float getBreakTorque();
+  public final void setBreakTorque(float);
+  public final boolean isBroken();
+  public final void setBroken(boolean);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.physics.FixedConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float);
+  public com.meta.spatial.physics.FixedConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float);
+  public com.meta.spatial.physics.FixedConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.FixedConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.FixedConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.FixedConstraint(com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.FixedConstraint();
+  public static final int access$getId$cp();
+  public static final int access$getBodyAId$cp();
+  public static final int access$getBodyBId$cp();
+  public static final int access$getAnchorAId$cp();
+  public static final int access$getAnchorBId$cp();
+  public static final int access$getBreakForceId$cp();
+  public static final int access$getBreakTorqueId$cp();
+  public static final int access$isBrokenId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyAData$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyBData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorAData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorBData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakForceData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakTorqueData$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$isBrokenData$cp();
+  static {};
+}
+Compiled from "FixedConstraint.kt"
+public final class com.meta.spatial.physics.FixedConstraint$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getBodyAId();
+  public final int getBodyBId();
+  public final int getAnchorAId();
+  public final int getAnchorBId();
+  public final int getBreakForceId();
+  public final int getBreakTorqueId();
+  public final int isBrokenId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.physics.FixedConstraint> getCreateDefaultInstance();
+  public final com.meta.spatial.core.EntityAttributeData getBodyAData();
+  public final com.meta.spatial.core.EntityAttributeData getBodyBData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorAData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorBData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakForceData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakTorqueData();
+  public final com.meta.spatial.core.BooleanAttributeData isBrokenData();
+  public com.meta.spatial.physics.FixedConstraint$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "FrictionObject.kt"
+public final class com.meta.spatial.physics.FrictionObject {
+  public final float getSlidingFriction();
+  public final void setSlidingFriction(float);
+  public final float getRollingFriction();
+  public final void setRollingFriction(float);
+  public static void getRollingFriction$annotations();
+  public final float getSpinningFriction();
+  public final void setSpinningFriction(float);
+  public static void getSpinningFriction$annotations();
+  public com.meta.spatial.physics.FrictionObject(float);
+  public com.meta.spatial.physics.FrictionObject(float, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public com.meta.spatial.physics.FrictionObject(float, float, float);
+}
+Compiled from "GrabbablePhysicsSystem.kt"
+public final class com.meta.spatial.physics.GrabbablePhysicsSystem extends com.meta.spatial.core.SystemBase {
+  public com.meta.spatial.physics.GrabbablePhysicsSystem();
+  public void execute();
+  public final void enableGrabbablePhysics(boolean);
+  public static void enableGrabbablePhysics$default(com.meta.spatial.physics.GrabbablePhysicsSystem, boolean, int, java.lang.Object);
+  public com.meta.spatial.core.SystemDependencies getDependencies();
+}
+Compiled from "HingeConstraint.kt"
+public final class com.meta.spatial.physics.HingeConstraint extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.physics.HingeConstraint$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, boolean, float, float);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, boolean, float, float, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final com.meta.spatial.core.Entity getBodyA();
+  public final void setBodyA(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Entity getBodyB();
+  public final void setBodyB(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Vector3 getAnchorA();
+  public final void setAnchorA(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getAnchorB();
+  public final void setAnchorB(com.meta.spatial.core.Vector3);
+  public final float getBreakForce();
+  public final void setBreakForce(float);
+  public final float getBreakTorque();
+  public final void setBreakTorque(float);
+  public final boolean isBroken();
+  public final void setBroken(boolean);
+  public final com.meta.spatial.core.Vector3 getAxis();
+  public final void setAxis(com.meta.spatial.core.Vector3);
+  public final float getLowerLimit();
+  public final void setLowerLimit(float);
+  public final float getUpperLimit();
+  public final void setUpperLimit(float);
+  public final boolean getMotorEnabled();
+  public final void setMotorEnabled(boolean);
+  public final float getMotorTargetVelocity();
+  public final void setMotorTargetVelocity(float);
+  public final float getMotorMaxForce();
+  public final void setMotorMaxForce(float);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, boolean, float);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, boolean);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.HingeConstraint(com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.HingeConstraint();
+  public static final int access$getId$cp();
+  public static final int access$getBodyAId$cp();
+  public static final int access$getBodyBId$cp();
+  public static final int access$getAnchorAId$cp();
+  public static final int access$getAnchorBId$cp();
+  public static final int access$getBreakForceId$cp();
+  public static final int access$getBreakTorqueId$cp();
+  public static final int access$isBrokenId$cp();
+  public static final int access$getAxisId$cp();
+  public static final int access$getLowerLimitId$cp();
+  public static final int access$getUpperLimitId$cp();
+  public static final int access$getMotorEnabledId$cp();
+  public static final int access$getMotorTargetVelocityId$cp();
+  public static final int access$getMotorMaxForceId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyAData$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyBData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorAData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorBData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakForceData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakTorqueData$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$isBrokenData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAxisData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getLowerLimitData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getUpperLimitData$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$getMotorEnabledData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getMotorTargetVelocityData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getMotorMaxForceData$cp();
+  static {};
+}
+Compiled from "HingeConstraint.kt"
+public final class com.meta.spatial.physics.HingeConstraint$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getBodyAId();
+  public final int getBodyBId();
+  public final int getAnchorAId();
+  public final int getAnchorBId();
+  public final int getBreakForceId();
+  public final int getBreakTorqueId();
+  public final int isBrokenId();
+  public final int getAxisId();
+  public final int getLowerLimitId();
+  public final int getUpperLimitId();
+  public final int getMotorEnabledId();
+  public final int getMotorTargetVelocityId();
+  public final int getMotorMaxForceId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.physics.HingeConstraint> getCreateDefaultInstance();
+  public final com.meta.spatial.core.EntityAttributeData getBodyAData();
+  public final com.meta.spatial.core.EntityAttributeData getBodyBData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorAData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorBData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakForceData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakTorqueData();
+  public final com.meta.spatial.core.BooleanAttributeData isBrokenData();
+  public final com.meta.spatial.core.Vector3AttributeData getAxisData();
+  public final com.meta.spatial.core.FloatAttributeData getLowerLimitData();
+  public final com.meta.spatial.core.FloatAttributeData getUpperLimitData();
+  public final com.meta.spatial.core.BooleanAttributeData getMotorEnabledData();
+  public final com.meta.spatial.core.FloatAttributeData getMotorTargetVelocityData();
+  public final com.meta.spatial.core.FloatAttributeData getMotorMaxForceData();
+  public com.meta.spatial.physics.HingeConstraint$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "Physics.kt"
+public final class com.meta.spatial.physics.Physics extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.physics.Physics$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float, com.meta.spatial.core.Vector3, float, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.physics.PhysicsState, com.meta.spatial.physics.CollisionShapeType, java.lang.String, int);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float, com.meta.spatial.core.Vector3, float, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.physics.PhysicsState, com.meta.spatial.physics.CollisionShapeType, java.lang.String, int, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final com.meta.spatial.core.Vector3 getLinearVelocity();
+  public final void setLinearVelocity(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getAngularVelocity();
+  public final void setAngularVelocity(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getDimensions();
+  public final void setDimensions(com.meta.spatial.core.Vector3);
+  public final java.lang.String getShape();
+  public final void setShape(java.lang.String);
+  public final float getDensityInternal();
+  public final void setDensityInternal(float);
+  public final com.meta.spatial.core.Vector3 getApplyForce();
+  public final void setApplyForce(com.meta.spatial.core.Vector3);
+  public final float getRestitution();
+  public final void setRestitution(float);
+  public final com.meta.spatial.core.Vector3 getFrictionInternal();
+  public final void setFrictionInternal(com.meta.spatial.core.Vector3);
+  public final float getLinearDamping();
+  public final void setLinearDamping(float);
+  public final float getAngularDamping();
+  public final void setAngularDamping(float);
+  public final boolean getAllowSleeping();
+  public final void setAllowSleeping(boolean);
+  public final com.meta.spatial.physics.PhysicsState getState();
+  public final void setState(com.meta.spatial.physics.PhysicsState);
+  public final com.meta.spatial.physics.CollisionShapeType getCollisionShapeType();
+  public final void setCollisionShapeType(com.meta.spatial.physics.CollisionShapeType);
+  public final java.lang.String getCollisionMeshNode();
+  public final void setCollisionMeshNode(java.lang.String);
+  public final int getMaxConvexHulls();
+  public final void setMaxConvexHulls(int);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public final float getDensity();
+  public final void setDensity(float);
+  public final com.meta.spatial.physics.FrictionObject getFriction();
+  public final void setFriction(com.meta.spatial.physics.FrictionObject);
+  public static void getFriction$annotations();
+  public final com.meta.spatial.physics.Physics applyMaterial(com.meta.spatial.physics.PhysicsMaterial);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float, com.meta.spatial.core.Vector3, float, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.physics.PhysicsState, com.meta.spatial.physics.CollisionShapeType, java.lang.String);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float, com.meta.spatial.core.Vector3, float, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.physics.PhysicsState, com.meta.spatial.physics.CollisionShapeType);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float, com.meta.spatial.core.Vector3, float, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.physics.PhysicsState);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float, com.meta.spatial.core.Vector3, float, com.meta.spatial.core.Vector3, float, float, boolean);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float, com.meta.spatial.core.Vector3, float, com.meta.spatial.core.Vector3, float, float);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float, com.meta.spatial.core.Vector3, float, com.meta.spatial.core.Vector3, float);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float, com.meta.spatial.core.Vector3, float, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float, com.meta.spatial.core.Vector3, float);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String, float);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, java.lang.String);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.Physics(com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.Physics();
+  public static final int access$getId$cp();
+  public static final int access$getLinearVelocityId$cp();
+  public static final int access$getAngularVelocityId$cp();
+  public static final int access$getDimensionsId$cp();
+  public static final int access$getShapeId$cp();
+  public static final int access$getDensityInternalId$cp();
+  public static final int access$getApplyForceId$cp();
+  public static final int access$getRestitutionId$cp();
+  public static final int access$getFrictionInternalId$cp();
+  public static final int access$getLinearDampingId$cp();
+  public static final int access$getAngularDampingId$cp();
+  public static final int access$getAllowSleepingId$cp();
+  public static final int access$getStateId$cp();
+  public static final int access$getCollisionShapeTypeId$cp();
+  public static final int access$getCollisionMeshNodeId$cp();
+  public static final int access$getMaxConvexHullsId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getLinearVelocityData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAngularVelocityData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getDimensionsData$cp();
+  public static final com.meta.spatial.core.StringAttributeData access$getShapeData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getDensityInternalData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getApplyForceData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getRestitutionData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getFrictionInternalData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getLinearDampingData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getAngularDampingData$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$getAllowSleepingData$cp();
+  public static final com.meta.spatial.core.EnumAttributeData access$getStateData$cp();
+  public static final com.meta.spatial.core.EnumAttributeData access$getCollisionShapeTypeData$cp();
+  public static final com.meta.spatial.core.StringAttributeData access$getCollisionMeshNodeData$cp();
+  public static final com.meta.spatial.core.IntAttributeData access$getMaxConvexHullsData$cp();
+  static {};
+}
+Compiled from "Physics.kt"
+public final class com.meta.spatial.physics.Physics$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getLinearVelocityId();
+  public final int getAngularVelocityId();
+  public final int getDimensionsId();
+  public final int getShapeId();
+  public final int getDensityInternalId();
+  public final int getApplyForceId();
+  public final int getRestitutionId();
+  public final int getFrictionInternalId();
+  public final int getLinearDampingId();
+  public final int getAngularDampingId();
+  public final int getAllowSleepingId();
+  public final int getStateId();
+  public final int getCollisionShapeTypeId();
+  public final int getCollisionMeshNodeId();
+  public final int getMaxConvexHullsId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.physics.Physics> getCreateDefaultInstance();
+  public final com.meta.spatial.core.Vector3AttributeData getLinearVelocityData();
+  public final com.meta.spatial.core.Vector3AttributeData getAngularVelocityData();
+  public final com.meta.spatial.core.Vector3AttributeData getDimensionsData();
+  public final com.meta.spatial.core.StringAttributeData getShapeData();
+  public final com.meta.spatial.core.FloatAttributeData getDensityInternalData();
+  public final com.meta.spatial.core.Vector3AttributeData getApplyForceData();
+  public final com.meta.spatial.core.FloatAttributeData getRestitutionData();
+  public final com.meta.spatial.core.Vector3AttributeData getFrictionInternalData();
+  public final com.meta.spatial.core.FloatAttributeData getLinearDampingData();
+  public final com.meta.spatial.core.FloatAttributeData getAngularDampingData();
+  public final com.meta.spatial.core.BooleanAttributeData getAllowSleepingData();
+  public final com.meta.spatial.core.EnumAttributeData getStateData();
+  public final com.meta.spatial.core.EnumAttributeData getCollisionShapeTypeData();
+  public final com.meta.spatial.core.StringAttributeData getCollisionMeshNodeData();
+  public final com.meta.spatial.core.IntAttributeData getMaxConvexHullsData();
+  public com.meta.spatial.physics.Physics$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "PhysicsBridge.kt"
+public final class com.meta.spatial.physics.PhysicsBridge {
+  public com.meta.spatial.physics.PhysicsBridge(com.meta.spatial.core.SpatialInterface);
+  public final com.meta.spatial.core.SpatialInterface getSpatial();
+  public final void tickPhysics();
+  public final void enablePhysicsDebugLines(boolean);
+  public final void deletePhysics(com.meta.spatial.core.Entity);
+  public final void setGravity(float, float, float);
+  public final void setSleepSettings(float, float);
+  public final void potentiallyActivatePhysicsBodies();
+}
+Compiled from "PhysicsCallbackEventArgs.kt"
+public final class com.meta.spatial.physics.PhysicsCollisionCallbackEventArgs extends com.meta.spatial.core.EventArgs {
+  public static final com.meta.spatial.physics.PhysicsCollisionCallbackEventArgs$Companion Companion;
+  public com.meta.spatial.physics.PhysicsCollisionCallbackEventArgs(com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, com.meta.spatial.core.DataModel);
+  public final com.meta.spatial.core.Entity getCollidedEntity();
+  public final com.meta.spatial.core.Vector3 getCollisionPosition();
+  public final com.meta.spatial.core.Vector3 getCollisionNormal();
+  public final float getImpulse();
+  public static final java.lang.String access$getEVENT_NAME$cp();
+  static {};
+}
+Compiled from "PhysicsCallbackEventArgs.kt"
+public final class com.meta.spatial.physics.PhysicsCollisionCallbackEventArgs$Companion {
+  public final java.lang.String getEVENT_NAME();
+  public com.meta.spatial.physics.PhysicsCollisionCallbackEventArgs$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "PhysicsComponentRegistrations.kt"
+public final class com.meta.spatial.physics.PhysicsComponentRegistrations {
+  public static final com.meta.spatial.physics.PhysicsComponentRegistrations INSTANCE;
+  public final java.util.List<com.meta.spatial.core.ComponentRegistration> all();
+  static {};
+}
+Compiled from "PhysicsConstraintSystem.kt"
+public final class com.meta.spatial.physics.PhysicsConstraintBreakEventArgs extends com.meta.spatial.core.EventArgs {
+  public static final com.meta.spatial.physics.PhysicsConstraintBreakEventArgs$Companion Companion;
+  public static final java.lang.String EVENT_NAME;
+  public com.meta.spatial.physics.PhysicsConstraintBreakEventArgs(float, com.meta.spatial.core.DataModel);
+  public final float getBreakingImpulse();
+  static {};
+}
+Compiled from "PhysicsConstraintSystem.kt"
+public final class com.meta.spatial.physics.PhysicsConstraintBreakEventArgs$Companion {
+  public com.meta.spatial.physics.PhysicsConstraintBreakEventArgs$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "PhysicsConstraintSystem.kt"
+public final class com.meta.spatial.physics.PhysicsConstraintSystem extends com.meta.spatial.core.SystemBase {
+  public com.meta.spatial.physics.PhysicsConstraintSystem();
+  public com.meta.spatial.core.SystemDependencies getDependencies();
+  public void execute();
+  public void delete(com.meta.spatial.core.Entity);
+}
+Compiled from "PhysicsConstraintSystem.kt"
+final class com.meta.spatial.physics.PhysicsConstraintSystem$ConeTwistStructure {
+  public com.meta.spatial.physics.PhysicsConstraintSystem$ConeTwistStructure(long, long, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, float, float, float, float);
+  public final long getBodyAId();
+  public final long getBodyBId();
+  public final com.meta.spatial.core.Vector3 getAnchorA();
+  public final com.meta.spatial.core.Vector3 getAnchorB();
+  public final com.meta.spatial.core.Vector3 getTwistAxis();
+  public final float getSwingSpan1();
+  public final float getSwingSpan2();
+  public final float getTwistSpan();
+  public final float getSoftness();
+  public final float getBiasFactor();
+  public final float getRelaxationFactor();
+  public final long component1();
+  public final long component2();
+  public final com.meta.spatial.core.Vector3 component3();
+  public final com.meta.spatial.core.Vector3 component4();
+  public final com.meta.spatial.core.Vector3 component5();
+  public final float component6();
+  public final float component7();
+  public final float component8();
+  public final float component9();
+  public final float component10();
+  public final float component11();
+  public final com.meta.spatial.physics.PhysicsConstraintSystem$ConeTwistStructure copy(long, long, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, float, float, float, float);
+  public static com.meta.spatial.physics.PhysicsConstraintSystem$ConeTwistStructure copy$default(com.meta.spatial.physics.PhysicsConstraintSystem$ConeTwistStructure, long, long, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, float, float, float, float, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "PhysicsConstraintSystem.kt"
+final class com.meta.spatial.physics.PhysicsConstraintSystem$HingeStructure {
+  public com.meta.spatial.physics.PhysicsConstraintSystem$HingeStructure(long, long, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public final long getBodyAId();
+  public final long getBodyBId();
+  public final com.meta.spatial.core.Vector3 getAnchorA();
+  public final com.meta.spatial.core.Vector3 getAnchorB();
+  public final com.meta.spatial.core.Vector3 getAxis();
+  public final long component1();
+  public final long component2();
+  public final com.meta.spatial.core.Vector3 component3();
+  public final com.meta.spatial.core.Vector3 component4();
+  public final com.meta.spatial.core.Vector3 component5();
+  public final com.meta.spatial.physics.PhysicsConstraintSystem$HingeStructure copy(long, long, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public static com.meta.spatial.physics.PhysicsConstraintSystem$HingeStructure copy$default(com.meta.spatial.physics.PhysicsConstraintSystem$HingeStructure, long, long, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "PhysicsConstraintSystem.kt"
+final class com.meta.spatial.physics.PhysicsConstraintSystem$SliderStructure {
+  public com.meta.spatial.physics.PhysicsConstraintSystem$SliderStructure(long, long, com.meta.spatial.core.Vector3);
+  public final long getBodyAId();
+  public final long getBodyBId();
+  public final com.meta.spatial.core.Vector3 getAxis();
+  public final long component1();
+  public final long component2();
+  public final com.meta.spatial.core.Vector3 component3();
+  public final com.meta.spatial.physics.PhysicsConstraintSystem$SliderStructure copy(long, long, com.meta.spatial.core.Vector3);
+  public static com.meta.spatial.physics.PhysicsConstraintSystem$SliderStructure copy$default(com.meta.spatial.physics.PhysicsConstraintSystem$SliderStructure, long, long, com.meta.spatial.core.Vector3, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "PhysicsConstraintSystem.kt"
+public final class com.meta.spatial.physics.PhysicsConstraintSystemKt {
+}
+Compiled from "PhysicsCreationSystem.kt"
+public final class com.meta.spatial.physics.PhysicsCreationSystem extends com.meta.spatial.core.SystemBase {
+  public com.meta.spatial.physics.PhysicsCreationSystem(com.meta.spatial.physics.PhysicsBridge);
+  public final com.meta.spatial.physics.PhysicsBridge getPhysicsBridge();
+  public final java.util.HashMap<java.lang.String, kotlin.jvm.functions.Function1<com.meta.spatial.core.Entity, com.meta.spatial.physics.ScenePhysicsObject>> getPhysicsCreators();
+  public final com.meta.spatial.physics.ScenePhysicsObject getPhysicsObject(com.meta.spatial.core.Entity);
+  public void execute();
+  public void delete(com.meta.spatial.core.Entity);
+}
+Compiled from "PhysicsCreationSystem.kt"
+final class com.meta.spatial.physics.PhysicsCreationSystem$DownloadedShape {
+  public com.meta.spatial.physics.PhysicsCreationSystem$DownloadedShape(java.lang.String, java.lang.String, com.meta.spatial.core.Entity);
+  public final java.lang.String getShape();
+  public final java.lang.String getFilename();
+  public final com.meta.spatial.core.Entity getEntity();
+}
+Compiled from "PhysicsCreationSystem.kt"
+public final class com.meta.spatial.physics.PhysicsCreationSystem$WhenMappings {
+  public static final int[] $EnumSwitchMapping$0;
+  static {};
+}
+Compiled from "PhysicsCreationSystem.kt"
+public final class com.meta.spatial.physics.PhysicsCreationSystemKt {
+  public static final void applyPhysicsProperties(com.meta.spatial.physics.Physics, com.meta.spatial.physics.ScenePhysicsObject);
+}
+Compiled from "PhysicsFeature.kt"
+public final class com.meta.spatial.physics.PhysicsFeature extends com.meta.spatial.core.AbstractSpatialFeature {
+  public com.meta.spatial.physics.PhysicsFeature(com.meta.spatial.core.SpatialInterface, boolean, com.meta.spatial.physics.PhysicsWorldBounds, com.meta.spatial.core.Vector3, float, float);
+  public com.meta.spatial.physics.PhysicsFeature(com.meta.spatial.core.SpatialInterface, boolean, com.meta.spatial.physics.PhysicsWorldBounds, com.meta.spatial.core.Vector3, float, float, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public final com.meta.spatial.core.SpatialInterface getSpatial();
+  public final boolean getUseGrabbablePhysics();
+  public void preRuntimeOnCreate(android.os.Bundle);
+  public java.util.List<com.meta.spatial.core.SystemBase> lateSystemsToRegister();
+  public java.util.List<com.meta.spatial.core.SystemBase> systemsToRegister();
+  public void onCreate(android.os.Bundle);
+  public java.util.List<com.meta.spatial.core.ComponentRegistration> componentsToRegister();
+  public final void setGravity(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getGravity();
+  public final void setSleepSettings(float, float);
+  public final void enablePhysicsDebugLines(boolean);
+}
+Compiled from "PhysicsLoader.kt"
+public final class com.meta.spatial.physics.PhysicsLoader extends com.meta.spatial.toolkit.inflate.BaseLoader {
+  public com.meta.spatial.physics.PhysicsLoader();
+  protected void parseAttributes(com.meta.spatial.toolkit.inflate.LoaderContext, com.meta.spatial.core.DataModel, android.content.res.XmlResourceParser);
+}
+Compiled from "PhysicsMaterial.kt"
+public final class com.meta.spatial.physics.PhysicsMaterial extends java.lang.Enum<com.meta.spatial.physics.PhysicsMaterial> {
+  public static final com.meta.spatial.physics.PhysicsMaterial WOOD;
+  public static final com.meta.spatial.physics.PhysicsMaterial LEAD;
+  public final float getDensity();
+  public final float getRestitution();
+  public final com.meta.spatial.physics.FrictionObject getFriction();
+  public static com.meta.spatial.physics.PhysicsMaterial[] values();
+  public static com.meta.spatial.physics.PhysicsMaterial valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.physics.PhysicsMaterial> getEntries();
+  static {};
+}
+Compiled from "PhysicsOutOfBoundsSystem.kt"
+public final class com.meta.spatial.physics.PhysicsOutOfBoundsSystem extends com.meta.spatial.core.SystemBase {
+  public com.meta.spatial.physics.PhysicsOutOfBoundsSystem(com.meta.spatial.physics.PhysicsWorldBounds);
+  public com.meta.spatial.physics.PhysicsOutOfBoundsSystem(com.meta.spatial.physics.PhysicsWorldBounds, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public void execute();
+  public final void setBounds(com.meta.spatial.physics.PhysicsWorldBounds);
+  public final void setBounds(java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float);
+  public static void setBounds$default(com.meta.spatial.physics.PhysicsOutOfBoundsSystem, java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float, int, java.lang.Object);
+  public com.meta.spatial.physics.PhysicsOutOfBoundsSystem();
+}
+Compiled from "PhysicsSecondaryConstructors.kt"
+public final class com.meta.spatial.physics.PhysicsSecondaryConstructorsKt {
+  public static final com.meta.spatial.physics.Physics Physics(java.lang.String, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, com.meta.spatial.physics.FrictionObject, com.meta.spatial.physics.PhysicsState, com.meta.spatial.core.Vector3, float, float, boolean);
+  public static com.meta.spatial.physics.Physics Physics$default(java.lang.String, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, com.meta.spatial.physics.FrictionObject, com.meta.spatial.physics.PhysicsState, com.meta.spatial.core.Vector3, float, float, boolean, int, java.lang.Object);
+}
+Compiled from "PhysicsState.kt"
+public final class com.meta.spatial.physics.PhysicsState extends java.lang.Enum<com.meta.spatial.physics.PhysicsState> {
+  public static final com.meta.spatial.physics.PhysicsState STATIC;
+  public static final com.meta.spatial.physics.PhysicsState DYNAMIC;
+  public static final com.meta.spatial.physics.PhysicsState KINEMATIC;
+  public static com.meta.spatial.physics.PhysicsState[] values();
+  public static com.meta.spatial.physics.PhysicsState valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.physics.PhysicsState> getEntries();
+  static {};
+}
+Compiled from "PhysicsOutOfBoundsSystem.kt"
+public final class com.meta.spatial.physics.PhysicsWorldBounds {
+  public com.meta.spatial.physics.PhysicsWorldBounds(java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float);
+  public com.meta.spatial.physics.PhysicsWorldBounds(java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float, java.lang.Float, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public final java.lang.Float getMinX();
+  public final void setMinX(java.lang.Float);
+  public final java.lang.Float getMaxX();
+  public final void setMaxX(java.lang.Float);
+  public final java.lang.Float getMinY();
+  public final void setMinY(java.lang.Float);
+  public final java.lang.Float getMaxY();
+  public final void setMaxY(java.lang.Float);
+  public final java.lang.Float getMinZ();
+  public final void setMinZ(java.lang.Float);
+  public final java.lang.Float getMaxZ();
+  public final void setMaxZ(java.lang.Float);
+  public com.meta.spatial.physics.PhysicsWorldBounds();
+}
+Compiled from "PlayerAvatarPhysics.kt"
+public final class com.meta.spatial.physics.PlayerAvatarPhysics extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.physics.PlayerAvatarPhysics$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.physics.PlayerAvatarPhysics(boolean, float, float, float, boolean, float, float, float);
+  public com.meta.spatial.physics.PlayerAvatarPhysics(boolean, float, float, float, boolean, float, float, float, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final boolean getBodyEnabled();
+  public final void setBodyEnabled(boolean);
+  public final float getBodyRadius();
+  public final void setBodyRadius(float);
+  public final float getBodyHeightOffset();
+  public final void setBodyHeightOffset(float);
+  public final float getFloorOffset();
+  public final void setFloorOffset(float);
+  public final boolean getHandsEnabled();
+  public final void setHandsEnabled(boolean);
+  public final float getHandRadius();
+  public final void setHandRadius(float);
+  public final float getFriction();
+  public final void setFriction(float);
+  public final float getRestitution();
+  public final void setRestitution(float);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.physics.PlayerAvatarPhysics(boolean, float, float, float, boolean, float, float);
+  public com.meta.spatial.physics.PlayerAvatarPhysics(boolean, float, float, float, boolean, float);
+  public com.meta.spatial.physics.PlayerAvatarPhysics(boolean, float, float, float, boolean);
+  public com.meta.spatial.physics.PlayerAvatarPhysics(boolean, float, float, float);
+  public com.meta.spatial.physics.PlayerAvatarPhysics(boolean, float, float);
+  public com.meta.spatial.physics.PlayerAvatarPhysics(boolean, float);
+  public com.meta.spatial.physics.PlayerAvatarPhysics(boolean);
+  public com.meta.spatial.physics.PlayerAvatarPhysics();
+  public static final int access$getId$cp();
+  public static final int access$getBodyEnabledId$cp();
+  public static final int access$getBodyRadiusId$cp();
+  public static final int access$getBodyHeightOffsetId$cp();
+  public static final int access$getFloorOffsetId$cp();
+  public static final int access$getHandsEnabledId$cp();
+  public static final int access$getHandRadiusId$cp();
+  public static final int access$getFrictionId$cp();
+  public static final int access$getRestitutionId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$getBodyEnabledData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBodyRadiusData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBodyHeightOffsetData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getFloorOffsetData$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$getHandsEnabledData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getHandRadiusData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getFrictionData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getRestitutionData$cp();
+  static {};
+}
+Compiled from "PlayerAvatarPhysics.kt"
+public final class com.meta.spatial.physics.PlayerAvatarPhysics$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getBodyEnabledId();
+  public final int getBodyRadiusId();
+  public final int getBodyHeightOffsetId();
+  public final int getFloorOffsetId();
+  public final int getHandsEnabledId();
+  public final int getHandRadiusId();
+  public final int getFrictionId();
+  public final int getRestitutionId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.physics.PlayerAvatarPhysics> getCreateDefaultInstance();
+  public final com.meta.spatial.core.BooleanAttributeData getBodyEnabledData();
+  public final com.meta.spatial.core.FloatAttributeData getBodyRadiusData();
+  public final com.meta.spatial.core.FloatAttributeData getBodyHeightOffsetData();
+  public final com.meta.spatial.core.FloatAttributeData getFloorOffsetData();
+  public final com.meta.spatial.core.BooleanAttributeData getHandsEnabledData();
+  public final com.meta.spatial.core.FloatAttributeData getHandRadiusData();
+  public final com.meta.spatial.core.FloatAttributeData getFrictionData();
+  public final com.meta.spatial.core.FloatAttributeData getRestitutionData();
+  public com.meta.spatial.physics.PlayerAvatarPhysics$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "PlayerAvatarPhysicsSystem.kt"
+public final class com.meta.spatial.physics.PlayerAvatarPhysicsSystem extends com.meta.spatial.core.SystemBase {
+  public static final com.meta.spatial.physics.PlayerAvatarPhysicsSystem$Companion Companion;
+  public com.meta.spatial.physics.PlayerAvatarPhysicsSystem();
+  public void execute();
+  public void delete(com.meta.spatial.core.Entity);
+  static {};
+}
+Compiled from "PlayerAvatarPhysicsSystem.kt"
+final class com.meta.spatial.physics.PlayerAvatarPhysicsSystem$AvatarPhysicsState {
+  public com.meta.spatial.physics.PlayerAvatarPhysicsSystem$AvatarPhysicsState(com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsCollider, com.meta.spatial.physics.ScenePhysicsCollider, com.meta.spatial.physics.ScenePhysicsCollider, float, float, boolean, boolean);
+  public com.meta.spatial.physics.PlayerAvatarPhysicsSystem$AvatarPhysicsState(com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsCollider, com.meta.spatial.physics.ScenePhysicsCollider, com.meta.spatial.physics.ScenePhysicsCollider, float, float, boolean, boolean, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public final com.meta.spatial.physics.ScenePhysicsObject getBodyPhysicsObject();
+  public final void setBodyPhysicsObject(com.meta.spatial.physics.ScenePhysicsObject);
+  public final com.meta.spatial.physics.ScenePhysicsObject getLeftHandPhysicsObject();
+  public final void setLeftHandPhysicsObject(com.meta.spatial.physics.ScenePhysicsObject);
+  public final com.meta.spatial.physics.ScenePhysicsObject getRightHandPhysicsObject();
+  public final void setRightHandPhysicsObject(com.meta.spatial.physics.ScenePhysicsObject);
+  public final com.meta.spatial.physics.ScenePhysicsCollider getBodyCollider();
+  public final void setBodyCollider(com.meta.spatial.physics.ScenePhysicsCollider);
+  public final com.meta.spatial.physics.ScenePhysicsCollider getLeftHandCollider();
+  public final void setLeftHandCollider(com.meta.spatial.physics.ScenePhysicsCollider);
+  public final com.meta.spatial.physics.ScenePhysicsCollider getRightHandCollider();
+  public final void setRightHandCollider(com.meta.spatial.physics.ScenePhysicsCollider);
+  public final float getLastBodyRadius();
+  public final void setLastBodyRadius(float);
+  public final float getLastHandRadius();
+  public final void setLastHandRadius(float);
+  public final boolean getLastBodyEnabled();
+  public final void setLastBodyEnabled(boolean);
+  public final boolean getLastHandsEnabled();
+  public final void setLastHandsEnabled(boolean);
+  public final com.meta.spatial.physics.ScenePhysicsObject component1();
+  public final com.meta.spatial.physics.ScenePhysicsObject component2();
+  public final com.meta.spatial.physics.ScenePhysicsObject component3();
+  public final com.meta.spatial.physics.ScenePhysicsCollider component4();
+  public final com.meta.spatial.physics.ScenePhysicsCollider component5();
+  public final com.meta.spatial.physics.ScenePhysicsCollider component6();
+  public final float component7();
+  public final float component8();
+  public final boolean component9();
+  public final boolean component10();
+  public final com.meta.spatial.physics.PlayerAvatarPhysicsSystem$AvatarPhysicsState copy(com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsCollider, com.meta.spatial.physics.ScenePhysicsCollider, com.meta.spatial.physics.ScenePhysicsCollider, float, float, boolean, boolean);
+  public static com.meta.spatial.physics.PlayerAvatarPhysicsSystem$AvatarPhysicsState copy$default(com.meta.spatial.physics.PlayerAvatarPhysicsSystem$AvatarPhysicsState, com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsObject, com.meta.spatial.physics.ScenePhysicsCollider, com.meta.spatial.physics.ScenePhysicsCollider, com.meta.spatial.physics.ScenePhysicsCollider, float, float, boolean, boolean, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public com.meta.spatial.physics.PlayerAvatarPhysicsSystem$AvatarPhysicsState();
+}
+Compiled from "PlayerAvatarPhysicsSystem.kt"
+public final class com.meta.spatial.physics.PlayerAvatarPhysicsSystem$Companion {
+  public com.meta.spatial.physics.PlayerAvatarPhysicsSystem$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "ScenePhysicsCollider.kt"
+public class com.meta.spatial.physics.ScenePhysicsCollider {
+  public static final com.meta.spatial.physics.ScenePhysicsCollider$Companion Companion;
+  public final long getHandle();
+  public com.meta.spatial.physics.ScenePhysicsCollider(long);
+  public final long getColliderID();
+  public final void addChildBox(float, float, float, com.meta.spatial.core.Pose);
+  public final void addChildSphere(float, com.meta.spatial.core.Vector3);
+  public final void addChildCylinder(float, float, com.meta.spatial.core.Pose);
+  public final void destroy();
+  protected final void finalize();
+  static {};
+}
+Compiled from "ScenePhysicsCollider.kt"
+public final class com.meta.spatial.physics.ScenePhysicsCollider$Companion {
+  public final com.meta.spatial.physics.ScenePhysicsCollider createBox(com.meta.spatial.runtime.Scene, float, float, float);
+  public final com.meta.spatial.physics.ScenePhysicsCollider createSphere(com.meta.spatial.runtime.Scene, float);
+  public final com.meta.spatial.physics.ScenePhysicsCollider createCylinderX(com.meta.spatial.runtime.Scene, float, float);
+  public final com.meta.spatial.physics.ScenePhysicsCollider createCylinderY(com.meta.spatial.runtime.Scene, float, float);
+  public final com.meta.spatial.physics.ScenePhysicsCollider createCylinderZ(com.meta.spatial.runtime.Scene, float, float);
+  public final com.meta.spatial.physics.ScenePhysicsCollider createCapsuleX(com.meta.spatial.runtime.Scene, float, float);
+  public final com.meta.spatial.physics.ScenePhysicsCollider createCapsuleY(com.meta.spatial.runtime.Scene, float, float);
+  public final com.meta.spatial.physics.ScenePhysicsCollider createCapsuleZ(com.meta.spatial.runtime.Scene, float, float);
+  public final com.meta.spatial.physics.ScenePhysicsCollider createConvexHull(com.meta.spatial.runtime.Scene, java.lang.String);
+  public final com.meta.spatial.physics.ScenePhysicsCollider createGLTF(com.meta.spatial.runtime.Scene, java.lang.String);
+  public final com.meta.spatial.physics.ScenePhysicsCollider createCompound(com.meta.spatial.runtime.Scene);
+  public com.meta.spatial.physics.ScenePhysicsCollider$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "ScenePhysicsConstraint.kt"
+public class com.meta.spatial.physics.ScenePhysicsConstraint {
+  public static final com.meta.spatial.physics.ScenePhysicsConstraint$Companion Companion;
+  public final long getHandle();
+  public final com.meta.spatial.core.Entity getEntityA();
+  public final com.meta.spatial.core.Entity getEntityB();
+  public final com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType getConstraintType();
+  public com.meta.spatial.physics.ScenePhysicsConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType, long);
+  public final void setBreakingThreshold(float, float);
+  public static void setBreakingThreshold$default(com.meta.spatial.physics.ScenePhysicsConstraint, float, float, int, java.lang.Object);
+  public final void setMotor(boolean, float, float);
+  public final void setLimits(float, float);
+  public final float getAppliedImpulse();
+  public final boolean isBroken();
+  public final void setEnabled(boolean);
+  public final void destroy();
+  protected final void finalize();
+  static {};
+}
+Compiled from "ScenePhysicsConstraint.kt"
+public final class com.meta.spatial.physics.ScenePhysicsConstraint$Companion {
+  public final com.meta.spatial.physics.ScenePhysicsConstraint createHinge(com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float);
+  public static com.meta.spatial.physics.ScenePhysicsConstraint createHinge$default(com.meta.spatial.physics.ScenePhysicsConstraint$Companion, com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, int, java.lang.Object);
+  public final com.meta.spatial.physics.ScenePhysicsConstraint createBallSocket(com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.physics.ScenePhysicsConstraint createFixed(com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public static com.meta.spatial.physics.ScenePhysicsConstraint createFixed$default(com.meta.spatial.physics.ScenePhysicsConstraint$Companion, com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, int, java.lang.Object);
+  public final com.meta.spatial.physics.ScenePhysicsConstraint createSlider(com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, float, float);
+  public static com.meta.spatial.physics.ScenePhysicsConstraint createSlider$default(com.meta.spatial.physics.ScenePhysicsConstraint$Companion, com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, float, float, int, java.lang.Object);
+  public final com.meta.spatial.physics.ScenePhysicsConstraint createSpring(com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, float);
+  public static com.meta.spatial.physics.ScenePhysicsConstraint createSpring$default(com.meta.spatial.physics.ScenePhysicsConstraint$Companion, com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, float, int, java.lang.Object);
+  public final com.meta.spatial.physics.ScenePhysicsConstraint createConeTwist(com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, float, float, float, float);
+  public static com.meta.spatial.physics.ScenePhysicsConstraint createConeTwist$default(com.meta.spatial.physics.ScenePhysicsConstraint$Companion, com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, float, float, float, float, int, java.lang.Object);
+  public com.meta.spatial.physics.ScenePhysicsConstraint$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "ScenePhysicsConstraint.kt"
+public final class com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType extends java.lang.Enum<com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType> {
+  public static final com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType FIXED;
+  public static final com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType HINGE;
+  public static final com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType BALL_SOCKET;
+  public static final com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType SLIDER;
+  public static final com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType SPRING;
+  public static final com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType CONE_TWIST;
+  public static com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType[] values();
+  public static com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.physics.ScenePhysicsConstraint$ConstraintType> getEntries();
+  static {};
+}
+Compiled from "ScenePhysicsObject.kt"
+public class com.meta.spatial.physics.ScenePhysicsObject {
+  public static final com.meta.spatial.physics.ScenePhysicsObject$Companion Companion;
+  public final long getHandle();
+  public final com.meta.spatial.core.Entity getEntity();
+  public com.meta.spatial.physics.ScenePhysicsObject(com.meta.spatial.core.Entity, long);
+  public com.meta.spatial.physics.ScenePhysicsObject(com.meta.spatial.core.Entity, long, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public final void setRestitution(float);
+  public final void setLinearVelocity(com.meta.spatial.core.Vector3);
+  public final void setAngularVelocity(com.meta.spatial.core.Vector3);
+  public final void setPose(com.meta.spatial.core.Pose);
+  public final void setFriction(float, float, float);
+  public static void setFriction$default(com.meta.spatial.physics.ScenePhysicsObject, float, float, float, int, java.lang.Object);
+  public final com.meta.spatial.core.Pose getPose();
+  public final void applyForce(com.meta.spatial.core.Vector3);
+  public final void applyForceAtRelativePosition(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public final void applyTorque(float, float, float);
+  public final void destroy();
+  public final void setBodyType(com.meta.spatial.physics.PhysicsState, float);
+  public final void setDamping(float, float);
+  public static void setDamping$default(com.meta.spatial.physics.ScenePhysicsObject, float, float, int, java.lang.Object);
+  public final void setDeactivationTime(float);
+  public static void setDeactivationTime$default(com.meta.spatial.physics.ScenePhysicsObject, float, int, java.lang.Object);
+  public final void setSleepingThresholds(float, float);
+  public static void setSleepingThresholds$default(com.meta.spatial.physics.ScenePhysicsObject, float, float, int, java.lang.Object);
+  public final void setAllowSleeping(boolean);
+  public final void setContinuousCollision(boolean);
+  protected final void finalize();
+  static {};
+}
+Compiled from "ScenePhysicsObject.kt"
+public final class com.meta.spatial.physics.ScenePhysicsObject$Companion {
+  public final com.meta.spatial.physics.ScenePhysicsObject createBox(com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, float, float, float, float);
+  public final com.meta.spatial.physics.ScenePhysicsObject createSphere(com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, float, float);
+  public final com.meta.spatial.physics.ScenePhysicsObject createGLTF(com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, java.lang.String, float);
+  public final void setCallbackEntities(long, long[]);
+  public final com.meta.spatial.physics.ScenePhysicsObject createFromCollider(com.meta.spatial.runtime.Scene, com.meta.spatial.core.Entity, com.meta.spatial.physics.ScenePhysicsCollider, float);
+  public com.meta.spatial.physics.ScenePhysicsObject$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "SliderConstraint.kt"
+public final class com.meta.spatial.physics.SliderConstraint extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.physics.SliderConstraint$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, boolean, float, float);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, boolean, float, float, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final com.meta.spatial.core.Entity getBodyA();
+  public final void setBodyA(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Entity getBodyB();
+  public final void setBodyB(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Vector3 getAnchorA();
+  public final void setAnchorA(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getAnchorB();
+  public final void setAnchorB(com.meta.spatial.core.Vector3);
+  public final float getBreakForce();
+  public final void setBreakForce(float);
+  public final float getBreakTorque();
+  public final void setBreakTorque(float);
+  public final boolean isBroken();
+  public final void setBroken(boolean);
+  public final com.meta.spatial.core.Vector3 getAxis();
+  public final void setAxis(com.meta.spatial.core.Vector3);
+  public final float getLowerLimit();
+  public final void setLowerLimit(float);
+  public final float getUpperLimit();
+  public final void setUpperLimit(float);
+  public final boolean getMotorEnabled();
+  public final void setMotorEnabled(boolean);
+  public final float getMotorTargetVelocity();
+  public final void setMotorTargetVelocity(float);
+  public final float getMotorMaxForce();
+  public final void setMotorMaxForce(float);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, boolean, float);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float, boolean);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float, float);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3, float);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.SliderConstraint(com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.SliderConstraint();
+  public static final int access$getId$cp();
+  public static final int access$getBodyAId$cp();
+  public static final int access$getBodyBId$cp();
+  public static final int access$getAnchorAId$cp();
+  public static final int access$getAnchorBId$cp();
+  public static final int access$getBreakForceId$cp();
+  public static final int access$getBreakTorqueId$cp();
+  public static final int access$isBrokenId$cp();
+  public static final int access$getAxisId$cp();
+  public static final int access$getLowerLimitId$cp();
+  public static final int access$getUpperLimitId$cp();
+  public static final int access$getMotorEnabledId$cp();
+  public static final int access$getMotorTargetVelocityId$cp();
+  public static final int access$getMotorMaxForceId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyAData$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyBData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorAData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorBData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakForceData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakTorqueData$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$isBrokenData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAxisData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getLowerLimitData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getUpperLimitData$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$getMotorEnabledData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getMotorTargetVelocityData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getMotorMaxForceData$cp();
+  static {};
+}
+Compiled from "SliderConstraint.kt"
+public final class com.meta.spatial.physics.SliderConstraint$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getBodyAId();
+  public final int getBodyBId();
+  public final int getAnchorAId();
+  public final int getAnchorBId();
+  public final int getBreakForceId();
+  public final int getBreakTorqueId();
+  public final int isBrokenId();
+  public final int getAxisId();
+  public final int getLowerLimitId();
+  public final int getUpperLimitId();
+  public final int getMotorEnabledId();
+  public final int getMotorTargetVelocityId();
+  public final int getMotorMaxForceId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.physics.SliderConstraint> getCreateDefaultInstance();
+  public final com.meta.spatial.core.EntityAttributeData getBodyAData();
+  public final com.meta.spatial.core.EntityAttributeData getBodyBData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorAData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorBData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakForceData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakTorqueData();
+  public final com.meta.spatial.core.BooleanAttributeData isBrokenData();
+  public final com.meta.spatial.core.Vector3AttributeData getAxisData();
+  public final com.meta.spatial.core.FloatAttributeData getLowerLimitData();
+  public final com.meta.spatial.core.FloatAttributeData getUpperLimitData();
+  public final com.meta.spatial.core.BooleanAttributeData getMotorEnabledData();
+  public final com.meta.spatial.core.FloatAttributeData getMotorTargetVelocityData();
+  public final com.meta.spatial.core.FloatAttributeData getMotorMaxForceData();
+  public com.meta.spatial.physics.SliderConstraint$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "SpringConstraint.kt"
+public final class com.meta.spatial.physics.SpringConstraint extends com.meta.spatial.core.ComponentBase {
+  public static final com.meta.spatial.physics.SpringConstraint$Companion Companion;
+  static final kotlin.reflect.KProperty<java.lang.Object>[] $$delegatedProperties;
+  public com.meta.spatial.physics.SpringConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, float, float, float);
+  public com.meta.spatial.physics.SpringConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, float, float, float, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public boolean getCachable();
+  public void setCachable(boolean);
+  public final com.meta.spatial.core.Entity getBodyA();
+  public final void setBodyA(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Entity getBodyB();
+  public final void setBodyB(com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Vector3 getAnchorA();
+  public final void setAnchorA(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getAnchorB();
+  public final void setAnchorB(com.meta.spatial.core.Vector3);
+  public final float getBreakForce();
+  public final void setBreakForce(float);
+  public final float getBreakTorque();
+  public final void setBreakTorque(float);
+  public final boolean isBroken();
+  public final void setBroken(boolean);
+  public final float getStiffness();
+  public final void setStiffness(float);
+  public final float getDamping();
+  public final void setDamping(float);
+  public final float getRestLength();
+  public final void setRestLength(float);
+  public int typeID();
+  public com.meta.spatial.core.ComponentCompanion companion();
+  public com.meta.spatial.core.ComponentCompanion companionUnsafe();
+  public com.meta.spatial.physics.SpringConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, float, float);
+  public com.meta.spatial.physics.SpringConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean, float);
+  public com.meta.spatial.physics.SpringConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, boolean);
+  public com.meta.spatial.physics.SpringConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float);
+  public com.meta.spatial.physics.SpringConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float);
+  public com.meta.spatial.physics.SpringConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.SpringConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, com.meta.spatial.core.Vector3);
+  public com.meta.spatial.physics.SpringConstraint(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.SpringConstraint(com.meta.spatial.core.Entity);
+  public com.meta.spatial.physics.SpringConstraint();
+  public static final int access$getId$cp();
+  public static final int access$getBodyAId$cp();
+  public static final int access$getBodyBId$cp();
+  public static final int access$getAnchorAId$cp();
+  public static final int access$getAnchorBId$cp();
+  public static final int access$getBreakForceId$cp();
+  public static final int access$getBreakTorqueId$cp();
+  public static final int access$isBrokenId$cp();
+  public static final int access$getStiffnessId$cp();
+  public static final int access$getDampingId$cp();
+  public static final int access$getRestLengthId$cp();
+  public static final int[] access$getAttributeTypeCounts_$cp();
+  public static final int[] access$getAttributeKeys_$cp();
+  public static final int[] access$getAttributeTypes_$cp();
+  public static final java.util.Map access$getEnumClassesMap_$cp();
+  public static final java.util.Map access$getKeyStringToKeyIntMap_$cp();
+  public static final java.util.Map access$getAttrMetaData_$cp();
+  public static final java.lang.String[] access$getAttributeNames_$cp();
+  public static final kotlin.jvm.functions.Function0 access$getCreateDefaultInstance$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyAData$cp();
+  public static final com.meta.spatial.core.EntityAttributeData access$getBodyBData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorAData$cp();
+  public static final com.meta.spatial.core.Vector3AttributeData access$getAnchorBData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakForceData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getBreakTorqueData$cp();
+  public static final com.meta.spatial.core.BooleanAttributeData access$isBrokenData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getStiffnessData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getDampingData$cp();
+  public static final com.meta.spatial.core.FloatAttributeData access$getRestLengthData$cp();
+  static {};
+}
+Compiled from "SpringConstraint.kt"
+public final class com.meta.spatial.physics.SpringConstraint$Companion implements com.meta.spatial.core.ComponentCompanion {
+  public int getId();
+  public final int getBodyAId();
+  public final int getBodyBId();
+  public final int getAnchorAId();
+  public final int getAnchorBId();
+  public final int getBreakForceId();
+  public final int getBreakTorqueId();
+  public final int isBrokenId();
+  public final int getStiffnessId();
+  public final int getDampingId();
+  public final int getRestLengthId();
+  public final int[] getAttributeTypeCounts_();
+  public final int[] getAttributeKeys_();
+  public final int[] getAttributeTypes_();
+  public final java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> getEnumClassesMap_();
+  public final java.util.Map<java.lang.String, java.lang.Integer> getKeyStringToKeyIntMap_();
+  public final java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> getAttrMetaData_();
+  public int attributeCount();
+  public final java.lang.String[] getAttributeNames_();
+  public java.lang.String[] attributeNames();
+  public int keyToIndex(int);
+  public int[] attributeTypeCounts();
+  public int[] attributeKeys();
+  public int[] attributeTypes();
+  public java.util.Map<java.lang.Integer, kotlin.Pair<com.meta.spatial.core.RegisteredAttributeType, java.lang.String>> attributeMetaData();
+  public java.util.Map<java.lang.Integer, java.lang.Class<? extends java.lang.Enum<?>>> enumClassesMap();
+  public java.lang.Integer keyStringToKeyIntMap(java.lang.String);
+  public kotlin.jvm.functions.Function0<com.meta.spatial.physics.SpringConstraint> getCreateDefaultInstance();
+  public final com.meta.spatial.core.EntityAttributeData getBodyAData();
+  public final com.meta.spatial.core.EntityAttributeData getBodyBData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorAData();
+  public final com.meta.spatial.core.Vector3AttributeData getAnchorBData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakForceData();
+  public final com.meta.spatial.core.FloatAttributeData getBreakTorqueData();
+  public final com.meta.spatial.core.BooleanAttributeData isBrokenData();
+  public final com.meta.spatial.core.FloatAttributeData getStiffnessData();
+  public final com.meta.spatial.core.FloatAttributeData getDampingData();
+  public final com.meta.spatial.core.FloatAttributeData getRestLengthData();
+  public com.meta.spatial.physics.SpringConstraint$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "TickPhysicsSystem.kt"
+public final class com.meta.spatial.physics.TickPhysicsSystem extends com.meta.spatial.core.SystemBase {
+  public com.meta.spatial.physics.TickPhysicsSystem(com.meta.spatial.physics.PhysicsBridge);
+  public final com.meta.spatial.physics.PhysicsBridge getPhysicsBridge();
+  public void execute();
+  public com.meta.spatial.core.SystemDependencies getDependencies();
+}
+Compiled from "TickUpdatePhysicsStateSystem.kt"
+public final class com.meta.spatial.physics.TickUpdatePhysicsStateSystem extends com.meta.spatial.core.SystemBase {
+  public com.meta.spatial.physics.TickUpdatePhysicsStateSystem(com.meta.spatial.physics.PhysicsCreationSystem);
+  public final com.meta.spatial.physics.PhysicsCreationSystem getPhysicsCreationSystem();
+  public void execute();
+  public com.meta.spatial.core.SystemDependencies getDependencies();
+}
+Compiled from "TriggerNativeCallbackOnDatamodel.kt"
+public final class com.meta.spatial.physics.TriggerNativeCallbackOnDatamodel {
+  public static final com.meta.spatial.physics.TriggerNativeCallbackOnDatamodel INSTANCE;
+  public static final void triggerCallback(long, long, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float);
+  static {};
+}
+Compiled from "UpdateCallbackEntitiesSystem.kt"
+public final class com.meta.spatial.physics.UpdateCallbackEntitiesSystem extends com.meta.spatial.core.SystemBase {
+  public com.meta.spatial.physics.UpdateCallbackEntitiesSystem(long);
+  public final long getMScene();
+  public void execute();
+}

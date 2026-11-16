@@ -1,0 +1,5 @@
+com.meta.spatial.compose.AppSystemActivityExtensionKt
+com.meta.spatial.compose.ComposeFeature
+com.meta.spatial.compose.ComposeViewPanelRegistration
+com.meta.spatial.compose.PanelRegistrationExtensionKt
+com.meta.spatial.compose.PanelViewLifecycleOwner

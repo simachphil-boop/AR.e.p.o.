@@ -1,0 +1,282 @@
+Compiled from "HandMicrogestureLocomotionSystem.kt"
+public final class com.meta.spatial.vr.HandMicrogestureLocomotionSystem extends com.meta.spatial.core.SystemBase {
+  public static final com.meta.spatial.vr.HandMicrogestureLocomotionSystem$Companion Companion;
+  public com.meta.spatial.vr.HandMicrogestureLocomotionSystem(float, float);
+  public com.meta.spatial.vr.HandMicrogestureLocomotionSystem(float, float, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public final float getPivotDegrees();
+  public final float getStepDistanceMeters();
+  public void execute();
+  public final void enableHandLocomotion(boolean);
+  public final void setHandTranslationMode(com.meta.spatial.vr.HandTranslationMode);
+  public final boolean areHandsInUse();
+  public final void setTeleporter$xplat_aether_libs_features_vr_vrForAAR(com.meta.spatial.vr.LocomotionTeleportHandler);
+  public final void claimNavigationInput$xplat_aether_libs_features_vr_vrForAAR(com.meta.spatial.core.Hand);
+  public final void processTranslation$xplat_aether_libs_features_vr_vrForAAR(com.meta.spatial.core.Entity, boolean);
+  public final com.meta.spatial.vr.HandMicrogestureLocomotionSystem$NavigationAction resolveNavigationAction$xplat_aether_libs_features_vr_vrForAAR(com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandGestureState);
+  public com.meta.spatial.vr.HandMicrogestureLocomotionSystem();
+  static {};
+}
+Compiled from "HandMicrogestureLocomotionSystem.kt"
+public final class com.meta.spatial.vr.HandMicrogestureLocomotionSystem$Companion {
+  public com.meta.spatial.vr.HandMicrogestureLocomotionSystem$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "HandMicrogestureLocomotionSystem.kt"
+final class com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandEntities {
+  public com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandEntities(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity);
+  public final com.meta.spatial.core.Entity getLeft();
+  public final com.meta.spatial.core.Entity getRight();
+  public final com.meta.spatial.core.Entity component1();
+  public final com.meta.spatial.core.Entity component2();
+  public final com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandEntities copy(com.meta.spatial.core.Entity, com.meta.spatial.core.Entity);
+  public static com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandEntities copy$default(com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandEntities, com.meta.spatial.core.Entity, com.meta.spatial.core.Entity, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "HandMicrogestureLocomotionSystem.kt"
+public final class com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandGestureState {
+  public com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandGestureState(boolean, boolean, boolean, boolean, boolean, boolean);
+  public com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandGestureState(boolean, boolean, boolean, boolean, boolean, boolean, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public final boolean getTap();
+  public final boolean getSwipeLeft();
+  public final boolean getSwipeRight();
+  public final boolean getSwipeForward();
+  public final boolean getSwipeBack();
+  public final boolean isFist();
+  public final boolean component1();
+  public final boolean component2();
+  public final boolean component3();
+  public final boolean component4();
+  public final boolean component5();
+  public final boolean component6();
+  public final com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandGestureState copy(boolean, boolean, boolean, boolean, boolean, boolean);
+  public static com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandGestureState copy$default(com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandGestureState, boolean, boolean, boolean, boolean, boolean, boolean, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public com.meta.spatial.vr.HandMicrogestureLocomotionSystem$HandGestureState();
+}
+Compiled from "HandMicrogestureLocomotionSystem.kt"
+public final class com.meta.spatial.vr.HandMicrogestureLocomotionSystem$NavigationAction extends java.lang.Enum<com.meta.spatial.vr.HandMicrogestureLocomotionSystem$NavigationAction> {
+  public static final com.meta.spatial.vr.HandMicrogestureLocomotionSystem$NavigationAction None;
+  public static final com.meta.spatial.vr.HandMicrogestureLocomotionSystem$NavigationAction PivotLeft;
+  public static final com.meta.spatial.vr.HandMicrogestureLocomotionSystem$NavigationAction PivotRight;
+  public static final com.meta.spatial.vr.HandMicrogestureLocomotionSystem$NavigationAction StepForward;
+  public static final com.meta.spatial.vr.HandMicrogestureLocomotionSystem$NavigationAction StepBack;
+  public static com.meta.spatial.vr.HandMicrogestureLocomotionSystem$NavigationAction[] values();
+  public static com.meta.spatial.vr.HandMicrogestureLocomotionSystem$NavigationAction valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.vr.HandMicrogestureLocomotionSystem$NavigationAction> getEntries();
+  static {};
+}
+Compiled from "HandMicrogestureLocomotionSystem.kt"
+public final class com.meta.spatial.vr.HandMicrogestureLocomotionSystem$WhenMappings {
+  public static final int[] $EnumSwitchMapping$0;
+  public static final int[] $EnumSwitchMapping$1;
+  static {};
+}
+Compiled from "HandMicrogestureLocomotionSystem.kt"
+public final class com.meta.spatial.vr.HandTranslationMode extends java.lang.Enum<com.meta.spatial.vr.HandTranslationMode> {
+  public static final com.meta.spatial.vr.HandTranslationMode Disabled;
+  public static final com.meta.spatial.vr.HandTranslationMode TeleportAndStep;
+  public final boolean getTeleportEnabled$xplat_aether_libs_features_vr_vrForAAR();
+  public final boolean getStepEnabled$xplat_aether_libs_features_vr_vrForAAR();
+  public static com.meta.spatial.vr.HandTranslationMode[] values();
+  public static com.meta.spatial.vr.HandTranslationMode valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.vr.HandTranslationMode> getEntries();
+  static {};
+}
+Compiled from "InputStateMachine.kt"
+public final class com.meta.spatial.vr.HitState extends java.lang.Enum<com.meta.spatial.vr.HitState> {
+  public static final com.meta.spatial.vr.HitState IDLE_UP;
+  public static final com.meta.spatial.vr.HitState IDLE_DOWN;
+  public static final com.meta.spatial.vr.HitState HOVER;
+  public static final com.meta.spatial.vr.HitState HOVER_PRESSED;
+  public static final com.meta.spatial.vr.HitState PRESSED;
+  public static final com.meta.spatial.vr.HitState HELD_OUTSIDE;
+  public static final com.meta.spatial.vr.HitState FIRE;
+  public static com.meta.spatial.vr.HitState[] values();
+  public static com.meta.spatial.vr.HitState valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.vr.HitState> getEntries();
+  static {};
+}
+Compiled from "InputStateMachine.kt"
+final class com.meta.spatial.vr.InputInfo {
+  public com.meta.spatial.vr.InputInfo(long, com.meta.spatial.vr.HitState);
+  public final long getSceneObjectHandle();
+  public final void setSceneObjectHandle(long);
+  public final com.meta.spatial.vr.HitState getState();
+  public final void setState(com.meta.spatial.vr.HitState);
+}
+Compiled from "InputStateMachine.kt"
+public final class com.meta.spatial.vr.InputStateMachine {
+  public com.meta.spatial.vr.InputStateMachine();
+  public final com.meta.spatial.runtime.Scene getScene();
+  public final void setScene(com.meta.spatial.runtime.Scene);
+  public final void updateState(com.meta.spatial.runtime.HitInfo, com.meta.spatial.core.Entity, int, int, int);
+}
+Compiled from "InputStateMachine.kt"
+public final class com.meta.spatial.vr.InputStateMachine$WhenMappings {
+  public static final int[] $EnumSwitchMapping$0;
+  static {};
+}
+Compiled from "InputSystem.kt"
+public final class com.meta.spatial.vr.InputSystem extends com.meta.spatial.core.SystemBase {
+  public static final com.meta.spatial.vr.InputSystem$Companion Companion;
+  public com.meta.spatial.vr.InputSystem(com.meta.spatial.vr.LocomotionSystem, android.content.Context);
+  public final com.meta.spatial.vr.LocomotionSystem getLocomotionSystem();
+  public final android.content.Context getCtx();
+  public final float getMaxPointerDistance();
+  public final void setMaxPointerDistance(float);
+  public final boolean getActive();
+  public final boolean getDirectInputEnabled();
+  public final int getTouchButtons();
+  public final void setTouchButtons(int);
+  public final int getSelectButtons();
+  public final void setSelectButtons(int);
+  public final float getCursorScale();
+  public final void setCursorScale(float);
+  public final float getCursorDepthScale();
+  public final void setCursorDepthScale(float);
+  public final float getCursorActuatedRatio();
+  public final void setCursorActuatedRatio(float);
+  public final float getCursorScaleMultiplier();
+  public final void setCursorScaleMultiplier(float);
+  public final com.meta.spatial.core.BuiltQuery getPreBuiltQuery();
+  public void execute();
+  public final void enableInput(boolean);
+  public final void enableDirectInput(boolean);
+  public final void setLeftHandDirectionOverride(com.meta.spatial.core.Vector3);
+  public final void setRightHandDirectionOverride(com.meta.spatial.core.Vector3);
+  public void destroy();
+  public static final float access$getDEFAULT_CURSOR_ACTUATED_RATIO$cp();
+  public static final float access$getDEFAULT_CURSOR_SCALE$cp();
+  public static final float access$getDEFAULT_CURSOR_DEPTH_SCALE$cp();
+  public static final float access$getDEFAULT_CURSOR_SCALE_MULTIPLIER$cp();
+  static {};
+}
+Compiled from "InputSystem.kt"
+public final class com.meta.spatial.vr.InputSystem$Companion {
+  public final float getDEFAULT_CURSOR_ACTUATED_RATIO();
+  public final float getDEFAULT_CURSOR_SCALE();
+  public final float getDEFAULT_CURSOR_DEPTH_SCALE();
+  public final float getDEFAULT_CURSOR_SCALE_MULTIPLIER();
+  public com.meta.spatial.vr.InputSystem$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "LocomotionSystem.kt"
+public final class com.meta.spatial.vr.LocomoteState extends java.lang.Enum<com.meta.spatial.vr.LocomoteState> {
+  public static final com.meta.spatial.vr.LocomoteState None;
+  public static final com.meta.spatial.vr.LocomoteState MovingLeftHand;
+  public static final com.meta.spatial.vr.LocomoteState MovingRightHand;
+  public static final com.meta.spatial.vr.LocomoteState Rotating;
+  public static final com.meta.spatial.vr.LocomoteState Disabled;
+  public static com.meta.spatial.vr.LocomoteState[] values();
+  public static com.meta.spatial.vr.LocomoteState valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.vr.LocomoteState> getEntries();
+  static {};
+}
+Compiled from "LocomotionSystem.kt"
+public final class com.meta.spatial.vr.LocomotionControls extends java.lang.Enum<com.meta.spatial.vr.LocomotionControls> {
+  public static final com.meta.spatial.vr.LocomotionControls Left;
+  public static final com.meta.spatial.vr.LocomotionControls Right;
+  public static final com.meta.spatial.vr.LocomotionControls LeftAndRight;
+  public static com.meta.spatial.vr.LocomotionControls[] values();
+  public static com.meta.spatial.vr.LocomotionControls valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.vr.LocomotionControls> getEntries();
+  static {};
+}
+Compiled from "LocomotionSystem.kt"
+public final class com.meta.spatial.vr.LocomotionSystem extends com.meta.spatial.core.SystemBase {
+  public static final com.meta.spatial.vr.LocomotionSystem$Companion Companion;
+  public com.meta.spatial.vr.LocomotionSystem(com.meta.spatial.vr.LocomotionControls, boolean);
+  public com.meta.spatial.vr.LocomotionSystem(com.meta.spatial.vr.LocomotionControls, boolean, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public final com.meta.spatial.vr.LocomotionControls getLocomotionControls();
+  public final boolean getCanCallbacksConsumeLeftRightInput();
+  public final com.meta.spatial.vr.LocomoteState getLocomoteState();
+  public final void setLocomoteState(com.meta.spatial.vr.LocomoteState);
+  public final boolean areControllersInUse();
+  public final boolean getControllerInputResult(com.meta.spatial.core.Entity);
+  public final void setControllerInputResult(com.meta.spatial.core.Entity, boolean);
+  public final void setTeleporter$xplat_aether_libs_features_vr_vrForAAR(com.meta.spatial.vr.LocomotionTeleporter);
+  public void execute();
+  public final void enableLocomotion(boolean);
+  public com.meta.spatial.core.SystemDependencies getDependencies();
+  public void destroy();
+  public com.meta.spatial.vr.LocomotionSystem();
+  static {};
+}
+Compiled from "LocomotionSystem.kt"
+public final class com.meta.spatial.vr.LocomotionSystem$Companion {
+  public com.meta.spatial.vr.LocomotionSystem$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "LocomotionTeleporter.kt"
+public interface com.meta.spatial.vr.LocomotionTeleportHandler {
+  public abstract com.meta.spatial.runtime.HitInfo updateTarget(com.meta.spatial.runtime.Scene, com.meta.spatial.toolkit.Transform, boolean);
+  public abstract void teleport(com.meta.spatial.runtime.Scene, com.meta.spatial.runtime.HitInfo);
+  public abstract void hideVisuals();
+}
+Compiled from "LocomotionTeleporter.kt"
+public final class com.meta.spatial.vr.LocomotionTeleporter implements com.meta.spatial.vr.LocomotionTeleportHandler {
+  public static final com.meta.spatial.vr.LocomotionTeleporter$Companion Companion;
+  public com.meta.spatial.vr.LocomotionTeleporter(java.lang.String, kotlin.jvm.functions.Function0<java.lang.Long>);
+  public com.meta.spatial.vr.LocomotionTeleporter(java.lang.String, kotlin.jvm.functions.Function0, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public com.meta.spatial.runtime.HitInfo updateTarget(com.meta.spatial.runtime.Scene, com.meta.spatial.toolkit.Transform, boolean);
+  public void teleport(com.meta.spatial.runtime.Scene, com.meta.spatial.runtime.HitInfo);
+  public final void hideCursor();
+  public void hideVisuals();
+  public final void destroy();
+  public com.meta.spatial.vr.LocomotionTeleporter();
+  static {};
+}
+Compiled from "LocomotionTeleporter.kt"
+public final class com.meta.spatial.vr.LocomotionTeleporter$Companion {
+  public final com.meta.spatial.core.Quaternion cursorRotation$xplat_aether_libs_features_vr_vrForAAR(com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 ballisticPoint$xplat_aether_libs_features_vr_vrForAAR(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float);
+  public final java.util.List<com.meta.spatial.core.Vector3> buildArcPoints$xplat_aether_libs_features_vr_vrForAAR(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, int);
+  public final com.meta.spatial.core.Vector3 arcControlPoint$xplat_aether_libs_features_vr_vrForAAR(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.vr.LocomotionTeleporter$Companion$SmoothDampResult smoothDamp$xplat_aether_libs_features_vr_vrForAAR(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, float, float, float);
+  public static final android.graphics.Color access$hiddenArcColor(com.meta.spatial.vr.LocomotionTeleporter$Companion);
+  public com.meta.spatial.vr.LocomotionTeleporter$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+}
+Compiled from "LocomotionTeleporter.kt"
+public final class com.meta.spatial.vr.LocomotionTeleporter$Companion$SmoothDampResult {
+  public com.meta.spatial.vr.LocomotionTeleporter$Companion$SmoothDampResult(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public final com.meta.spatial.core.Vector3 getPosition();
+  public final com.meta.spatial.core.Vector3 getVelocity();
+  public final com.meta.spatial.core.Vector3 component1();
+  public final com.meta.spatial.core.Vector3 component2();
+  public final com.meta.spatial.vr.LocomotionTeleporter$Companion$SmoothDampResult copy(com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3);
+  public static com.meta.spatial.vr.LocomotionTeleporter$Companion$SmoothDampResult copy$default(com.meta.spatial.vr.LocomotionTeleporter$Companion$SmoothDampResult, com.meta.spatial.core.Vector3, com.meta.spatial.core.Vector3, int, java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}
+Compiled from "VRFeature.kt"
+public final class com.meta.spatial.vr.VRFeature extends com.meta.spatial.core.AbstractSpatialFeature {
+  public com.meta.spatial.vr.VRFeature(android.content.Context, com.meta.spatial.vr.LocomotionControls, boolean, com.meta.spatial.vr.VrInputSystemType, boolean);
+  public com.meta.spatial.vr.VRFeature(android.content.Context, com.meta.spatial.vr.LocomotionControls, boolean, com.meta.spatial.vr.VrInputSystemType, boolean, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public final android.content.Context getCtx();
+  public final com.meta.spatial.vr.LocomotionControls getLocomotionSystemControlsChoice();
+  public final boolean getShouldConsumeLeftRightInput();
+  public final com.meta.spatial.vr.VrInputSystemType getInputSystemType();
+  public final boolean getHandMicrogestureLocomotion();
+  public java.util.List<com.meta.spatial.core.SystemBase> earlySystemsToRegister();
+  public java.util.List<com.meta.spatial.core.SystemBase> systemsToRegister();
+  public java.util.List<com.meta.spatial.core.SystemBase> lateSystemsToRegister();
+  public java.util.List<com.meta.spatial.core.ComponentRegistration> componentsToRegister();
+  public void preRuntimeOnCreate(android.os.Bundle);
+  public static final com.meta.spatial.vr.HandMicrogestureLocomotionSystem access$getHandMicrogestureLocomotionSystem$p(com.meta.spatial.vr.VRFeature);
+}
+Compiled from "VRFeature.kt"
+public final class com.meta.spatial.vr.VRFeature$WhenMappings {
+  public static final int[] $EnumSwitchMapping$0;
+  static {};
+}
+Compiled from "VRFeature.kt"
+public final class com.meta.spatial.vr.VrInputSystemType extends java.lang.Enum<com.meta.spatial.vr.VrInputSystemType> {
+  public static final com.meta.spatial.vr.VrInputSystemType INTERACTION_SDK;
+  public static final com.meta.spatial.vr.VrInputSystemType SIMPLE_CONTROLLER;
+  public static com.meta.spatial.vr.VrInputSystemType[] values();
+  public static com.meta.spatial.vr.VrInputSystemType valueOf(java.lang.String);
+  public static kotlin.enums.EnumEntries<com.meta.spatial.vr.VrInputSystemType> getEntries();
+  static {};
+}

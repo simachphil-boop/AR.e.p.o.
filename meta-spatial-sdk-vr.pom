@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.meta.spatial</groupId>
+  <artifactId>meta-spatial-sdk-vr</artifactId>
+  <name>meta-spatial-sdk-vr</name>
+  <description>The Meta Spatial SDK VR library.</description>
+  <url>https://developers.meta.com/</url>
+  <version>0.15.0</version>
+  <packaging>aar</packaging>
+  <licenses>
+    <license>
+      <name>Meta Platform Technologies SDK License Agreement</name>
+      <url>https://developer.oculus.com/licenses/oculussdk/</url>
+    </license>
+  </licenses>
+   <developers>
+    <developer>
+      <name>Meta Spatial SDK</name>
+      <email>gradle-tooling@meta.com</email>
+      <organization>Meta</organization>
+      <organizationUrl>http://www.meta.com</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>PRIVATE</connection>
+    <developerConnection>PRIVATE</developerConnection>
+    <url>PRIVATE</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.meta.spatial</groupId>
+      <artifactId>meta-spatial-sdk</artifactId>
+      <version>0.15.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.meta.spatial</groupId>
+      <artifactId>meta-spatial-sdk-toolkit</artifactId>
+      <version>0.15.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.meta.spatial</groupId>
+      <artifactId>meta-spatial-sdk-isdk</artifactId>
+      <version>0.15.0</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,41 @@
+Compiled from "AppSystemActivityExtension.kt"
+public final class com.meta.spatial.compose.AppSystemActivityExtensionKt {
+  public static final com.meta.spatial.compose.PanelViewLifecycleOwner getPanelViewLifecycleOwner(com.meta.spatial.toolkit.AppSystemActivity);
+  public static final void attachLifecycleToRootView(com.meta.spatial.toolkit.AppSystemActivity, android.view.View, com.meta.spatial.compose.PanelViewLifecycleOwner);
+  public static void attachLifecycleToRootView$default(com.meta.spatial.toolkit.AppSystemActivity, android.view.View, com.meta.spatial.compose.PanelViewLifecycleOwner, int, java.lang.Object);
+}
+Compiled from "ComposeFeature.kt"
+public final class com.meta.spatial.compose.ComposeFeature implements com.meta.spatial.core.SpatialFeature {
+  public com.meta.spatial.compose.ComposeFeature();
+  public final com.meta.spatial.compose.PanelViewLifecycleOwner getPanelViewLifecycleOwner();
+  public void onCreate(android.os.Bundle);
+  public void onStart();
+  public void onResume();
+  public void onPauseActivity();
+  public void onStopActivity();
+  public void onSpatialShutdown();
+  public void onDestroy();
+}
+Compiled from "ComposeViewPanelRegistration.kt"
+public final class com.meta.spatial.compose.ComposeViewPanelRegistration extends com.meta.spatial.toolkit.PanelRegistration {
+  public com.meta.spatial.compose.ComposeViewPanelRegistration(int, kotlin.jvm.functions.Function2<? super com.meta.spatial.core.Entity, ? super android.content.Context, androidx.compose.ui.platform.ComposeView>, kotlin.jvm.functions.Function1<? super com.meta.spatial.core.Entity, ? extends com.meta.spatial.toolkit.PanelSettings>, kotlin.jvm.functions.Function3<? super androidx.compose.ui.platform.ComposeView, ? super com.meta.spatial.runtime.PanelSceneObject, ? super com.meta.spatial.core.Entity, kotlin.Unit>);
+  public com.meta.spatial.compose.ComposeViewPanelRegistration(int, kotlin.jvm.functions.Function2, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function3, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public kotlin.jvm.functions.Function1<com.meta.spatial.core.Entity, com.meta.spatial.runtime.PanelSceneObject> panelCreator(com.meta.spatial.runtime.Scene, com.meta.spatial.core.SpatialContext);
+}
+Compiled from "PanelRegistrationExtension.kt"
+public final class com.meta.spatial.compose.PanelRegistrationExtensionKt {
+  public static final com.meta.spatial.toolkit.PanelRegistration composePanel(com.meta.spatial.toolkit.PanelRegistration, kotlin.jvm.functions.Function1<? super androidx.compose.ui.platform.ComposeView, kotlin.Unit>);
+}
+Compiled from "PanelViewLifecycleOwner.kt"
+public final class com.meta.spatial.compose.PanelViewLifecycleOwner implements androidx.lifecycle.LifecycleOwner,androidx.lifecycle.ViewModelStoreOwner,androidx.savedstate.SavedStateRegistryOwner {
+  public com.meta.spatial.compose.PanelViewLifecycleOwner();
+  public androidx.lifecycle.Lifecycle getLifecycle();
+  public androidx.savedstate.SavedStateRegistry getSavedStateRegistry();
+  public androidx.lifecycle.ViewModelStore getViewModelStore();
+  public final void onCreate();
+  public final void onStart();
+  public final void onResume();
+  public final void onPause();
+  public final void onStop();
+  public final void onDestroy();
+}
