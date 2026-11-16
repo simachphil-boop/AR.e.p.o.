@@ -90,6 +90,11 @@ class AREPOActivity : AppSystemActivity() {
         game.setPhase(Phase.LOADING)
     }
 
+    fun sc() = scene
+    fun haptic(hand: com.meta.spatial.core.Hand, amp: Float, ms: Long) {
+        try { spatial.applyHapticFeedback(hand, amp, ms, 160f) } catch (e: Throwable) { }
+    }
+
     fun loadScene() {
         Ui.status = "Загружаю отсканированные комнаты…"
         try {

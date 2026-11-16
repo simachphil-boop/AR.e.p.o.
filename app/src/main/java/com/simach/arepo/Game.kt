@@ -139,10 +139,10 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
     }
     private fun play(name: String, at: Vector3? = null, vol: Float = 1f) {
         val a = snd(name) ?: return
-        try { if (at != null) scene.playSound(a, at, vol) else scene.playSound(a, vol) } catch (e: Throwable) { }
+        try { if (at != null) act.sc().playSound(a, at, vol) else act.sc().playSound(a, vol) } catch (e: Throwable) { }
     }
     private fun buzz(hand: Hand, amp: Float, ms: Long) {
-        try { act.spatial.applyHapticFeedback(hand, amp, ms, 160f) } catch (e: Throwable) { }
+        try { act.haptic(hand, amp, ms) } catch (e: Throwable) { }
     }
     private fun ui(block: () -> Unit) = main.post(block)
     private fun toast(t: String, kind: Int = 0) = ui { Ui.toast(t, kind) }
@@ -154,7 +154,7 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
         lastNs = now
         time += dt
         try {
-            head = scene.getViewerPose()
+            head = act.sc().getViewerPose()
             fwd = (head.q * v3(0f, 0f, 1f))
             processCmds()
             when (phase) {
@@ -214,7 +214,7 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
             Ui.surfaces = surf
             Ui.mapPolys = rooms.map { r -> MapPoly(0, floatArrayOf(r.corners[0].x, r.corners[0].z, r.corners[1].x, r.corners[1].z, r.corners[2].x, r.corners[2].z, r.corners[3].x, r.corners[3].z)) }
         }
-        if (!ambientOn) { snd("ambient")?.let { try { scene.playBackgroundSound(it, 0.35f, true) } catch (e: Throwable) { } }; ambientOn = true }
+        if (!ambientOn) { snd("ambient")?.let { try { act.sc().playBackgroundSound(it, 0.35f, true) } catch (e: Throwable) { } }; ambientOn = true }
         setPhase(Phase.MENU)
     }
 
@@ -295,7 +295,7 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
     private fun clearLevel() {
         for (it in items) it.entity.destroy()
         items.clear()
-        for (m in monsters) { try { scene.stopSound(m.soundId) } catch (e: Throwable) { }; m.entity.destroy() }
+        for (m in monsters) { try { act.sc().stopSound(m.soundId) } catch (e: Throwable) { }; m.entity.destroy() }
         monsters.clear()
         held = null; aimed = null; zoneValue = 0
         beam?.setComponent(Visible(false)); marker?.setComponent(Visible(false))
@@ -367,7 +367,7 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
             val m = Monster(kd, e, pos, sp, id)
             m.timer = 4f + Random.nextFloat() * 4f
             monsters.add(m)
-            snd("monster_loop")?.let { try { scene.playSound(it, e, if (kd == 1) 0.25f else 0.6f, id, true) } catch (x: Throwable) { } }
+            snd("monster_loop")?.let { try { act.sc().playSound(it, e, if (kd == 1) 0.25f else 0.6f, id, true) } catch (x: Throwable) { } }
         }
         setPhase(Phase.PLAY)
         play("start")
