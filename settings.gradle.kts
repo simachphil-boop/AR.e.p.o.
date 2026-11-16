@@ -1,13 +1,9 @@
 pluginManagement {
-    repositories { google(); mavenCentral(); gradlePluginPortal() }
+    repositories { mavenCentral(); google(); gradlePluginPortal() }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        maven { url = uri("https://developer.huawei.com/repo/") }
-    }
+    repositories { mavenCentral(); google() }
 }
 rootProject.name = "AREPO"
 include(":app")
