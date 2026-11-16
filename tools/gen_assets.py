@@ -157,11 +157,18 @@ def write_glb(path, parts, center=True):
             if any(m['e']): md['emissiveFactor'] = [min(1.0, v) for v in m['e']]
             if m['b']: md['alphaMode'] = 'BLEND'
             mat_index[key] = len(mats); mats.append(md)
-        vp = add_view(P.tobytes()); vn = add_view(N.tobytes())
+        UV = np.zeros((len(P), 2), np.float32)
+        IDX = np.arange(len(P), dtype=np.uint32)
+        vp = add_view(P.tobytes()); vn = add_view(N.tobytes()); vu = add_view(UV.tobytes()); vi = add_view(IDX.tobytes(), 34963)
         accessors.append({'bufferView': vp, 'componentType': 5126, 'count': len(P), 'type': 'VEC3',
                           'min': P.min(0).tolist(), 'max': P.max(0).tolist()})
         accessors.append({'bufferView': vn, 'componentType': 5126, 'count': len(N), 'type': 'VEC3'})
-        prims.append({'attributes': {'POSITION': len(accessors) - 2, 'NORMAL': len(accessors) - 1}, 'material': mat_index[key]})
+        accessors.append({'bufferView': vu, 'componentType': 5126, 'count': len(UV), 'type': 'VEC2'})
+        accessors.append({'bufferView': vi, 'componentType': 5125, 'count': len(IDX), 'type': 'SCALAR',
+                          'min': [0], 'max': [int(len(IDX) - 1)]})
+        n = len(accessors)
+        prims.append({'attributes': {'POSITION': n - 4, 'NORMAL': n - 3, 'TEXCOORD_0': n - 2}, 'indices': n - 1,
+                      'material': mat_index[key], 'mode': 4})
     while len(bin_) % 4: bin_ += b'\0'
     gltf = {'asset': {'version': '2.0', 'generator': 'arepo-gen'}, 'scene': 0, 'scenes': [{'nodes': [0]}],
             'nodes': [{'mesh': 0, 'name': os.path.basename(path)}], 'meshes': [{'primitives': prims}],
