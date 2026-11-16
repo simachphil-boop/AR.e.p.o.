@@ -125,7 +125,7 @@ def xform(mesh, t=(0, 0, 0), s=(1, 1, 1), rx=0, ry=0, rz=0):
 def mat(color, metal=0.0, rough=0.6, emis=(0, 0, 0), alpha=1.0, blend=False):
     return {'c': list(color) + [alpha], 'm': metal, 'r': rough, 'e': list(emis), 'b': blend}
 
-GOLD = mat((1.0, 0.72, 0.2), 1.0, 0.25)
+GOLD = mat((1.0, 0.72, 0.2), 0.6, 0.35)
 WOOD = mat((0.42, 0.24, 0.11), 0.0, 0.7)
 DARKWOOD = mat((0.28, 0.14, 0.06), 0.0, 0.7)
 DARK = mat((0.03, 0.03, 0.04), 0.0, 0.9)
@@ -158,13 +158,14 @@ def write_glb(path, parts, center=True):
             if m['b']: md['alphaMode'] = 'BLEND'
             mat_index[key] = len(mats); mats.append(md)
         UV = np.zeros((len(P), 2), np.float32)
-        IDX = np.arange(len(P), dtype=np.uint32)
+        assert len(P) < 65535
+        IDX = np.arange(len(P), dtype=np.uint16)
         vp = add_view(P.tobytes()); vn = add_view(N.tobytes()); vu = add_view(UV.tobytes()); vi = add_view(IDX.tobytes(), 34963)
         accessors.append({'bufferView': vp, 'componentType': 5126, 'count': len(P), 'type': 'VEC3',
                           'min': P.min(0).tolist(), 'max': P.max(0).tolist()})
         accessors.append({'bufferView': vn, 'componentType': 5126, 'count': len(N), 'type': 'VEC3'})
         accessors.append({'bufferView': vu, 'componentType': 5126, 'count': len(UV), 'type': 'VEC2'})
-        accessors.append({'bufferView': vi, 'componentType': 5125, 'count': len(IDX), 'type': 'SCALAR',
+        accessors.append({'bufferView': vi, 'componentType': 5123, 'count': len(IDX), 'type': 'SCALAR',
                           'min': [0], 'max': [int(len(IDX) - 1)]})
         n = len(accessors)
         prims.append({'attributes': {'POSITION': n - 4, 'NORMAL': n - 3, 'TEXCOORD_0': n - 2}, 'indices': n - 1,

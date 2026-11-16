@@ -84,6 +84,7 @@ class AREPOActivity : AppSystemActivity() {
             sunDirection = -Vector3(1.0f, 3.0f, -2.0f),
             environmentIntensity = 0.4f,
         )
+        try { scene.updateIBLEnvironment("environment.env") } catch (e: Throwable) { }
 
         // Невидимые стены, пол и мебель: дают физику и прячут виртуальное за реальными стенами
         val mat = try { AnchorProceduralMeshConfig(SceneMaterial.depthOnly(false), true) } catch (e: Throwable) { null }
@@ -179,9 +180,9 @@ class AREPOActivity : AppSystemActivity() {
             composeViewCreator = { _, ctx -> ComposeView(ctx).apply { setContent { WristPanel() } } },
             settingsCreator = {
                 UIPanelSettings(
-                    shape = QuadShapeOptions(width = 0.26f, height = 0.22f),
+                    shape = QuadShapeOptions(width = 0.24f, height = 0.2f),
                     style = PanelStyleOptions(themeResourceId = R.style.PanelAppThemeTransparent),
-                    display = DpPerMeterDisplayOptions(),
+                    display = DpPerMeterDisplayOptions(dpPerMeter = 1500f),
                 )
             },
         ),

@@ -23,6 +23,7 @@ import com.meta.spatial.toolkit.MeshCollision
 import com.meta.spatial.toolkit.PlayerBodyAttachmentSystem
 import com.meta.spatial.toolkit.Scale
 import com.meta.spatial.toolkit.Transform
+import com.meta.spatial.toolkit.TransformParent
 import com.meta.spatial.toolkit.Visible
 import kotlin.math.abs
 import kotlin.math.atan2
@@ -273,7 +274,7 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
     }
 
     private fun setZoneHere() {
-        val y = floorAt(head.t)
+        val y = floorAt(head.t) + 0.012f
         val z = v3(head.t.x, y, head.t.z)
         zone = z
         if (zoneEntity == null) {
@@ -375,7 +376,7 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
         }
         setPhase(Phase.PLAY)
         play("start")
-        toast("Уровень $lvl: собери $quota $", 3)
+        toast("Уровень $lvl: собери $quota $ · ценностей: ${items.size}", 3)
         if (monsters.isNotEmpty()) main.postDelayed({ Ui.toast("Ты здесь не один…", 1) }, 2500)
     }
 
@@ -839,16 +840,22 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
     }
     private fun hideMenu() { menuPanel?.setComponent(Visible(false)) }
 
+    private var wristParent: Entity? = null
+
     private fun placeWrist() {
         val w = wristPanel ?: return
-        val show = phase == Phase.PLAY
-        val lp = if (show) body()?.leftHand?.tryGetComponent<Transform>()?.transform else null
-        if (lp == null) { w.setComponent(Visible(false)); return }
-        val pos = lp.t + lp.q * v3(0f, 0.09f, 0.02f)
-        val toHead = head.t - pos
+        val left = body()?.leftHand
+        val lp = left?.tryGetComponent<Transform>()?.transform
+        if (phase != Phase.PLAY || left == null || lp == null) { w.setComponent(Visible(false)); return }
+        // панель прикреплена к левому контроллеру — двигается вместе с ним без задержки
+        if (wristParent != left) { w.setComponent(TransformParent(left)); wristParent = left }
+        val offset = v3(0f, 0.1f, 0.03f)
+        val worldPos = lp.t + lp.q * offset
+        val toHead = head.t - worldPos
         val l = lenOf(toHead)
-        val q = if (l > 0.01f) Quaternion.lookRotation(toHead * (-1f / l)) else lp.q
-        w.setComponent(Transform(Pose(pos, q)))
+        val worldQ = if (l > 0.01f) Quaternion.lookRotation(toHead * (-1f / l)) else lp.q
+        val localQ = lp.q.inverse() * worldQ
+        w.setComponent(Transform(Pose(offset, localQ)))
         w.setComponent(Visible(true))
     }
 
