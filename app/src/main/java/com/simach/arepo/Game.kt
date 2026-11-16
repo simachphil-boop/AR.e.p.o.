@@ -912,7 +912,7 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
     }
 
     private fun pushMap() {
-        if (phase != Phase.PLAY && phase != Phase.ZONE) return
+        if (phase != Phase.PLAY) return
         val f = v3(fwd.x, 0f, fwd.z).normalize()
         val r0 = head.q * v3(1f, 0f, 0f)
         val r = v3(r0.x, 0f, r0.z).normalize()

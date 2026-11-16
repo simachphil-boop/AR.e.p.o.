@@ -33,6 +33,7 @@ import com.meta.spatial.toolkit.Visible
 import com.meta.spatial.toolkit.createPanelEntity
 import com.meta.spatial.vr.LocomotionSystem
 import com.meta.spatial.vr.VRFeature
+import com.meta.spatial.vr.VrInputSystemType
 
 class AREPOActivity : AppSystemActivity() {
     lateinit var mruk: MRUKFeature
@@ -43,7 +44,7 @@ class AREPOActivity : AppSystemActivity() {
     override fun registerFeatures(): List<SpatialFeature> {
         mruk = MRUKFeature(this, systemManager)
         physics = PhysicsFeature(spatial, worldBounds = PhysicsWorldBounds(minY = -100.0f))
-        return listOf(physics, VRFeature(this), ComposeFeature(), mruk)
+        return listOf(physics, VRFeature(this, inputSystemType = VrInputSystemType.SIMPLE_CONTROLLER), ComposeFeature(), mruk)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

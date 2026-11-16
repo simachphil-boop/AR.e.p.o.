@@ -254,6 +254,7 @@ private fun Toasts() {
 // ================== панель на руке ==================
 @Composable
 fun WristPanel() {
+    if (Ui.phase != Phase.PLAY) { Box(Modifier.fillMaxSize()); return }
     val danger = Ui.danger
     Box(
         Modifier.fillMaxSize().clip(RoundedCornerShape(20.dp))
