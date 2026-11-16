@@ -1,0 +1,35 @@
+name: SDK API dump
+on:
+  push:
+    paths: [ '.github/workflows/api.yml' ]
+permissions:
+  contents: write
+jobs:
+  dump:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/setup-java@v5
+        with: { distribution: temurin, java-version: '17' }
+      - name: Dump
+        run: |
+          set -x
+          V=0.15.0
+          mkdir out
+          curl -sSL https://repo1.maven.org/maven2/com/meta/spatial/meta-spatial-sdk/maven-metadata.xml > out/versions.xml || true
+          for A in meta-spatial-sdk meta-spatial-sdk-toolkit meta-spatial-sdk-vr meta-spatial-sdk-physics meta-spatial-sdk-mruk meta-spatial-sdk-spatialaudio meta-spatial-sdk-compose meta-spatial-sdk-isdk; do
+            curl -sSLf "https://repo1.maven.org/maven2/com/meta/spatial/$A/$V/$A-$V.aar" -o $A.aar || { echo "no $A" >> out/missing.txt; continue; }
+            curl -sSLf "https://repo1.maven.org/maven2/com/meta/spatial/$A/$V/$A-$V.pom" -o out/$A.pom || true
+            mkdir -p x/$A && (cd x/$A && unzip -q -o ../../$A.aar && mkdir cls && cd cls && unzip -q -o ../classes.jar)
+            cp x/$A/AndroidManifest.xml out/$A.manifest.xml || true
+            (cd x/$A/cls && find . -name "*.class" | sed 's#^\./##; s#\.class$##; s#/#.#g' | sort) > out/$A.classes.txt
+            grep -v '\$[0-9]' out/$A.classes.txt | grep -v 'Kt\$\|ComposableSingletons\|\$\$' > list.txt || true
+            javap -cp x/$A/cls $(cat list.txt) > out/$A.api.txt 2>&1 || true
+          done
+          ls -la out
+      - name: Publish to branch
+        run: |
+          cd out
+          git init -q -b api-dump
+          git config user.name ci; git config user.email ci@example.com
+          git add -A; git commit -qm dump
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" api-dump
