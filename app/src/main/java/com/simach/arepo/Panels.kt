@@ -176,6 +176,14 @@ fun MenuPanel() {
                 }
                 Phase.PLAY -> {}
             }
+            if (Ui.lastCrash.isNotEmpty() && (Ui.phase == Phase.MENU || Ui.phase == Phase.LOADING || Ui.phase == Phase.NOSCENE)) {
+                CardBox {
+                    Text("⚠️ Прошлый запуск закрылся с ошибкой. Сделай скриншот и пришли:", color = Red, fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                    Spacer(Modifier.height(6.dp))
+                    Text(Ui.lastCrash, color = Color.White, fontSize = 13.sp, lineHeight = 16.sp)
+                }
+                Btn("Скрыть ошибку", modifier = Modifier.fillMaxWidth()) { Ui.cmd("clearCrash") }
+            }
             Toasts()
         }
     }

@@ -22,6 +22,7 @@ import com.meta.spatial.physics.PhysicsFeature
 import com.meta.spatial.physics.PhysicsWorldBounds
 import com.meta.spatial.runtime.SceneMaterial
 import com.meta.spatial.toolkit.AppSystemActivity
+import com.meta.spatial.toolkit.AvatarSystem
 import com.meta.spatial.toolkit.DpPerMeterDisplayOptions
 import com.meta.spatial.toolkit.PanelRegistration
 import com.meta.spatial.toolkit.PanelStyleOptions
@@ -46,15 +47,36 @@ class AREPOActivity : AppSystemActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installCrashLogger()
         super.onCreate(savedInstanceState)
+        Ui.lastCrash = getSharedPreferences("crash", MODE_PRIVATE).getString("last", "") ?: ""
         game = GameSystem(this)
         systemManager.registerSystem(game)
         systemManager.findSystem<LocomotionSystem>().enableLocomotion(false)
         scene.enablePassthrough(true)
     }
 
+    private fun installCrashLogger() {
+        val prev = Thread.getDefaultUncaughtExceptionHandler()
+        Thread.setDefaultUncaughtExceptionHandler { t, e ->
+            try {
+                val sw = java.io.StringWriter()
+                e.printStackTrace(java.io.PrintWriter(sw))
+                val text = sw.toString().lines().filter { it.isNotBlank() }.take(14).joinToString("\n")
+                getSharedPreferences("crash", MODE_PRIVATE).edit().putString("last", text).commit()
+            } catch (x: Throwable) { }
+            prev?.uncaughtException(t, e)
+        }
+    }
+
+    fun clearCrash() {
+        getSharedPreferences("crash", MODE_PRIVATE).edit().remove("last").apply()
+        Ui.lastCrash = ""
+    }
+
     override fun onSceneReady() {
         super.onSceneReady()
+        try { systemManager.findSystem<AvatarSystem>().setShowControllers(true) } catch (e: Throwable) { }
         scene.setLightingEnvironment(
             ambientColor = Vector3(0.35f),
             sunColor = Vector3(4.0f, 3.8f, 3.6f),

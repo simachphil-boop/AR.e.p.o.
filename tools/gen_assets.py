@@ -258,6 +258,8 @@ write_glb(os.path.join(MODELS, 'zone_red.glb'), [
 # луч: цилиндр вдоль +Z длиной 1
 write_glb(os.path.join(MODELS, 'beam.glb'), [
     (xform(cyl(0.006, 1.0, 10), rx=90), mat((1, 0.85, 0.3), 0, 0.5, emis=(1, 0.75, 0.2), alpha=0.75, blend=True))], center=False)
+write_glb(os.path.join(MODELS, 'pointer.glb'), [
+    (xform(cyl(0.003, 1.0, 8), rx=90), mat((0.6, 0.9, 1), 0, 0.5, emis=(0.4, 0.8, 1), alpha=0.45, blend=True))], center=False)
 write_glb(os.path.join(MODELS, 'shard.glb'), [(box(0.03, 0.03, 0.03), mat((0.9, 0.9, 0.95), 0.3, 0.3))], center=True)
 write_glb(os.path.join(MODELS, 'marker.glb'), [(xform(crystal(0.03, 0.05, 0.05, 4), (0, 0, 0)), mat((1, 0.8, 0.2), 0, 0.3, emis=(1, 0.75, 0.15)))], center=True)
 

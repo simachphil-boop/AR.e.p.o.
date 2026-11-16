@@ -96,6 +96,7 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
     private val monsters = ArrayList<Monster>()
     private val shards = ArrayList<Pair<Entity, Float>>()
     private var beam: Entity? = null
+    private val pointers = HashMap<Hand, Entity>()
     private var marker: Entity? = null
     var menuPanel: Entity? = null
     var wristPanel: Entity? = null
@@ -174,6 +175,7 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
 
     fun setPhase(p: Phase) {
         phase = p
+        if (p != Phase.PLAY) for (pe in pointers.values) pe.setComponent(Visible(false))
         ui { Ui.phase = p }
         if (p != Phase.PLAY) showMenu() else hideMenu()
     }
@@ -254,6 +256,7 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
                 c == "setZone" -> setZoneHere()
                 c == "zoneOk" -> if (zone != null) setPhase(Phase.INTRO)
                 c == "rescan" -> act.requestCapture()
+                c == "clearCrash" -> act.runOnUiThread { act.clearCrash() }
                 c == "startLevel" -> startLevel()
                 c == "extract" -> extract()
                 c == "pause" -> if (phase == Phase.PLAY) setPhase(Phase.PAUSE)
@@ -299,6 +302,7 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
         monsters.clear()
         held = null; aimed = null; zoneValue = 0
         beam?.setComponent(Visible(false)); marker?.setComponent(Visible(false))
+        for (p in pointers.values) p.setComponent(Visible(false))
         setZoneColor(false)
     }
 
@@ -437,6 +441,21 @@ class GameSystem(private val act: AREPOActivity) : SystemBase() {
                 play("hit", p, 0.8f)
                 it.pendingDmg = 0f; it.dmgTimer = 0.4f
             }
+        }
+
+        // указки из контроллеров, чтобы было видно, куда целишься
+        for ((hand, pose) in listOf(Hand.RIGHT to rPose, Hand.LEFT to lPose)) {
+            val pe = pointers.getOrPut(hand) {
+                Entity.create(listOf(Mesh(Uri.parse("apk:///models/pointer.glb"), MeshCollision.NoCollision), Transform(), Scale(v3(1f, 1f, 1f))))
+            }
+            val holding = held != null && heldHand == hand
+            if (pose == null || holding) { pe.setComponent(Visible(false)); continue }
+            val dir = pose.q * v3(0f, 0f, 1f)
+            val target = findAimed(pose)
+            val len = if (target != null) lenOf(target.pos - pose.t) else reach()
+            pe.setComponent(Transform(Pose(pose.t, Quaternion.lookRotation(dir))))
+            pe.setComponent(Scale(v3(1f, 1f, len)))
+            pe.setComponent(Visible(true))
         }
 
         // захват лучом

@@ -52,6 +52,7 @@ dependencies {
     implementation("com.meta.spatial:meta-spatial-sdk-physics:$spatial")
     implementation("com.meta.spatial:meta-spatial-sdk-mruk:$spatial")
     implementation("com.meta.spatial:meta-spatial-sdk-compose:$spatial")
+    implementation("com.meta.spatial:meta-spatial-sdk-isdk:$spatial")
 
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")

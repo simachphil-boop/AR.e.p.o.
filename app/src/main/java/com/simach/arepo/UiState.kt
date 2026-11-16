@@ -15,6 +15,7 @@ data class Toast(val text: String, val kind: Int, val time: Long) // 0 обыч�
 object Ui {
     var phase by mutableStateOf(Phase.LOADING)
     var status by mutableStateOf("Загрузка…")
+    var lastCrash by mutableStateOf("")
     var level by mutableStateOf(1)
     var money by mutableStateOf(0)
     var best by mutableStateOf(0)
